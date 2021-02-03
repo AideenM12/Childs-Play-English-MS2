@@ -1,3 +1,15 @@
+# UX
+
+## Strategy
+
+### User Stories
+
+# Structure
+
+## Features
+
+### Design
+
 ## Skeleton
 
 ### Wireframes
@@ -13,3 +25,18 @@
 * [Clothes Page Wireframes](documentation/wireframes/clothes-page-frames.pdf)
 
 * [Event Wireframes](documentation/wireframes/event-frames.pdf)
+
+
+## Technologies Used
+
+## Testing
+
+## Deployment
+
+## Credits
+
+### Media
+
+### Code
+
+### Acknowledgements

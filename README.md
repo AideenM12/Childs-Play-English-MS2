@@ -30,6 +30,7 @@
 ## Technologies Used
 
 ## Testing
+Testing information can be found here in the separate [TESTING.md file](TESTING.md)
 
 ## Deployment
 

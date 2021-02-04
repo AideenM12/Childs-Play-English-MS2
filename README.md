@@ -21,6 +21,9 @@
 ## Features
 
 ### Design
+**Colours**
+
+<img src="documentation/MS2-Palette (640x480).jpg" width="450" height="250" alt="milestone palette">
 
 ## Skeleton
 

@@ -2,6 +2,16 @@
 
 ## Strategy
 
+### Project Goals
+
+The primary goal of the project is to create a site for younger, non-english speaking, learners to learn some basic English vocabulary in a stress-free playful environment. Younger learners enjoy repetitive material and respond better to praise than to new challenges so the site will be designed with this in mind. The material will be easy in order to encourage learners and the graphics used will be consistent with what is attractive to the target audience. The vocabulary chosen is food, animals and clothing because often learners in non English speaking countries are presented with certified English speaking exams that often involve being able to identify this vocabulary when presented with images so the site can function as an effective study aid in order to make the process of learning and studying much less daunting and hopefully much more enjoyable.
+
+**The Ideal User of this site is:**
+* Aged 5+ or a younger child with excellent reading skills.
+* Someone who enjoys languages and learning new things.
+* Someone who has regular access to a phone or computer with internet connection.
+* Someome who has been in enrolled in a ESL oral exam such as Trinity's GESE 1 exam.  
+
 ### User Stories
 * As a first time user I want to learn basic English vocabulary with the aid of intuitive visual images/graphics.
 

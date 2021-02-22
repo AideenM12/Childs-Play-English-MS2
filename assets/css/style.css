@@ -1,6 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Chewy&family=Chilanka&display=swap');
 body{
     background-color: #a1d9f7;
     color: #001011; 
+    font-family: 'Chilanka', sans-serif;
+}
+h1, .navbar-brand{
+    font-family: 'Chewy', sans-serif;
 }
 
 .nav-color{

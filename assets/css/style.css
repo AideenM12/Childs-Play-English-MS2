@@ -21,15 +21,29 @@ footer{
     height: auto;
     position: relative;
     background-color:#f1a4aa ;
+   
 }
 .icons{
     float: right;
     font-size: 20px;
 }
 
+@media only screen and (min-width: 577px) and (max-width:992px) {
+     footer{
+        font-family: 'Chewy', san-serif;
+        font-size: 30px;
+    }
+}
+
 @media only screen and (max-width: 576px) {
+    footer{
+        font-family: 'Chewy', san-serif;
+        font-size: 30px;
+    }
     .icons{
         display: inline-flex;
         flex: 100%;
+        line-height: 30px;
+        word-spacing: 60px;
     }
 }

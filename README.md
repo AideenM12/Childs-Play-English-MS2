@@ -30,6 +30,9 @@ The primary goal of the project is to create a site for younger, non-english spe
 
 ## Features
 
+### Footer
+The footer code was used twice to alter the display on different screen sizes.
+
 ### Design
 **Colours**
 

@@ -12,6 +12,7 @@
         x.src = "assets/images/strawberry (640x640).jpg";
     }
 }*/
+/* This code was found on code project.com (https://www.codeproject.com/Questions/845323/JAVA-SCRIPT-image-image-src-match-issue)*/
 function myFunction(){
     var x = document.getElementById('elephant');
     if(x.getAttribute('src') == "assets/images/strawberry (640x640).jpg" ){

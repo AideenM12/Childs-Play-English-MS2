@@ -23,3 +23,23 @@ function myFunction(){
         x.src = "assets/images/strawberry (640x640).jpg";
     }
 }
+
+function myQuestions(){
+    var
+}
+
+var questions = [
+  {
+    question: "What is this animal?",
+    answer: [
+        {
+          answerText: "Elephant",
+          correct: true
+        },
+        {
+          answerText: "Dog",
+          correct: false
+        }
+    ]
+  }
+]

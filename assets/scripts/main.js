@@ -23,12 +23,19 @@ function myFunction(){
         x.src = "assets/images/strawberry (640x640).jpg";
     }
 }
-
-function myQuestions(){
-    var
+while(images< images.length){
+    
+}
+function myQuizQuestions(){
+    var images = []
 }
 
-var questions = [
+if(button.onclick === img.src){
+
+}
+
+
+/*var questions = [
   {
     question: "What is this animal?",
     answer: [
@@ -42,4 +49,4 @@ var questions = [
         }
     ]
   }
-]
+]*/

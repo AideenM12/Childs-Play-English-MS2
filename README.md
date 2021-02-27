@@ -65,6 +65,10 @@ Testing information can be found here in the separate [TESTING.md file](TESTING.
 ## Credits
 
 ### Media
+Dog image was found [Freepik]('https://www.freepik.com/vectors/dog')Dog vector created by catalyststuff .
+Cat image was found [Freepik]('https://www.freepik.com/vectors/cartoon')Cartoon vector created by catalyststuff 
+Lion image was found [Freepik]('https://www.freepik.com/vectors/logo')Cartoon vector created by catalyststuff
+Penguin image was found [Freepik]('https://www.freepik.com/vectors/winter')Cartoon vector created by catalyststuff
 
 ### Code
 

@@ -13,7 +13,7 @@
     }
 }*/
 /* This code was found on code project.com (https://www.codeproject.com/Questions/845323/JAVA-SCRIPT-image-image-src-match-issue)*/
-function myFunction(){
+/*function myFunction(){
     var x = document.getElementById('elephant');
     if(x.getAttribute('src') == "assets/images/strawberry (640x640).jpg" ){
         x.src = "assets/images/elephant (640x640).jpg";
@@ -24,7 +24,7 @@ function myFunction(){
     }
 }
 while(images< images.length){
-    
+
 }
 function myQuizQuestions(){
     var images = []
@@ -32,7 +32,7 @@ function myQuizQuestions(){
 
 if(button.onclick === img.src){
 
-}
+}*/
 
 
 /*var questions = [
@@ -50,3 +50,34 @@ if(button.onclick === img.src){
     ]
   }
 ]*/
+function changeImage(){
+    
+    let images = ["assets/images/CoolCat (640x640).jpg", "assets/images/Dog (640x640).jpg", "assets/images/elephant (640x640).jpg", "assets/images/lion (640x640).jpg", "assets/images/panda bear (640x640).jpg" ];
+    images.push("assets/images/penguin (640x640).jpg");
+    
+    for(i= 0,images.length > i; i++;) 
+    {
+        let img = new Image(200, 200);
+        img.src = images[i];
+
+        let src = document.getElementById("elephant");
+        src.appendChild(img);
+    }
+};
+
+const opt1 = document.getElementById("opt1");
+const opt2 = document.getElementById("opt2");
+const opt3 = document.getElementById("opt3");
+const opt4 = document.getElementById("opt4");
+
+/*let images = ["assets/images/CoolCat (640x640).jpg", "assets/images/Dog (640x640).jpg", "assets/images/elephant (640x640).jpg", "assets/images/lion (640x640).jpg"]*/;
+
+let answers = [
+    {
+        imgSrc: "assets/images/elephant (640x640).jpg",
+        opt1: "A Lion",
+        opt2: "A Cat",
+        opt3: "An Elephant",
+        opt4: "A Dog"
+    }
+]

@@ -69,6 +69,18 @@ Dog image was found [Freepik]('https://www.freepik.com/vectors/dog')Dog vector c
 Cat image was found [Freepik]('https://www.freepik.com/vectors/cartoon')Cartoon vector created by catalyststuff 
 Lion image was found [Freepik]('https://www.freepik.com/vectors/logo')Cartoon vector created by catalyststuff
 Penguin image was found [Freepik]('https://www.freepik.com/vectors/winter')Cartoon vector created by catalyststuff
+Elephant image was found [Freepik]('https://www.freepik.com/vectors/baby')Cartoon vector created by catalyststuff
+Panda Bear image was found [Freepik]('https://www.freepik.com/vectors/baby')Cartoon vector created by catalyststuff
+Pig image was found [Freepik]('https://www.freepik.com/vectors/food')Food vector created by catalyststuff
+Cow image was found [Freepik]('https://www.freepik.com/vectors/music')Music vector created by catalyststuff 
+Mouse image was found [Freepik]('https://www.freepik.com/vectors/food')Food vector created by catalyststuff 
+Rabbit image was found [Freepik]('https://www.freepik.com/vectors/design')Design vector created by catalyststuff 
+Horse image was found [Freepik]('https://www.freepik.com/vectors/nature') Nature vector created by catalyststuff 
+Parrot image was found [Freepik]('https://www.freepik.com/vectors/cartoon') Cartoon vector created by catalyststuff 
+Turtle image was found [Freepik]('https://www.freepik.com/vectors/cartoon')Cartoon vector created by catalyststuff 
+Duck image was found[Freepik]('https://www.freepik.com/vectors/baby')Baby vector created by catalyststuff 
+
+Strawberry image was found [Freepik]('https://www.freepik.com/vectors/food')food vector created by gstudioimagen
 
 ### Code
 

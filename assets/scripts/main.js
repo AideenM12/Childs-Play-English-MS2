@@ -50,12 +50,18 @@ if(button.onclick === img.src){
     ]
   }
 ]*/
-function changeImage(){
+
     
-    let images = ["assets/images/CoolCat (640x640).jpg", "assets/images/Dog (640x640).jpg", "assets/images/elephant (640x640).jpg", "assets/images/lion (640x640).jpg", "assets/images/panda bear (640x640).jpg" ];
-    images.push("assets/images/penguin (640x640).jpg");
-    
-    /*for(i= 0,images.length > i; i++;)*/
+    let images = ["assets/images/coolcat.jpg", "assets/images/Dog (640x640).jpg", "assets/images/elephant (640x640).jpg", "assets/images/lion (640x640).jpg", "assets/images/panda bear (640x640).jpg" ];
+    images.push("assets/images/penguin.jpg");
+
+    function changeImage(){
+     let newPic = Math.floor(Math.random * images.length);
+     document.getElementById('elephant').src = newPic.toString();
+     
+     return images[newPic];
+}
+    /*for(i= 0,images.length > i; i++;)
     let newVar = Math.floor(Math.random * images.length);     
     {
         let img = new Image(200, 200);
@@ -73,7 +79,6 @@ const opt2 = document.getElementById("opt2");
 const opt3 = document.getElementById("opt3");
 const opt4 = document.getElementById("opt4");
 
-/*let images = ["assets/images/CoolCat (640x640).jpg", "assets/images/Dog (640x640).jpg", "assets/images/elephant (640x640).jpg", "assets/images/lion (640x640).jpg"]*/;
 
 let answers = [
     {
@@ -83,4 +88,4 @@ let answers = [
         opt3: "An Elephant",
         opt4: "A Dog"
     }
-]
+]*/

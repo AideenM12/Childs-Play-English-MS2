@@ -55,13 +55,16 @@ function changeImage(){
     let images = ["assets/images/CoolCat (640x640).jpg", "assets/images/Dog (640x640).jpg", "assets/images/elephant (640x640).jpg", "assets/images/lion (640x640).jpg", "assets/images/panda bear (640x640).jpg" ];
     images.push("assets/images/penguin (640x640).jpg");
     
-    for(i= 0,images.length > i; i++;) 
+    /*for(i= 0,images.length > i; i++;)*/
+    let newVar = Math.floor(Math.random * images.length);     
     {
         let img = new Image(200, 200);
-        img.src = images[i];
+        img.src = images//[i];
 
         let src = document.getElementById("elephant");
         src.appendChild(img);
+       // document.getElementById("elephant").innerHTML = img;
+        return images[newVar];
     }
 };
 

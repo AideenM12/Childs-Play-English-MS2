@@ -77,12 +77,12 @@ let images = new Array();
                 if (currentPic == lastPic)
                 {
                     currentPic = 0;
-                    document.getElementById('elephant').src = images[currentPic];
+                    document.getElementById('qImg').src = images[currentPic];
                 }
                 else
                 {
                     currentPic++;
-                    document.getElementById('elephant').src = images[currentPic];
+                    document.getElementById('qImg').src = images[currentPic];
                 }
             }
 
@@ -122,29 +122,29 @@ let images = new Array();
     }
 };*/
 
-const opt1 = document.getElementById("opt1");
-const opt2 = document.getElementById("opt2");
-const opt3 = document.getElementById("opt3");
-const opt4 = document.getElementById("opt4");
+const opt1 = document.getElementById("button1");
+const opt2 = document.getElementById("button2");
+const opt3 = document.getElementById("button3");
+const opt4 = document.getElementById("button4");
 
 
 let answers = [
     {
         imgSrc: "assets/images/elephant.jpg",
-        opt1: "A Lion",
-        opt2: "A Cat",
-        opt3: "An Elephant",
-        opt4: "A Dog",
-        correct: "opt3",
+        button1: "A Lion",
+        button2: "A Cat",
+        button3: "An Elephant",
+        button4: "A Dog",
+        correct: "button3",
     },
 ];
-let wellDone = alert("Well done Great Job!");
-let uhOh = alert("uh oh! Maybe next time!");
+/*let wellDone = alert("Well done Great Job!");
+let uhOh = alert("uh oh! Maybe next time!");*/
 function checkAnswer(){
-    if(options === answers.correct){
-        console.log(wellDone);
+    if(options.onClick() === answers.correct){
+        alert("wellDone");
     }
     else{
-        console.log(uhOh);
+        alert("uhOh");
     }
 }

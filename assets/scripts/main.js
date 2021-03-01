@@ -81,7 +81,7 @@ let images = new Array();
                 }
                 else
                 {
-                    currentpic++;
+                    currentPic++;
                     document.getElementById('elephant').src = images[currentPic];
                 }
             }

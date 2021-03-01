@@ -100,7 +100,7 @@ let images = new Array();
      document.getElementById('elephant').src = newPic.toString();
      
      return images[newPic];
-}*/
+}
 
 
 
@@ -120,7 +120,7 @@ let images = new Array();
        // document.getElementById("elephant").innerHTML = img;
         return images[newVar];
     }
-};
+};*/
 
 const opt1 = document.getElementById("opt1");
 const opt2 = document.getElementById("opt2");
@@ -130,10 +130,21 @@ const opt4 = document.getElementById("opt4");
 
 let answers = [
     {
-        imgSrc: "assets/images/elephant (640x640).jpg",
+        imgSrc: "assets/images/elephant.jpg",
         opt1: "A Lion",
         opt2: "A Cat",
         opt3: "An Elephant",
-        opt4: "A Dog"
+        opt4: "A Dog",
+        correct: "opt3",
+    },
+];
+let wellDone = alert("Well done Great Job!");
+let uhOh = alert("uh oh! Maybe next time!");
+function checkAnswer(){
+    if(options === answers.correct){
+        console.log(wellDone);
     }
-]*/
+    else{
+        console.log(uhOh);
+    }
+}

@@ -50,17 +50,65 @@ if(button.onclick === img.src){
     ]
   }
 ]*/
+// This code was found on Stack overflow;
+let images = new Array();
+ images[0] = "assets/images/elephant.jpg";
+            images[1] = "assets/images/coolcat.jpg";
+            images[2] = "assets/images/penguin.jpg";
+            images[3] = "assets/images/dog.jpg";
+            images[4] = "assets/images/horse.jpg";
+            images[5] = "assets/images/mouse.jpg";
+            images[6] = "assets/images/duck.jpg";
+            images[7] = "assets/images/turtle.jpg";
+            images[8] = "assets/images/parrot.jpg";
+            images[9] = "assets/images/cow.jpg";
+            images[10] = "assets/images/lion.jpg";
+            images[11] = "assets/images/panda-bear.jpg";
+            images[12] = "assets/images/pig.jpg";
+            images[13] = "assets/images/rabbit.jpg";
+            images[14] = "assets/images/shark.jpg";
+            images[15] = "assets/images/owl.jpg";
+            images[16] = "assets/images/unicorn.jpg";
+            
+            var currentPic = 0;
+            var lastPic = images.length-1;
+            function changeImage()
+            {
+                if (currentPic == lastPic)
+                {
+                    currentPic = 0;
+                    document.getElementById('elephant').src = images[currentPic];
+                }
+                else
+                {
+                    currentpic++;
+                    document.getElementById('elephant').src = images[currentPic];
+                }
+            }
+
+
+
 
     
-    let images = ["assets/images/coolcat.jpg", "assets/images/Dog (640x640).jpg", "assets/images/elephant (640x640).jpg", "assets/images/lion (640x640).jpg", "assets/images/panda bear (640x640).jpg" ];
+/*    let images = ["assets/images/coolcat.jpg", "assets/images/Dog (640x640).jpg", "assets/images/elephant (640x640).jpg", "assets/images/lion (640x640).jpg", "assets/images/panda bear (640x640).jpg" ];
     images.push("assets/images/penguin.jpg");
 
+
+
     function changeImage(){
-     let newPic = Math.floor(Math.random * images.length);
+     let newPic = [Math.floor(Math.random() * images.length)];
      document.getElementById('elephant').src = newPic.toString();
      
      return images[newPic];
-}
+}*/
+
+
+
+
+
+
+
+
     /*for(i= 0,images.length > i; i++;)
     let newVar = Math.floor(Math.random * images.length);     
     {

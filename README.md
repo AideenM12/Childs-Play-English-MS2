@@ -79,6 +79,9 @@ Horse image was found [Freepik]('https://www.freepik.com/vectors/nature') Nature
 Parrot image was found [Freepik]('https://www.freepik.com/vectors/cartoon') Cartoon vector created by catalyststuff 
 Turtle image was found [Freepik]('https://www.freepik.com/vectors/cartoon')Cartoon vector created by catalyststuff 
 Duck image was found[Freepik]('https://www.freepik.com/vectors/baby')Baby vector created by catalyststuff 
+Shark image was found [Freepik]('https://www.freepik.com/vectors/water')Water vector created by catalyststuff 
+Owl image was found [Freepik]('https://www.freepik.com/vectors/food') Food vector created by catalyststuff 
+Unicorn image was found [Freepik]('https://www.freepik.com/vectors/nature')Nature vector created by catalyststuff
 
 Strawberry image was found [Freepik]('https://www.freepik.com/vectors/food')food vector created by gstudioimagen
 

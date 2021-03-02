@@ -122,7 +122,7 @@ let images = new Array();
     }
 };*/
 
-const opt1 = document.getElementById("button1");
+/*const opt1 = document.getElementById("button1");
 const opt2 = document.getElementById("button2");
 const opt3 = document.getElementById("button3");
 const opt4 = document.getElementById("button4");
@@ -139,7 +139,7 @@ let answers = [
     },
 ];
 /*let wellDone = alert("Well done Great Job!");
-let uhOh = alert("uh oh! Maybe next time!");*/
+let uhOh = alert("uh oh! Maybe next time!");
 function checkAnswer(){
     if(options.onClick() === answers.correct){
         alert("wellDone");
@@ -147,4 +147,60 @@ function checkAnswer(){
     else{
         alert("uhOh");
     }
-}
+}*/
+
+const beginQuiz = document.getElementById("begin-quiz");
+
+const quiz = document.getElementById("quiz");
+
+const question = document.getElementById("question");
+
+const qImages = document.getElementById("qImages");
+
+const opt1 = document.getElementById("opt1");
+const opt2 = document.getElementById("opt2");
+const opt3 = document.getElementById("opt3");
+const opt4 = document.getElementById("opt4");
+
+let questions = [
+    {
+        question: "What animal is this?",
+        qImages: "assets/images/unicorn.jpg",
+        opt1: "A Unicorn",
+        opt2: "A Panda",
+        opt3: "A Duck",
+        opt4: "A Dog",
+        correct: "opt1",
+
+    },
+     {
+        question: "What animal is this?",
+        qImages: "assets/images/coolcat.jpg",
+        opt1: "A Cow",
+        opt2: "An Elephant",
+        opt3: "A Cat",
+        opt4: "A Lion",
+        correct: "opt3",
+
+    },
+    {
+        question: "What animal is this?",
+        qImages: "assets/images/turtle.jpg",
+        opt1: "A Shark",
+        opt2: "A Turtle",
+        opt3: "A Horse",
+        opt4: "A Pig",
+        correct: "opt2",
+
+    },
+    {
+        question: "What animal is this?",
+        qImages: "assets/images/cow.jpg",
+        opt1: "A Mouse",
+        opt2: "A Parrot",
+        opt3: "A Rabbit",
+        opt4: "A Cow",
+        correct: "opt4",
+
+    },
+];

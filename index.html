@@ -38,10 +38,27 @@
             </div>
         </div>
     </header>
-<main>
+<div class="container-fluid">
+    <div id="begin-quiz"></div>
+    <div id="quiz" style="display: none"></div>
+    <div id="question"></div>
+    <div id="qImages"></div>
+    <div id="solutions">
+        <div class="solutions" id="opt1" onclick="checkSelection('opt1')"></div>
+        <div class="solutions" id="opt2" onclick="checkSelection('opt2')"></div>
+        <div class="solutions" id="opt3" onclick="checkSelection('opt3')"></div>
+        <div class="solutions" id="opt4" onclick="checkSelection('opt4')"></div>
+    </div>
+    
+</div>
+
+
+
+
+<!--<main>
     <div class="jumbotron jumbotron-fluid jb-bg">
         <div class="container-fluid">
-            <!--<div id="elephant"></div>-->
+            <div id="elephant"></div>
          <img src="assets/images/elephant.jpg" alt="placeholder" class="img-fluid rounded mx-auto d-block"
                 id="qImg">
                 <div class ="row ">
@@ -67,7 +84,7 @@
             </div>
         </div>
     </div>
-</main>
+</main>-->
 <footer>
     <div class="container-fluid justify-content-between d-none d-sm-none d-md-none d-lg-block">
         <div class="row">

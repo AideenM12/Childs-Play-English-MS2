@@ -51,7 +51,7 @@ if(button.onclick === img.src){
   }
 ]*/
 // This code was found on Stack overflow;
-let images = new Array();
+/*let images = new Array();
  images[0] = "assets/images/elephant.jpg";
             images[1] = "assets/images/coolcat.jpg";
             images[2] = "assets/images/penguin.jpg";
@@ -90,7 +90,7 @@ let images = new Array();
 
 
     
-/*    let images = ["assets/images/coolcat.jpg", "assets/images/Dog (640x640).jpg", "assets/images/elephant (640x640).jpg", "assets/images/lion (640x640).jpg", "assets/images/panda bear (640x640).jpg" ];
+    let images = ["assets/images/coolcat.jpg", "assets/images/Dog (640x640).jpg", "assets/images/elephant (640x640).jpg", "assets/images/lion (640x640).jpg", "assets/images/panda bear (640x640).jpg" ];
     images.push("assets/images/penguin.jpg");
 
 
@@ -165,7 +165,7 @@ const opt4 = document.getElementById("opt4");
 let questions = [
     {
         question: "What animal is this?",
-        qImages: "assets/images/unicorn.jpg",
+        imgSrc: "assets/images/unicorn.jpg",
         opt1: "A Unicorn",
         opt2: "A Panda",
         opt3: "A Duck",
@@ -175,7 +175,7 @@ let questions = [
     },
      {
         question: "What animal is this?",
-        qImages: "assets/images/coolcat.jpg",
+        imgSrc: "assets/images/coolcat.jpg",
         opt1: "A Cow",
         opt2: "An Elephant",
         opt3: "A Cat",
@@ -185,7 +185,7 @@ let questions = [
     },
     {
         question: "What animal is this?",
-        qImages: "assets/images/turtle.jpg",
+        imgSrc: "assets/images/turtle.jpg",
         opt1: "A Shark",
         opt2: "A Turtle",
         opt3: "A Horse",
@@ -195,7 +195,7 @@ let questions = [
     },
     {
         question: "What animal is this?",
-        qImages: "assets/images/cow.jpg",
+        imgSrc: "assets/images/cow.jpg",
         opt1: "A Mouse",
         opt2: "A Parrot",
         opt3: "A Rabbit",
@@ -204,3 +204,46 @@ let questions = [
 
     },
 ];
+
+let finalQuestion = questions.length - 1;
+
+let currentQuestion = 0;
+
+function askQuestion(){
+    let q = questions[currentQuestion];
+    qImages.innerHTML = "<img src="+ q.imgSrc +">";
+    question.innerHTML = "<p>"+ q.question +"</p>";
+    opt1.innerHTML = q.opt1;
+    opt2.innerHTML = q.opt2;
+    opt3.innerHTML = q.opt3;
+    opt4.innerHTML = q.opt4;
+}
+
+function checkSelection(answer){
+    if(answer === questions[currentQuestion].correct){
+        let congrats = "Well Done!";
+        alert(congrats);
+        answerIsCorrect();
+    }
+    else{
+        let uhOh = "uhOh!";
+        alert(uhOh);
+        answerIsWrong();
+    }
+     if(currentQuestion < finalQuestion){
+         currentQuestion++;
+         askQuestion();
+     }
+     else{
+         let gameOver = "GameOver";
+         alert(gameOver);
+     }
+}
+
+beginQuiz.addEventListener("click", startQuiz);
+
+function startQuiz(){
+    beginQuiz.style.display = "none";
+    askQuestion();
+    quiz.style.display = "block";
+}

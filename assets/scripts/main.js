@@ -254,7 +254,7 @@ function checkSelection(solutions){
         currentQuestion++
          askQuestion();
     }
-    else if(answer !== questions[currentQuestion].correct ){
+    else if(solutions !== questions[currentQuestion].correct ){
         let uhOh = "uhOh!";
         alert(uhOh);
        
@@ -265,9 +265,11 @@ function checkSelection(solutions){
      }
 }
 function nextQuestion(){
-    while(currentQuestion < finalQuestion){
-      currentQuestion++;
-      askQuestion();
+    while( currentQuestion < finalQuestion ){
+        askQuestion();
+        
+      
+      
     }
 }
 

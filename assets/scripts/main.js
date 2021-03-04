@@ -161,6 +161,10 @@ const opt1 = document.getElementById("opt1");
 const opt2 = document.getElementById("opt2");
 const opt3 = document.getElementById("opt3");
 const opt4 = document.getElementById("opt4");
+let solutions = document.getElementsByClassName("solutions");
+
+const nxtBtn = document.getElementById("nxtBtn");
+
 
 let questions = [
     {
@@ -217,9 +221,10 @@ function askQuestion(){
     opt2.innerHTML = q.opt2;
     opt3.innerHTML = q.opt3;
     opt4.innerHTML = q.opt4;
+
 }
 
-function checkSelection(answer){
+/*function checkSelection(answer){
     if(answer === questions[currentQuestion].correct){
         let congrats = "Well Done!";
         alert(congrats);
@@ -238,7 +243,34 @@ function checkSelection(answer){
          let gameOver = "GameOver";
          alert(gameOver);
      }
+}*/
+let answer = [opt1.innerHTML, opt2.innerHTML, opt3.innerHTML, opt4.innerHTML];
+
+function checkSelection(solutions){
+    if(solutions === questions[currentQuestion].correct && currentQuestion < finalQuestion){
+        let congrats = "Well Done!";
+        alert(congrats);
+        
+        currentQuestion++
+         askQuestion();
+    }
+    else if(answer !== questions[currentQuestion].correct ){
+        let uhOh = "uhOh!";
+        alert(uhOh);
+       
+    }
+    else{
+         let gameOver = "GameOver";
+         alert(gameOver);
+     }
 }
+function nextQuestion(){
+    while(currentQuestion < finalQuestion){
+      currentQuestion++;
+      askQuestion();
+    }
+}
+
 
 beginQuiz.addEventListener("click", startQuiz);
 
@@ -247,3 +279,18 @@ function startQuiz(){
     askQuestion();
     quiz.style.display = "block";
 }
+
+opt1.addEventListener("click", () => {
+checkSelection(opt1);
+});
+opt2.addEventListener("click", () => {
+checkSelection(opt2);
+})
+opt3.addEventListener("click", () => {
+checkSelection(opt3);
+})
+opt4.addEventListener("click", () => {
+checkSelection(opt4);
+})
+
+nxtBtn.addEventListener("click", nextQuestion)

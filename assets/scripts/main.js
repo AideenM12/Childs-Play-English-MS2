@@ -1,61 +1,3 @@
-
-
-
-
-   /* function changeImage(){
-     let newPic = [Math.floor(Math.random() * images.length)];
-     document.getElementById('elephant').src = newPic.toString();
-     
-     return images[newPic];
-}
-*/
-
-
-
-
-
-
-
-    /*for(i= 0,images.length > i; i++;)
-    let newVar = Math.floor(Math.random * images.length);     
-    {
-        let img = new Image(200, 200);
-        img.src = images//[i];
-
-        let src = document.getElementById("elephant");
-        src.appendChild(img);
-       // document.getElementById("elephant").innerHTML = img;
-        return images[newVar];
-    }
-};*/
-
-/*const opt1 = document.getElementById("button1");
-const opt2 = document.getElementById("button2");
-const opt3 = document.getElementById("button3");
-const opt4 = document.getElementById("button4");
-
-
-let answers = [
-    {
-        imgSrc: "assets/images/elephant.jpg",
-        button1: "A Lion",
-        button2: "A Cat",
-        button3: "An Elephant",
-        button4: "A Dog",
-        correct: "button3",
-    },
-];
-/*let wellDone = alert("Well done Great Job!");
-let uhOh = alert("uh oh! Maybe next time!");
-function checkAnswer(){
-    if(options.onClick() === answers.correct){
-        alert("wellDone");
-    }
-    else{
-        alert("uhOh");
-    }
-}*/
-
 const beginQuiz = document.getElementById("begin-quiz");
 
 const quiz = document.getElementById("quiz");
@@ -128,33 +70,29 @@ function askQuestion(){
     opt2.innerHTML = q.opt2;
     opt3.innerHTML = q.opt3;
     opt4.innerHTML = q.opt4;
-
 }
+
 function prevQuestion(){
     if(currentQuestion > 0){
         askQuestion();
-        --currentQuestion
-        
+        --currentQuestion        
     }
     else{
         currentQuestion = 0;
     }
 }
+
 function nextQuestion(){
     if( currentQuestion < finalQuestion ){
         
         askQuestion();
-        currentQuestion++
-             
-      
+        currentQuestion++            
     }
     else{
         
          let gameOver = "GameOver";
          alert(gameOver);
-
     }
-    
 }
 
 

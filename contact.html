@@ -11,6 +11,15 @@
     <link rel="shortcut icon" type="image/png" href="assets/images/favicon-16x16.png">
 
     <title>Childs Play English</title>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init("user_3MpZ43XcMqWmcr1rZUerd");
+      emailjs.send("gmail", "Child's Play English", {name: "Aideen", notes:"Hello, Can you help me improve my English?"});
+   })();
+</script>
 </head>
 
 <body>
@@ -24,7 +33,7 @@
             </button>
             <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
-                    <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-item nav-link active" href="index.html">Home <span class="sr-only">(current)</span></a>
                     <a class="nav-item nav-link" href="#">Features</a>
                     <a class="nav-item nav-link" href="#">Pricing</a>
 
@@ -47,7 +56,10 @@
   <div class="form-group">
     <label for="exampleFormControlTextarea1">Example textarea</label>
     <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+
+
   </div>
+  <button type="button" class="btn btn-primary">Primary</button>
 </form>
 
 
@@ -86,6 +98,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
 <script src="https://kit.fontawesome.com/38072707df.js" crossorigin="anonymous"></script>
+
 </body>
 
 </html>

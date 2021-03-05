@@ -82,7 +82,7 @@ function askQuestion(){
 function prevQuestion(){
     if(currentQuestion > 0){
         askQuestion();
-        --currentQuestion        
+        currentQuestion--;        
     }
     else{
         currentQuestion = 0;

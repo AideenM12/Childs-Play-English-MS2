@@ -80,20 +80,21 @@ function askQuestion(){
 }
 
 function prevQuestion(){
-    if(currentQuestion > 0){
-        askQuestion();
-        currentQuestion--;        
+    if(currentQuestion <= 0) currentQuestion = questions.length;
+        
+        currentQuestion--; 
+        return askQuestion();       
     }
-    else{
+   /* else{
         currentQuestion = 0;
     }
-}
+}*/
 
 function nextQuestion(){
     if( currentQuestion < finalQuestion ){
-        
-        askQuestion();
-        currentQuestion++            
+        currentQuestion++  
+        return askQuestion();
+                   
     }
     else{
         currentQuestion = finalQuestion;
@@ -190,4 +191,4 @@ opt4.addEventListener("click", () => {
 checkSelection(opt4);
 })*/
 
-nxtBtn.addEventListener("click", nextQuestion)
+//nxtBtn.addEventListener("click", nextQuestion)

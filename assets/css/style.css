@@ -28,6 +28,16 @@ footer{
     float: right;
     font-size: 20px;
 }
+.solutions{
+    background-color: #f75c03;
+    width: 120px;
+    height: 40px;
+    color: #ffff3f;
+    margin: 20px;
+    padding: 20px;
+    display: inline;
+    border-radius: 10%;
+}
 
 @media only screen and (min-width: 577px) and (max-width:992px) {
      footer{

@@ -172,6 +172,9 @@ function startQuiz(){
     beginQuiz.style.display = "none";
     askQuestion();
     quiz.style.display = "block";
+    solution.style.display= "inline";
+    nxtBtn.style.display= "block";
+    prevBtn.style.display= "block";
 }
 
 /*opt1.addEventListener("click", () => {

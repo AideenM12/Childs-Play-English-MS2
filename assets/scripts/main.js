@@ -58,6 +58,13 @@ let questions = [
     },
 ];
 
+/*let result = [
+    {
+        goodWork: "Great Work!",
+        imgSrc: "assets/images/strawberry (640x640).jpg",
+    }
+]*/
+
 let finalQuestion = questions.length - 1;
 
 let currentQuestion = 0;
@@ -89,7 +96,7 @@ function nextQuestion(){
         currentQuestion++            
     }
     else{
-        
+        currentQuestion = finalQuestion;
          let gameOver = "GameOver";
          alert(gameOver);
     }
@@ -117,12 +124,16 @@ function nextQuestion(){
      }
 }*/
 //let answer = [opt1.innerHTML, opt2.innerHTML, opt3.innerHTML, opt4.innerHTML];
+function correctAnswer(){
+    document.getElementById("qImages").src ="assets/images/strawberry (640x640).jpg";
+     
+}
 
 function checkSelection(solutions){
     if(solutions == questions[currentQuestion].correct && currentQuestion < finalQuestion){
         let congrats = "Well Done!";
         alert(congrats);
-        
+        correctAnswer();
         currentQuestion++
          askQuestion();
     }
@@ -163,7 +174,7 @@ function startQuiz(){
     quiz.style.display = "block";
 }
 
-opt1.addEventListener("click", () => {
+/*opt1.addEventListener("click", () => {
 checkSelection(opt1);
 });
 opt2.addEventListener("click", () => {
@@ -174,6 +185,6 @@ checkSelection(opt3);
 })
 opt4.addEventListener("click", () => {
 checkSelection(opt4);
-})
+})*/
 
 nxtBtn.addEventListener("click", nextQuestion)

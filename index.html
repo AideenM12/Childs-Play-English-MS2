@@ -7,9 +7,12 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
       integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous" />
-      <link rel="stylesheet" href="sweetalert2.min.css">
+      <!--<link rel="stylesheet" href="sweetalert2.min.css">-->
     <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
-    <link rel="shortcut icon" type="image/png" href="assets/images/favicon-16x16.png">
+    <link rel="shortcut icon" type="image/png" href="assets/images/favicon-16x16.png"/>
+    
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"  />
+
     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10.15.5/dist/sweetalert2.all.min.js"></script>
     <title>Childs Play English</title>
@@ -46,14 +49,14 @@
     </div>
     <div id="quiz" style="display: none"></div>
     <div id="question"></div>
-    <div id="qImages"  ></div>
+    <div class="container-md" id="qImages" ><img src="#" style="display: none"/></div>
     <div id="solution" style="display: none">
         <div class="solutions" id="opt1" onclick="checkSelection('opt1')"></div>
         <div class="solutions" id="opt2" onclick="checkSelection('opt2')"></div>
         <div class="solutions" id="opt3" onclick="checkSelection('opt3')"></div>
         <div class="solutions" id="opt4" onclick="checkSelection('opt4')"></div>
     </div>
-    <div class="selectors"> <button type="button" style="display: none" class="btn btn-primary btn-lg mt-2 list-inline-item mx-auto" id="prevBtn" onclick="prevQuestion()">Previous</button>
+    <div class="selectors"> <button type="button" style="display: none" class="btn btn-primary btn-lg mt-2 list-inline-item mx-auto p-2" id="prevBtn" onclick="prevQuestion()">Previous</button>
     <button type="button" style="display: none" class="btn btn-primary btn-lg mt-2 list-inline-item mx-auto" id="nxtBtn"
                         onclick="nextQuestion()">Next</button></div>
     
@@ -88,14 +91,14 @@
     </div>
 </footer>
 
-<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>-->
+
 
 <script src="assets/scripts/main.js"></script>
-<!--<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>-->
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
 <script src="https://kit.fontawesome.com/38072707df.js" crossorigin="anonymous"></script>
-<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/10.15.5/sweetalert2.min.js" integrity="sha512-+uGHdpCaEymD6EqvUR4H/PBuwqm3JTZmRh3gT0Lq52VGDAlywdXPBEiLiZUg6D1ViLonuNSUFdbL2tH9djAP8g==" crossorigin="anonymous"></script>-->
+
 </body>
 
 </html>

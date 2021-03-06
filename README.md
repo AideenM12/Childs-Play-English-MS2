@@ -85,6 +85,8 @@ Unicorn image was found [Freepik]('https://www.freepik.com/vectors/nature')Natur
 
 Strawberry image was found [Freepik]('https://www.freepik.com/vectors/food')food vector created by gstudioimagen
 
+Littleboy and littlegirl images were found [Freepik]('https://www.freepik.com/vectors/girl')Frame vector created by brgfx
+
 ### Code
 
 ### Acknowledgements

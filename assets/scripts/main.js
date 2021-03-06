@@ -137,40 +137,83 @@ function nextQuestion(){
         alert(congrats);
 }*/
 
-function checkSelection(solutions){
-    if(solutions == questions[currentQuestion].correct && currentQuestion < finalQuestion){
-       /* let congrats = "Well Done!";
-        alert(congrats);*/
+function checkSelection(solutions) {
+    if (solutions == questions[currentQuestion].correct && currentQuestion < finalQuestion) {
+        /* let congrats = "Well Done!";
+         alert(congrats);*/
         swal.fire({
-            icon: 'success',
+             showClass: {
+                popup: 'animate__animated animate__heartBeat'
+            },
+            hideClass: {
+                popup: 'animate__animated animate__backOutRight'
+            },
+            customClass: {
+                 background: '#71f909',
+                 textColor: '#000',
+},
+            width: 500,
+            height: 600,
+           // icon: 'success',
             text: 'Well Done',
             confirmButtonText: 'Cool!',
-            imageUrl: 'https://unsplash.it/400/200',
-  imageWidth: 400,
-  imageHeight: 200,
-  imageAlt: 'Custom image',
+            confirmButtonColor: '#009bf5',
+            
+            imageUrl: 'assets/images/littlegirl.jpg',
+            imageWidth: 200,
+            imageHeight: 300,
+            imageAlt: 'Custom image',
+            background: '#71f909',
         });
-         qImages.innerHTML = "<img src="+ result.imgSrc +">";
+
         //correctAnswer();
         currentQuestion++
-         askQuestion();
+        askQuestion();
     }
-    else if(solutions != questions[currentQuestion].correct ){
-       /* let uhOh = "uhOh!";
-        alert(uhOh);*/
-       swal.fire({
-           icon: 'error',
-           text: 'Uh Oh Try Again!',
-           confirmButtonText: 'Okay',
-           imageUrl: 'https://unsplash.it/400/200',
-  imageWidth: 400,
-  imageHeight: 200,
-  imageAlt: 'Custom image',
+    else if (solutions != questions[currentQuestion].correct) {
+        /* let uhOh = "uhOh!";
+         alert(uhOh);*/
+        swal.fire({
+            showClass: {
+                popup: 'animate__animated animate__jello'
+            },
+            hideClass: {
+                popup: 'animate__animated animate__backOutRight'
+            },
+            //icon: 'error',
+            text: 'Uh Oh Try Again!',
+            confirmButtonText: 'Okay',
+            confirmButtonColor: '#009bf5',
+            imageUrl: 'assets/images/littleboy.jpg',
+            imageWidth: 200,
+            imageHeight: 300,
+            imageAlt: 'Custom image',
+            background: '#d00000',
+            
+
        })
     }
     else if(currentQuestion == finalQuestion){
-         let gameOver = "GameOver";
-         alert(gameOver);
+         /*let gameOver = "GameOver";
+         alert(gameOver);*/
+         swal.fire({
+            showClass: {
+                popup: 'animate__animated animate__swing'
+            },
+            hideClass: {
+                popup: 'animate__animated animate__backOutRight'
+            },
+            
+            text: 'Game Over! Great Work!',
+            confirmButtonText: 'Okay',
+            confirmButtonColor: '#009bf5',
+            imageUrl: 'assets/images/littleboy.jpg',
+            imageWidth: 200,
+            imageHeight: 300,
+            imageAlt: 'Custom image',
+            background: '#009bf5',
+         });
+
      }
      else{
          nextQuestion();
@@ -189,9 +232,10 @@ function startQuiz(){
     beginQuiz.style.display = "none";
     askQuestion();
     quiz.style.display = "block";
+    qImages.style.display="block";
     solution.style.display= "inline";
-    nxtBtn.style.display= "block";
-    prevBtn.style.display= "block";
+    nxtBtn.style.display= "inline";
+    prevBtn.style.display= "inline";
 }
 
 /*opt1.addEventListener("click", () => {

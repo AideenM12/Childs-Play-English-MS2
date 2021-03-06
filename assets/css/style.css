@@ -39,7 +39,7 @@ footer{
     border-radius: 10%;
     clear: both;
 }
-#qImages{
+#qImages > img{
     
     display: block;
   margin-left: auto;
@@ -58,11 +58,18 @@ footer{
     footer{
         font-family: 'Chewy', san-serif;
         font-size: 30px;
+        margin-top: 10px;
     }
     .icons{
         display: inline-flex;
         flex: 100%;
         line-height: 30px;
         word-spacing: 60px;
+    }
+    .solutions{
+        display: block;
+    }
+    .btn{
+        display: inline;
     }
 }

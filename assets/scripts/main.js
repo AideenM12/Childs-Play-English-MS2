@@ -15,6 +15,8 @@ let solutions = document.getElementsByClassName("solutions");
 const nxtBtn = document.getElementById("nxtBtn");
 const prevBtn = document.getElementById("prevBtn");
 
+//const Swal = require('sweetalert2');
+
 let questions = [
     {
         question: "What animal is this?",
@@ -58,12 +60,12 @@ let questions = [
     },
 ];
 
-/*let result = [
+let result = [
     {
         goodWork: "Great Work!",
         imgSrc: "assets/images/strawberry (640x640).jpg",
     }
-]*/
+];
 
 let finalQuestion = questions.length - 1;
 
@@ -124,16 +126,27 @@ function nextQuestion(){
          alert(gameOver);
      }
 }*/
-//let answer = [opt1.innerHTML, opt2.innerHTML, opt3.innerHTML, opt4.innerHTML];
+
+/*function correctAnswer(){
+    qImages.innerHTML = "<img src="+ result.imgSrc +">";
+     console.log();
+}*/
+
 function correctAnswer(){
-    document.getElementById("qImages").src ="assets/images/strawberry (640x640).jpg";
-     
+     let congrats = "Well Done!";
+        alert(congrats);
 }
 
 function checkSelection(solutions){
     if(solutions == questions[currentQuestion].correct && currentQuestion < finalQuestion){
-        let congrats = "Well Done!";
-        alert(congrats);
+       /* let congrats = "Well Done!";
+        alert(congrats);*/
+        swal.fire({
+            icon: 'success',
+            text: 'Well Done',
+            confirmButtonText: 'Cool!',
+        });
+         qImages.innerHTML = "<img src="+ result.imgSrc +">";
         correctAnswer();
         currentQuestion++
          askQuestion();
@@ -155,16 +168,7 @@ function checkSelection(solutions){
 
 
 
-/*function nextQuestion(){
-    while( currentQuestion < finalQuestion ){
-        currentQuestion++
-        askQuestion();
-    
-        
-      
-      
-    }
-}*/
+
 
 
 beginQuiz.addEventListener("click", startQuiz);

@@ -15,7 +15,7 @@ let solutions = document.getElementsByClassName("solutions");
 const nxtBtn = document.getElementById("nxtBtn");
 const prevBtn = document.getElementById("prevBtn");
 
-//const Swal = require('sweetalert2');
+
 
 let questions = [
     {
@@ -132,10 +132,10 @@ function nextQuestion(){
      console.log();
 }*/
 
-function correctAnswer(){
+/*function correctAnswer(){
      let congrats = "Well Done!";
         alert(congrats);
-}
+}*/
 
 function checkSelection(solutions){
     if(solutions == questions[currentQuestion].correct && currentQuestion < finalQuestion){
@@ -145,16 +145,28 @@ function checkSelection(solutions){
             icon: 'success',
             text: 'Well Done',
             confirmButtonText: 'Cool!',
+            imageUrl: 'https://unsplash.it/400/200',
+  imageWidth: 400,
+  imageHeight: 200,
+  imageAlt: 'Custom image',
         });
          qImages.innerHTML = "<img src="+ result.imgSrc +">";
-        correctAnswer();
+        //correctAnswer();
         currentQuestion++
          askQuestion();
     }
     else if(solutions != questions[currentQuestion].correct ){
-        let uhOh = "uhOh!";
-        alert(uhOh);
-       
+       /* let uhOh = "uhOh!";
+        alert(uhOh);*/
+       swal.fire({
+           icon: 'error',
+           text: 'Uh Oh Try Again!',
+           confirmButtonText: 'Okay',
+           imageUrl: 'https://unsplash.it/400/200',
+  imageWidth: 400,
+  imageHeight: 200,
+  imageAlt: 'Custom image',
+       })
     }
     else if(currentQuestion == finalQuestion){
          let gameOver = "GameOver";

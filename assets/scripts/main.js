@@ -15,8 +15,6 @@ let solutions = document.getElementsByClassName("solutions");
 const nxtBtn = document.getElementById("nxtBtn");
 const prevBtn = document.getElementById("prevBtn");
 
-
-
 let questions = [
     {
         question: "What animal is this?",
@@ -58,14 +56,126 @@ let questions = [
         correct: "opt4",
 
     },
+    {
+        question: "What animal is this?",
+        imgSrc:"assets/images/shark.jpg" ,
+        opt1: "A Horse" ,
+        opt2: "A Unicorn",
+        opt3: "A Shark",
+        opt4: "A Cat",
+        correct: "opt3",
+
+    },
+    {
+     question: "What animal is this?",
+        imgSrc: "assets/images/duck.jpg",
+        opt1: "A Duck",
+        opt2: "A Parrot",
+        opt3: "An Owl",
+        opt4: "A Lion",
+        correct: "opt1",
+    },
+    {
+        question: "What animal is this?",
+        imgSrc: "assets/images/rabbit.jpg",
+        opt1: "A Pig",
+        opt2: "A Rabbit",
+        opt3: "A Turtle",
+        opt4: "A Dog",
+        correct: "opt2",
+    },
+    {
+        question: "What animal is this?",
+        imgSrc: "assets/images/elephant.jpg",
+        opt1: "A Panda Bear",
+        opt2: "A Horse",
+        opt3: "A Mouse",
+        opt4: "An Elephant",
+        correct: "opt4",
+    },
+    {
+        question: "What animal is this?",
+        imgSrc: "assets/images/pig.jpg",
+        opt1: "An Owl",
+        opt2: "A Pig",
+        opt3: "A Shark",
+        opt4: "A Penguin",
+        correct: "opt2",
+    },
+    {
+        question: "What animal is this?",
+        imgSrc: "assets/images/horse.jpg",
+        opt1: "A Duck",
+        opt2: "A Cat",
+        opt3: "A Horse",
+        opt4: "A Turtle",
+        correct: "opt3",
+    },
+    {
+        question: "What animal is this?",
+        imgSrc: "assets/images/penguin.jpg",
+        opt1: "A Penguin",
+        opt2: "A Parrot",
+        opt3: "An Elephant ",
+        opt4: "A Cow",
+        correct: "opt1",
+    },
+     {
+        question: "What animal is this?",
+        imgSrc: "assets/images/lion.jpg",
+        opt1: "A Unicorn",
+        opt2: "A Rabbit",
+        opt3: "A Cat",
+        opt4: "A Lion",
+        correct: "opt4",
+    },
+    {
+        question: "What animal is this?",
+        imgSrc: "assets/images/panda-bear.jpg",
+        opt1: "A Penguin",
+        opt2: "A Dog",
+        opt3: "A Panda Bear",
+        opt4: "A Duck",
+        correct: "opt3",
+    },
+    {
+        question: "What animal is this?",
+        imgSrc: "assets/images/mouse.jpg",
+        opt1: "A Rabbit",
+        opt2: "A Shark",
+        opt3: "A Mouse ",
+        opt4: "A Turtle",
+        correct: "opt3",
+    },
+    {
+        question: "What animal is this?",
+        imgSrc: "assets/images/owl.jpg",
+        opt1: "An Owl",
+        opt2: "A Parrot",
+        opt3: "A Penguin",
+        opt4: "A Duck",
+        correct: "opt1",
+    },
+    {
+        question: "What animal is this?",
+        imgSrc: "assets/images/dog.jpg",
+        opt1: "A Mouse",
+        opt2: "A Cat",
+        opt3: "A Cow",
+        opt4: "A Dog",
+        correct: "opt4",
+    },
+    {
+        question: "What animal is this?",
+        imgSrc: "assets/images/parrot.jpg",
+        opt1: "A Lion",
+        opt2: "A Horse",
+        opt3: "A Pig",
+        opt4: "A Parrot",
+        correct: "opt4",
+    },
 ];
 
-let result = [
-    {
-        goodWork: "Great Work!",
-        imgSrc: "assets/images/strawberry (640x640).jpg",
-    }
-];
 
 let finalQuestion = questions.length - 1;
 
@@ -83,14 +193,9 @@ function askQuestion(){
 
 function prevQuestion(){
     if(currentQuestion <= 0) currentQuestion = questions.length;
-        
         currentQuestion--; 
         return askQuestion();       
-    }
-   /* else{
-        currentQuestion = 0;
-    }
-}*/
+    }  
 
 function nextQuestion(){
     if( currentQuestion < finalQuestion ){
@@ -99,48 +204,28 @@ function nextQuestion(){
                    
     }
     else{
-        currentQuestion = finalQuestion;
-         let gameOver = "GameOver";
-         alert(gameOver);
+        swal.fire({
+            showClass: {
+                popup: 'animate__animated animate__swing'
+            },
+            hideClass: {
+                popup: 'animate__animated animate__backOutRight'
+            },
+            text: 'Game Over! Great Work!',
+            confirmButtonText: 'Okay',
+            confirmButtonColor: '#009bf5',
+            imageUrl: 'assets/images/littleboy.jpg',
+            imageWidth: 200,
+            imageHeight: 300,
+            imageAlt: 'Custom image',
+            background: '#009bf5',
+         });
     }
 }
 
 
-/*function checkSelection(answer){
-    if(answer === questions[currentQuestion].correct){
-        let congrats = "Well Done!";
-        alert(congrats);
-        answerIsCorrect();
-    }
-    else{
-        let uhOh = "uhOh!";
-        alert(uhOh);
-        answerIsWrong();
-    }
-     if(currentQuestion < finalQuestion){
-         currentQuestion++;
-         askQuestion();
-     }
-     else{
-         let gameOver = "GameOver";
-         alert(gameOver);
-     }
-}*/
-
-/*function correctAnswer(){
-    qImages.innerHTML = "<img src="+ result.imgSrc +">";
-     console.log();
-}*/
-
-/*function correctAnswer(){
-     let congrats = "Well Done!";
-        alert(congrats);
-}*/
-
 function checkSelection(solutions) {
     if (solutions == questions[currentQuestion].correct && currentQuestion < finalQuestion) {
-        /* let congrats = "Well Done!";
-         alert(congrats);*/
         swal.fire({
              showClass: {
                 popup: 'animate__animated animate__heartBeat'
@@ -151,36 +236,29 @@ function checkSelection(solutions) {
             customClass: {
                  background: '#71f909',
                  textColor: '#000',
-},
+            },
             width: 500,
             height: 600,
-           // icon: 'success',
             text: 'Well Done',
             confirmButtonText: 'Cool!',
             confirmButtonColor: '#009bf5',
-            
             imageUrl: 'assets/images/littlegirl.jpg',
             imageWidth: 200,
             imageHeight: 300,
             imageAlt: 'Custom image',
             background: '#71f909',
         });
-
-        //correctAnswer();
         currentQuestion++
         askQuestion();
     }
     else if (solutions != questions[currentQuestion].correct) {
-        /* let uhOh = "uhOh!";
-         alert(uhOh);*/
-        swal.fire({
+            swal.fire({
             showClass: {
                 popup: 'animate__animated animate__jello'
             },
             hideClass: {
                 popup: 'animate__animated animate__backOutRight'
             },
-            //icon: 'error',
             text: 'Uh Oh Try Again!',
             confirmButtonText: 'Okay',
             confirmButtonColor: '#009bf5',
@@ -189,21 +267,16 @@ function checkSelection(solutions) {
             imageHeight: 300,
             imageAlt: 'Custom image',
             background: '#d00000',
-            
-
-       })
+            })
     }
     else if(currentQuestion == finalQuestion){
-         /*let gameOver = "GameOver";
-         alert(gameOver);*/
-         swal.fire({
+        swal.fire({
             showClass: {
                 popup: 'animate__animated animate__swing'
             },
             hideClass: {
                 popup: 'animate__animated animate__backOutRight'
             },
-            
             text: 'Game Over! Great Work!',
             confirmButtonText: 'Okay',
             confirmButtonColor: '#009bf5',
@@ -220,10 +293,6 @@ function checkSelection(solutions) {
      }
      
 }
-
-
-
-
 
 
 beginQuiz.addEventListener("click", startQuiz);

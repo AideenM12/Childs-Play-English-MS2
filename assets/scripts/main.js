@@ -1,4 +1,6 @@
 const beginQuiz = document.getElementById("begin-quiz");
+const foodQuiz = document.getElementById("food-quiz");
+const objectQuiz = document.getElementById("object-quiz");
 
 const quiz = document.getElementById("quiz");
 
@@ -14,6 +16,17 @@ let solutions = document.getElementsByClassName("solutions");
 
 const nxtBtn = document.getElementById("nxtBtn");
 const prevBtn = document.getElementById("prevBtn");
+
+function chooseFoodQuiz(){
+    $(foodQuiz).click()
+    questions = foodQuestions;
+}
+
+function chooseObjectQuiz(){
+    $(objectQuiz).click()
+    questions = objectQuestions;
+}
+
 
 let questions = [
     {
@@ -179,7 +192,19 @@ let questions = [
 let foodQuestions = [
     {
          question: "What food is this?",
-        imgSrc: "assets/images/parrot.jpg",
+        imgSrc: "assets/images/food/strawberry.jpg",
+        opt1: "A Lion",
+        opt2: "A Horse",
+        opt3: "A Pig",
+        opt4: "A Parrot",
+        correct: "opt4",
+    }
+];
+
+let objectQuestions =[
+    {
+        question: "What food is this?",
+        imgSrc: "assets/images/food/cheese.jpg",
         opt1: "A Lion",
         opt2: "A Horse",
         opt3: "A Pig",
@@ -203,8 +228,7 @@ let currentQuestion = 0;
 let randomQuestion;
 
 function askQuestion(){
-  /*  randomQ();
-    let q = randomQuestion;*/
+ 
     let q = questions[currentQuestion];
     qImages.innerHTML = "<img src="+ q.imgSrc +">";
     question.innerHTML = "<p>"+ q.question +"</p>";
@@ -322,6 +346,10 @@ function checkSelection(solutions) {
 
 beginQuiz.addEventListener("click", startQuiz);
 
+foodQuiz.addEventListener("click", chooseFoodQuiz);
+
+objectQuiz.addEventListener("click", chooseObjectQuiz);
+
 function startQuiz(){
     beginQuiz.style.display = "none";
     askQuestion();
@@ -332,6 +360,17 @@ function startQuiz(){
     prevBtn.style.display= "inline";
 }
 
+/*function animalQ(){
+    foodQuiz.style.display ="none";
+    let questions = foodQuestions;
+    askQuestion();
+    quiz.style.display = "block";
+    qImages.style.display="block";
+    solution.style.display= "inline";
+    nxtBtn.style.display= "inline";
+    prevBtn.style.display= "inline";
+
+}
 /*opt1.addEventListener("click", () => {
 checkSelection(opt1);
 });

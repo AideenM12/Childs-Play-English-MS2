@@ -18,7 +18,7 @@ const prevBtn = document.getElementById("prevBtn");
 let questions = [
     {
         question: "What animal is this?",
-        imgSrc: "assets/images/unicorn.jpg",
+        imgSrc: "assets/images/animals/unicorn.jpg",
         opt1: "A Unicorn",
         opt2: "A Panda",
         opt3: "A Duck",
@@ -28,7 +28,7 @@ let questions = [
     },
      {
         question: "What animal is this?",
-        imgSrc: "assets/images/coolcat.jpg",
+        imgSrc: "assets/images/animals/coolcat.jpg",
         opt1: "A Cow",
         opt2: "An Elephant",
         opt3: "A Cat",
@@ -38,7 +38,7 @@ let questions = [
     },
     {
         question: "What animal is this?",
-        imgSrc: "assets/images/turtle.jpg",
+        imgSrc: "assets/images/animals/turtle.jpg",
         opt1: "A Shark",
         opt2: "A Turtle",
         opt3: "A Horse",
@@ -48,7 +48,7 @@ let questions = [
     },
     {
         question: "What animal is this?",
-        imgSrc: "assets/images/cow.jpg",
+        imgSrc: "assets/images/animals/cow.jpg",
         opt1: "A Mouse",
         opt2: "A Parrot",
         opt3: "A Rabbit",
@@ -58,7 +58,7 @@ let questions = [
     },
     {
         question: "What animal is this?",
-        imgSrc:"assets/images/shark.jpg" ,
+        imgSrc:"assets/images/animals/shark.jpg" ,
         opt1: "A Horse" ,
         opt2: "A Unicorn",
         opt3: "A Shark",
@@ -68,7 +68,7 @@ let questions = [
     },
     {
      question: "What animal is this?",
-        imgSrc: "assets/images/duck.jpg",
+        imgSrc: "assets/images/animals/duck.jpg",
         opt1: "A Duck",
         opt2: "A Parrot",
         opt3: "An Owl",
@@ -77,7 +77,7 @@ let questions = [
     },
     {
         question: "What animal is this?",
-        imgSrc: "assets/images/rabbit.jpg",
+        imgSrc: "assets/images/animals/rabbit.jpg",
         opt1: "A Pig",
         opt2: "A Rabbit",
         opt3: "A Turtle",
@@ -86,7 +86,7 @@ let questions = [
     },
     {
         question: "What animal is this?",
-        imgSrc: "assets/images/elephant.jpg",
+        imgSrc: "assets/images/animals/elephant.jpg",
         opt1: "A Panda Bear",
         opt2: "A Horse",
         opt3: "A Mouse",
@@ -95,7 +95,7 @@ let questions = [
     },
     {
         question: "What animal is this?",
-        imgSrc: "assets/images/pig.jpg",
+        imgSrc: "assets/images/animals/pig.jpg",
         opt1: "An Owl",
         opt2: "A Pig",
         opt3: "A Shark",
@@ -104,7 +104,7 @@ let questions = [
     },
     {
         question: "What animal is this?",
-        imgSrc: "assets/images/horse.jpg",
+        imgSrc: "assets/images/animals/horse.jpg",
         opt1: "A Duck",
         opt2: "A Cat",
         opt3: "A Horse",
@@ -113,7 +113,7 @@ let questions = [
     },
     {
         question: "What animal is this?",
-        imgSrc: "assets/images/penguin.jpg",
+        imgSrc: "assets/images/animals/penguin.jpg",
         opt1: "A Penguin",
         opt2: "A Parrot",
         opt3: "An Elephant ",
@@ -122,7 +122,7 @@ let questions = [
     },
      {
         question: "What animal is this?",
-        imgSrc: "assets/images/lion.jpg",
+        imgSrc: "assets/images/animals/lion.jpg",
         opt1: "A Unicorn",
         opt2: "A Rabbit",
         opt3: "A Cat",
@@ -131,7 +131,7 @@ let questions = [
     },
     {
         question: "What animal is this?",
-        imgSrc: "assets/images/panda-bear.jpg",
+        imgSrc: "assets/images/animals/panda-bear.jpg",
         opt1: "A Penguin",
         opt2: "A Dog",
         opt3: "A Panda Bear",
@@ -140,7 +140,7 @@ let questions = [
     },
     {
         question: "What animal is this?",
-        imgSrc: "assets/images/mouse.jpg",
+        imgSrc: "assets/images/animals/mouse.jpg",
         opt1: "A Rabbit",
         opt2: "A Shark",
         opt3: "A Mouse ",
@@ -149,7 +149,7 @@ let questions = [
     },
     {
         question: "What animal is this?",
-        imgSrc: "assets/images/owl.jpg",
+        imgSrc: "assets/images/animals/owl.jpg",
         opt1: "An Owl",
         opt2: "A Parrot",
         opt3: "A Penguin",
@@ -158,7 +158,7 @@ let questions = [
     },
     {
         question: "What animal is this?",
-        imgSrc: "assets/images/dog.jpg",
+        imgSrc: "assets/images/animals/dog.jpg",
         opt1: "A Mouse",
         opt2: "A Cat",
         opt3: "A Cow",
@@ -167,7 +167,7 @@ let questions = [
     },
     {
         question: "What animal is this?",
-        imgSrc: "assets/images/parrot.jpg",
+        imgSrc: "assets/images/animals/parrot.jpg",
         opt1: "A Lion",
         opt2: "A Horse",
         opt3: "A Pig",
@@ -175,6 +175,18 @@ let questions = [
         correct: "opt4",
     },
 ];
+
+let foodQuestions = [
+    {
+         question: "What food is this?",
+        imgSrc: "assets/images/parrot.jpg",
+        opt1: "A Lion",
+        opt2: "A Horse",
+        opt3: "A Pig",
+        opt4: "A Parrot",
+        correct: "opt4",
+    }
+]
 
 function randomQ(){
     let randomNum = Math.floor(Math.random() * 5);

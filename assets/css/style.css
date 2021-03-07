@@ -16,7 +16,9 @@ h1, .navbar-brand{
     margin-bottom: 0;
     
 }
-
+.btn{
+    background-color: #009bf5;
+}
 footer{
     width: 100%;
     height: auto;
@@ -48,7 +50,7 @@ footer{
   width: 50%;
 
 }
-.solution{
+#solution{
     margin: 30px;
 }
 @media only screen and (min-width: 577px) and (max-width:992px) {
@@ -74,6 +76,6 @@ footer{
         display: block;
     }
     .btn{
-        display: inline;
+        display: block;
     }
 }

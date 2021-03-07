@@ -93,9 +93,10 @@ Testing information can be found here in the separate [TESTING.md file](TESTING.
 * Cheese image [FreePik]('https://www.freepik.com/vectors/food')Food vector created by catalyststuff 
 * Meat image [FreePik]('https://www.freepik.com/vectors/food')Food vector created by catalyststuff 
 * Salad image [FreePik]('https://www.freepik.com/vectors/food')Food vector created by catalyststuff 
-
+* Fruit image [FreePik]('https://www.freepik.com/vectors/food')Food vector created by catalyststuff 
 
 * Littleboy and littlegirl images were found [Freepik]('https://www.freepik.com/vectors/girl')Frame vector created by brgfx
+* Astronaut image were found [Freepik]('https://www.freepik.com/vectors/heart')Heart vector created by catalyststuff 
 
 ### Code
 

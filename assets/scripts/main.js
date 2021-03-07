@@ -27,6 +27,11 @@ function chooseObjectQuiz(){
     questions = objectQuestions;
 }
 
+function changeBackground(){
+    let colorArray = ["#ffadad","#ffd6a5","#fdffb6","#caffbf","#9bf6ff","#a0c4ff","#bdb2ff","#ffc6ff","#fffffc"]
+    let randColor = Math.floor(Math.random()*colorArray.length);
+     $('body').css("background-color", colorArray[randColor]);
+}
 
 let questions = [
     {
@@ -37,6 +42,7 @@ let questions = [
         opt3: "A Duck",
         opt4: "A Dog",
         correct: "opt1",
+       
 
     },
      {
@@ -219,8 +225,6 @@ function randomQ(){
     randomQuestion = questions[randomNum][currentQuestion];
 }
 
-
-
 let finalQuestion = questions.length - 1;
 
 let currentQuestion = 0;
@@ -228,7 +232,6 @@ let currentQuestion = 0;
 let randomQuestion;
 
 function askQuestion(){
- 
     let q = questions[currentQuestion];
     qImages.innerHTML = "<img src="+ q.imgSrc +">";
     question.innerHTML = "<p>"+ q.question +"</p>";
@@ -236,8 +239,9 @@ function askQuestion(){
     opt2.innerHTML = q.opt2;
     opt3.innerHTML = q.opt3;
     opt4.innerHTML = q.opt4;
+    changeBackground();
 }
- //let q = questions[currentQuestion];
+ 
 function prevQuestion(){
     if(currentQuestion <= 0) currentQuestion = questions.length;
         currentQuestion--; 
@@ -261,7 +265,7 @@ function nextQuestion(){
             text: 'Game Over! Great Work!',
             confirmButtonText: 'Okay',
             confirmButtonColor: '#009bf5',
-            imageUrl: 'assets/images/littleboy.jpg',
+            imageUrl: 'assets/images/misc/astronaut.jpg',
             imageWidth: 200,
             imageHeight: 300,
             imageAlt: 'Custom image',
@@ -289,7 +293,7 @@ function checkSelection(solutions) {
             text: 'Well Done',
             confirmButtonText: 'Cool!',
             confirmButtonColor: '#009bf5',
-            imageUrl: 'assets/images/littlegirl.jpg',
+            imageUrl: 'assets/images/misc/littlegirl.jpg',
             imageWidth: 200,
             imageHeight: 300,
             imageAlt: 'Custom image',
@@ -309,7 +313,7 @@ function checkSelection(solutions) {
             text: 'Uh Oh Try Again!',
             confirmButtonText: 'Okay',
             confirmButtonColor: '#009bf5',
-            imageUrl: 'assets/images/littleboy.jpg',
+            imageUrl: 'assets/images/misc/littleboy.jpg',
             imageWidth: 200,
             imageHeight: 300,
             imageAlt: 'Custom image',
@@ -327,7 +331,7 @@ function checkSelection(solutions) {
             text: 'Game Over! Great Work!',
             confirmButtonText: 'Okay',
             confirmButtonColor: '#009bf5',
-            imageUrl: 'assets/images/littleboy.jpg',
+            imageUrl: 'assets/images/misc/astronaut.jpg',
             imageWidth: 200,
             imageHeight: 300,
             imageAlt: 'Custom image',
@@ -360,17 +364,6 @@ function startQuiz(){
     prevBtn.style.display= "inline";
 }
 
-/*function animalQ(){
-    foodQuiz.style.display ="none";
-    let questions = foodQuestions;
-    askQuestion();
-    quiz.style.display = "block";
-    qImages.style.display="block";
-    solution.style.display= "inline";
-    nxtBtn.style.display= "inline";
-    prevBtn.style.display= "inline";
-
-}
 /*opt1.addEventListener("click", () => {
 checkSelection(opt1);
 });
@@ -384,4 +377,3 @@ opt4.addEventListener("click", () => {
 checkSelection(opt4);
 })*/
 
-//nxtBtn.addEventListener("click", nextQuestion)

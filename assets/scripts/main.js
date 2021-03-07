@@ -176,12 +176,23 @@ let questions = [
     },
 ];
 
+function randomQ(){
+    let randomNum = Math.floor(Math.random() * 5);
+    console.log()
+    randomQuestion = questions[randomNum][currentQuestion];
+}
+
+
 
 let finalQuestion = questions.length - 1;
 
 let currentQuestion = 0;
 
+let randomQuestion;
+
 function askQuestion(){
+  /*  randomQ();
+    let q = randomQuestion;*/
     let q = questions[currentQuestion];
     qImages.innerHTML = "<img src="+ q.imgSrc +">";
     question.innerHTML = "<p>"+ q.question +"</p>";
@@ -190,7 +201,7 @@ function askQuestion(){
     opt3.innerHTML = q.opt3;
     opt4.innerHTML = q.opt4;
 }
-
+ //let q = questions[currentQuestion];
 function prevQuestion(){
     if(currentQuestion <= 0) currentQuestion = questions.length;
         currentQuestion--; 
@@ -293,6 +304,8 @@ function checkSelection(solutions) {
      }
      
 }
+
+
 
 
 beginQuiz.addEventListener("click", startQuiz);

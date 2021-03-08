@@ -23,7 +23,7 @@ footer{
     width: 100%;
     height: auto;
     position: relative;
-    background-color:#f1a4aa ;
+    background-color:#d81159 ;
    
 }
 .icons{
@@ -32,8 +32,8 @@ footer{
 }
 .solutions{
     background-color: #f75c03;
-    width: 120px;
-    height: 40px;
+    width: 150px;
+    height: 60px;
     color: #ffff3f;
     margin: 20px;
     padding: 20px;

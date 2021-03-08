@@ -26,7 +26,7 @@ function chooseObjectQuiz(){
     $(objectQuiz).click()
     questions = objectQuestions;
 }
-
+//Found on codepen
 function changeBackground(){
     let colorArray = ["#ffadad","#ffd6a5","#fdffb6","#caffbf","#9bf6ff","#a0c4ff","#bdb2ff","#ffc6ff","#fffffc"]
     let randColor = Math.floor(Math.random()*colorArray.length);

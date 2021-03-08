@@ -117,6 +117,15 @@ This project was deployed from the [Github Respository](https://github.com/Aidee
 * Meat image [FreePik]('https://www.freepik.com/vectors/food')Food vector created by catalyststuff 
 * Salad image [FreePik]('https://www.freepik.com/vectors/food')Food vector created by catalyststuff 
 * Fruit image [FreePik]('https://www.freepik.com/vectors/food')Food vector created by catalyststuff 
+* Candy image [FreePik]('https://www.freepik.com/vectors/food')Food vector created by catalyststuff 
+* Bread image [FreePik]('https://www.freepik.com/vectors/food')Food vector created by catalyststuff
+* Chicken image [FreePik]('https://www.freepik.com/vectors/food')Food vector created by catalyststuff
+* Fish image [FreePik]('https://www.freepik.com/vectors/food')Food vector created by catalyststuff
+
+* Clock image [Freepik]('https://www.freepik.com/vectors/hand')Hand vector created by catalyststuff 
+* Crayons image [Freepik]('https://www.freepik.com/vectors/box')Box vector created by catalyststuff 
+* Book image [Freepik]('https://www.freepik.com/vectors/book')Book vector created by catalyststuff 
+* Phone image [Freepik]('https://www.freepik.com/vectors/heart')Heart vector created by catalyststuff
 
 * Littleboy and littlegirl images were found [Freepik]('https://www.freepik.com/vectors/girl')Frame vector created by brgfx
 * Astronaut image were found [Freepik]('https://www.freepik.com/vectors/heart')Heart vector created by catalyststuff 

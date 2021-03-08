@@ -56,6 +56,8 @@ The footer code was used twice to alter the display on different screen sizes.
 
 
 ## Technologies Used
+* Animate.css
+* 
 
 ## Testing
 Testing information can be found here in the separate [TESTING.md file](TESTING.md)

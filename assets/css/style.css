@@ -30,14 +30,16 @@ footer{
     float: right;
     font-size: 20px;
 }
-.solutions{
+.options{
     background-color: #f75c03;
     width: 150px;
     height: 60px;
     color: #ffff3f;
-    margin: 20px;
+    margin-right: auto;
+    margin-left: auto;
     padding: 20px;
     display: inline;
+
     border-radius: 10%;
     clear: both;
 }
@@ -73,7 +75,11 @@ footer{
         word-spacing: 60px;
     }
     .solutions{
-        display: block;
+       height: 40px;
+    width: 80px;
+    font-size: 15px;
+   
+    padding: 0
     }
     .btn{
         display: block;

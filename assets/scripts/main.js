@@ -220,7 +220,7 @@ let objectQuestions =[
 ]
 
 function randomQ(){
-    let randomNum = Math.floor(Math.random() * 5);
+    let randomNum = Math.floor(Math.random()*questions.length);
     console.log()
     randomQuestion = questions[randomNum][currentQuestion];
 }
@@ -232,6 +232,8 @@ let currentQuestion = 0;
 let randomQuestion;
 
 function askQuestion(){
+    /*randomQ();
+    let q = randomQuestion;*/
     let q = questions[currentQuestion];
     qImages.innerHTML = "<img src="+ q.imgSrc +">";
     question.innerHTML = "<p>"+ q.question +"</p>";
@@ -356,6 +358,7 @@ objectQuiz.addEventListener("click", chooseObjectQuiz);
 
 function startQuiz(){
     beginQuiz.style.display = "none";
+   
     askQuestion();
     quiz.style.display = "block";
     qImages.style.display="block";

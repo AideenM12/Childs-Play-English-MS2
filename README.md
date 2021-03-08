@@ -61,6 +61,27 @@ The footer code was used twice to alter the display on different screen sizes.
 Testing information can be found here in the separate [TESTING.md file](TESTING.md)
 
 ## Deployment
+This project was developed using [Gitpod IDE](https://gitpod.io) and pushed to Github using the in-built terminal.
+
+This project was deployed from the [Github Respository](https://github.com/AideenM12/Galway-Tours-MS1) to GitHub Pages using the following steps:
+
+1. Log into Github.
+2. Select the [AideenM12/Galway-Tours-MS1](https://github.com/AideenM12/Galway-Tours-MS1) respository.
+3. Click the settings tab.
+4. Scroll to the GitHub Pages section of the page.
+5. Under the source heading select the *master* branch option.
+6. Click save.
+7. The project has now been deployed. Scroll back to the GitHub pages section and click on the link above the source heading to view the live site.
+
+### Making a clone to run locally
+
+1. Log into GitHub.
+2. Select the [respository](https://github.com/AideenM12/Galway-Tours-MS1).
+3. Click the Code dropdown button next to the green Gitpod button.
+4. Download ZIP file and unpackage locally and open with IDE. Alternatively copy the URL in the HTTPS box.
+5. Open the alternative editor and terminal window.
+6. Type 'git clone' and paste the copied URL.
+7. Press Enter. A local clone will be created.
 
 ## Credits
 

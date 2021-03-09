@@ -3,12 +3,9 @@ body{
     background-color: #a1d9f7;
     color: #001011; 
     font-family: 'Chilanka', sans-serif;
+    
 }
-/*.navbar{
-    position: fixed;
-    width: 100%;
-    margin-bottom: auto;
-}*/
+
 h1, .navbar-brand{
     font-family: 'Chewy', sans-serif;
     
@@ -23,7 +20,10 @@ h1, .navbar-brand{
     
 }
 .btn{
-    background-color: #009bf5;
+    background-color: #fffffc;
+    border: 2px solid #001011;
+    font-weight: 600;
+    color: #001011;
 }
 footer{
     width: 100%;
@@ -31,21 +31,24 @@ footer{
     position: relative;
     background-color:#d81159 ;
     overflow: hidden;
+    padding-bottom: 2vh;
+    padding-top: 1vh;
  
 }
 .icons{
     float: right;
     font-size: 20px;
+    color: #001011;
 }
 #astro{
     animation: slideInRight; /* referring directly to the animation's @keyframe declaration */
   animation-duration: 2s;
 }
 .options{
-    background-color: #f75c03;
+    
     width: 150px;
     height: 60px;
-    color: #ffff3f;
+    color: #001011;
     margin-right: auto;
     margin-left: auto;
     padding: 20px;
@@ -56,13 +59,37 @@ footer{
     animation: slideInRight; /* referring directly to the animation's @keyframe declaration */
   animation-duration: 2s;
 }
+#opt1{
+    background-color: #ffd6a5;
+}
+#opt2{
+    background-color: #ffadad;
+}
+#opt3{
+    background-color: #caffbf;
+}
+#opt4{
+    background-color: #9bf6ff;
+}
+#question{
+    margin-top: 400px;
+}
+#question > p{
+    font-weight: 400;
+    margin-top: 100px;
+}
+#qImages{
+    width: 100%;
+    margin-top: 5%;
+}
 #qImages > img{
-    
-    display: block;
+   display: block; 
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 5%;
-  width: 50%;
+  
+  width: 500px;
+  max-height: 400px;
+  
   animation: slideInLeft; /* referring directly to the animation's @keyframe declaration */
   animation-duration: 2s;
 
@@ -101,6 +128,28 @@ footer{
     padding: 0
     }
     .btn{
-        display: block;
+    display: inline;
+    margin: 10px;
+    font-weight: 700;
+    font-size: 20px;
     }
+    #qImages > img{
+        width: 300px;
+        margin-top: 20px;
+    }
+    #astro{
+        width: 300px;
+        position: relative;
+    }
+    #question > p {
+    font-weight: 600;
+    margin-top: 80px;
+    font-size: 30px;
+    margin-bottom: 0;
+}
+.options{
+    width:30px;
+    height: 30px;
+    font-size: 18px;
+}
 }

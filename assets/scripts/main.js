@@ -3,9 +3,12 @@ const foodQuiz = document.getElementById("food-quiz");
 const objectQuiz = document.getElementById("object-quiz");
 const welcomeQuiz =document.getElementById("welcome-quiz");
 
+const titleHeader= document.getElementById("title-h1");
+
 const quiz = document.getElementById("quiz");
 
 const question = document.getElementById("question");
+
 
 const qImages = document.getElementById("qImages");
 
@@ -385,8 +388,10 @@ objectQuiz.addEventListener("click", chooseObjectQuiz);
 function startQuiz(){
     beginQuiz.style.display = "none";
     welcomeQuiz.style.display ="none";
+    titleHeader.style.display ="none";
     askQuestion();
     quiz.style.display = "block";
+    question.style.display= "inline";
     qImages.style.display="block";
     solution.style.display= "inline";
     nxtBtn.style.display= "inline";

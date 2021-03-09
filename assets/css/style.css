@@ -5,7 +5,9 @@ body{
     font-family: 'Chilanka', sans-serif;
     
 }
-
+.navbar{
+    z-index: 300;
+}
 h1, .navbar-brand{
     font-family: 'Chewy', sans-serif;
     
@@ -41,6 +43,7 @@ footer{
     color: #001011;
 }
 #astro{
+    margin-bottom: 10px;
     animation: slideInRight; /* referring directly to the animation's @keyframe declaration */
   animation-duration: 2s;
 }
@@ -72,15 +75,18 @@ footer{
     background-color: #9bf6ff;
 }
 #question{
-    margin-top: 400px;
+    margin-top: 250px;
+    margin-bottom: 0;
 }
 #question > p{
     font-weight: 400;
     margin-top: 100px;
+    font-family: 'Chewy', sans-serif;
+    font-size: 30px;
 }
 #qImages{
     width: 100%;
-    margin-top: 5%;
+    /*margin-top: 5%;*/
 }
 #qImages > img{
    display: block; 
@@ -148,8 +154,8 @@ footer{
     margin-bottom: 0;
 }
 .options{
-    width:30px;
-    height: 30px;
+    /*width:30px;
+    height: 30px;*/
     font-size: 18px;
 }
 }

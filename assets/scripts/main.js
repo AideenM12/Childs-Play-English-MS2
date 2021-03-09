@@ -495,6 +495,7 @@ function randomQ(){
     let randomNum = Math.floor(Math.random()*questions.length);
     console.log()
     randomQuestion = questions[randomNum][currentQuestion];
+    return randomQuestion;
 }
 
 let finalQuestion = questions.length - 1;
@@ -504,9 +505,9 @@ let currentQuestion = 0;
 let randomQuestion;
 
 function askQuestion(){
-    /*randomQ();
-    let q = randomQuestion;*/
-    let q = questions[currentQuestion];
+   
+    let q = randomQ();
+    //let q = questions[currentQuestion];
     qImages.innerHTML = "<img src="+ q.imgSrc +">";
     question.innerHTML = "<p>"+ q.question +"</p>";
     opt1.innerHTML = q.opt1;
@@ -555,7 +556,7 @@ function checkSelection(solutions) {
     if (solutions == questions[currentQuestion].correct && currentQuestion < finalQuestion) {
         swal.fire({
              showClass: {
-                popup: 'animate__animated animate__heartBeat'
+                popup: 'animate__animated animate__backInDown'
             },
             hideClass: {
                 popup: 'animate__animated animate__backOutRight'

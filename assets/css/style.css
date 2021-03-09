@@ -47,7 +47,12 @@ footer{
     animation: slideInRight; /* referring directly to the animation's @keyframe declaration */
   animation-duration: 2s;
 }
-.options{
+#astro404{
+    margin-bottom: 10px;
+    animation: slideInRight; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 2s;
+}
+.solutions{
     
     width: 150px;
     height: 60px;
@@ -125,6 +130,7 @@ footer{
         flex: 100%;
         line-height: 30px;
         word-spacing: 60px;
+        color: #001011;
     }
     .solutions{
        height: 40px;
@@ -153,9 +159,9 @@ footer{
     font-size: 30px;
     margin-bottom: 0;
 }
-.options{
-    /*width:30px;
-    height: 30px;*/
+/*.options{
+    width:30px;
+    height: 30px;
     font-size: 18px;
-}
+}*/
 }

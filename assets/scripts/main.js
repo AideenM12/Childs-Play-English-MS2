@@ -202,9 +202,27 @@ let foodQuestions = [
         opt1: "A Lion",
         opt2: "A Horse",
         opt3: "A Pig",
-        opt4: "A Parrot",
+        opt4: "A Strawberry",
         correct: "opt4",
-    }
+    },
+    {
+         question: "What food is this?",
+        imgSrc: "assets/images/food/bread.jpg",
+        opt1: "A Lion",
+        opt2: "Bread",
+        opt3: "A Pig",
+        opt4: "A Parrot",
+        correct: "opt2",
+    },
+    {
+         question: "What food is this?",
+        imgSrc: "assets/images/food/bread.jpg",
+        opt1: "A Lion",
+        opt2: "Bread",
+        opt3: "A Pig",
+        opt4: "A Parrot",
+        correct: "opt2",
+    },
 ];
 
 let objectQuestions =[
@@ -272,7 +290,9 @@ function nextQuestion(){
             imageHeight: 300,
             imageAlt: 'Custom image',
             background: '#009bf5',
-         });
+         }).then(function(){
+   location.reload();
+});
     }
 }
 
@@ -338,7 +358,10 @@ function checkSelection(solutions) {
             imageHeight: 300,
             imageAlt: 'Custom image',
             background: '#009bf5',
-         });
+           
+         }).then(function(){
+   location.reload();
+});
 
      }
      else{

@@ -30,6 +30,10 @@ footer{
     float: right;
     font-size: 20px;
 }
+#astro{
+    animation: slideInRight; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 2s;
+}
 .options{
     background-color: #f75c03;
     width: 150px;
@@ -42,6 +46,8 @@ footer{
 
     border-radius: 10%;
     clear: both;
+    animation: slideInRight; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 2s;
 }
 #qImages > img{
     
@@ -50,10 +56,16 @@ footer{
   margin-right: auto;
   margin-bottom: 5%;
   width: 50%;
+  animation: slideInLeft; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 2s;
 
 }
 #solution{
     margin: 30px;
+}
+.btn{
+    animation: slideInRight; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 2s;
 }
 @media only screen and (min-width: 577px) and (max-width:992px) {
      footer{

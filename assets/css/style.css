@@ -4,8 +4,14 @@ body{
     color: #001011; 
     font-family: 'Chilanka', sans-serif;
 }
+/*.navbar{
+    position: fixed;
+    width: 100%;
+    margin-bottom: auto;
+}*/
 h1, .navbar-brand{
     font-family: 'Chewy', sans-serif;
+    
 }
 
 .nav-color{
@@ -24,7 +30,8 @@ footer{
     height: auto;
     position: relative;
     background-color:#d81159 ;
-   
+    overflow: hidden;
+ 
 }
 .icons{
     float: right;

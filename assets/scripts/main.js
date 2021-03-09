@@ -1,6 +1,7 @@
 const beginQuiz = document.getElementById("begin-quiz");
 const foodQuiz = document.getElementById("food-quiz");
 const objectQuiz = document.getElementById("object-quiz");
+const welcomeQuiz =document.getElementById("welcome-quiz");
 
 const quiz = document.getElementById("quiz");
 
@@ -20,11 +21,13 @@ const prevBtn = document.getElementById("prevBtn");
 function chooseFoodQuiz(){
     $(foodQuiz).click()
     questions = foodQuestions;
+    startQuiz();
 }
 
 function chooseObjectQuiz(){
     $(objectQuiz).click()
     questions = objectQuestions;
+    startQuiz();
 }
 //Found on codepen
 function changeBackground(){
@@ -291,7 +294,7 @@ function nextQuestion(){
             imageAlt: 'Custom image',
             background: '#009bf5',
          }).then(function(){
-   location.reload();
+   location.reload(); //Reload function found on stack overflow
 });
     }
 }
@@ -381,7 +384,7 @@ objectQuiz.addEventListener("click", chooseObjectQuiz);
 
 function startQuiz(){
     beginQuiz.style.display = "none";
-   
+    welcomeQuiz.style.display ="none";
     askQuestion();
     quiz.style.display = "block";
     qImages.style.display="block";

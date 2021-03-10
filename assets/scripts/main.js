@@ -495,20 +495,21 @@ let objectQuestions =[
 
 function randomQ(){
     
-    let randomNum = Math.floor(Math.random()*10);
+    let randomNum = Math.floor(Math.random()*questions.length);
     console.log()
     currentQuestionIndex = randomNum;
     randomQuestion = questions[randomNum];
+    randomQuestion.length = questions.length;
    // finalQuestion = randomNum.length;
     return randomQuestion;
 }
 
-let finalQuestion = questions.length -1;
+//let finalQuestion = questions.length -1;
 
 //let currentQuestion= 0;
 
 let randomQuestion = 0;
-//let finalQuestion = randomQuestion.length -1;
+let finalQuestion = questions.length -1;
 
 function askQuestion(){
    
@@ -545,7 +546,7 @@ function nextQuestion(){
             },
             text: 'Game Over! Great Work!',
             confirmButtonText: 'Okay',
-            confirmButtonColor: '#009bf5',
+            confirmButtonColor: '#fffffc',
             imageUrl: 'assets/images/misc/astronaut.jpg',
             imageWidth: 200,
             imageHeight: 300,
@@ -613,7 +614,7 @@ function checkSelection(solutions) {
             },
             text: 'Game Over! Great Work!',
             confirmButtonText: 'Okay',
-            confirmButtonColor: '#009bf5',
+            confirmButtonColor: '#fffffc',
             imageUrl: 'assets/images/misc/astronaut.jpg',
             imageWidth: 200,
             imageHeight: 300,

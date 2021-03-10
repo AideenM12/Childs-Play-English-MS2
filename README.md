@@ -36,7 +36,16 @@ The footer code was used twice to alter the display on different screen sizes.
 ### Design
 **Colours**
 
-<img src="documentation/MS2-Palette (640x480).jpg" width="450" height="250" alt="milestone palette">
+<img src="documentation/ms2pastels.png" width="450" height="250" alt="milestone palette one">
+
+
+<img src="documentation/ms2bold.png" width="450" height="250" alt="milestone palette two">
+
+
+
+**Typography**
+'Chewy'
+'Chilanka'
 
 ## Skeleton
 
@@ -56,8 +65,39 @@ The footer code was used twice to alter the display on different screen sizes.
 
 
 ## Technologies Used
-* Animate.css
-* 
+- This project is primarily built using HTML5 semantic markup, CSS stylesheets and Javascript.
+-[jQuery](https://jquery.com/)
+- [Gitpod](https://gitpod.io)
+    - This project was built using Gitpod as the IDE.
+- [Google fonts](https://fonts.google.com/) 
+    - The font styles used on this website were chosen from Google fonts.
+- [Bootstrap 4.5](https://getbootstrap.com/)
+   - Various aspects of this website were structured using Bootstrap.
+   - Bootstrap was used to make this website responsive
+- [TinyJPG](https://tinyjpg.com/)
+   - The images represented were compressed using TinyJPG in order to improve the performance of the project. 
+- [Fontawesome](https://fontawesome.com/)
+    - The icons used on this page were found in Fontawesome.
+- [Hover.css](https://ianlunn.github.io/Hover/) 
+    - The hover feature of the navigation links below the hero image were implemented using Hover.css. 
+- [Popper.js](https://popper.js.org/)
+    - Certain bootstrap responsive elements require Popper.js in order to function correctly.
+- [Balsamiq](https://balsamiq.com/)
+    - The wireframes for this project were created using Balsamiq.
+- [FreePik](https://www.freepik.com/)
+    - All of the vectors used in this project were found on Freepik. 
+- [Freeformatter- CSS beautifier](https://www.freeformatter.com/css-beautifier.html)
+    - This was used to format the CSS stylesheet.
+- [Freeformatter- HTML formatter](https://www.freeformatter.com/html-formatter.html)
+    - This was used to format each HTML page
+- [Adobe Photoshop](https://photoshop.adobe.com/) 
+    - Some images were resized using Adobe Photoshop.
+- [Google DevTools](https://developers.google.com/web/tools/chrome-devtools) 
+    - Google Dev Tools was extensively used throughout the project for various styling and testing purposes. Its lighthouse feature was used as one of the main testing tools for this project.
+- [Animate.css]('https://animate.style/')
+- [SweetAlert2]('https://sweetalert2.github.io/')
+-[EmailJS]('https://www.emailjs.com/')
+
 
 ## Testing
 Testing information can be found here in the separate [TESTING.md file](TESTING.md)
@@ -130,6 +170,15 @@ This project was deployed from the [Github Respository](https://github.com/Aidee
 * Littleboy and littlegirl images were found [Freepik]('https://www.freepik.com/vectors/girl')Frame vector created by brgfx
 * Astronaut image were found [Freepik]('https://www.freepik.com/vectors/heart')Heart vector created by catalyststuff 
 * 404astro image [Freepik](<a href='https://www.freepik.com/vectors/logo')Logo vector created by catalyststuff 
+
 ### Code
+* The Javascript aspects of this site were inspired by a tutorial found on [codeexplained.org](https://www.codeexplained.org/2018/10/create-multiple-choice-quiz-using-javascript.html)
+
+Other important resources for basic tutorials and troubleshooting resources include:
+* [Stack Overflow](https://stackoverflow.com/)
+* [W3Schools](https://www.w3schools.com/)
+* [Youtube](https://www.youtube.com/)
+* [Codepen.io](https://codepen.io/)
+* [CodeInstitute](https://codeinstitute.net/) 
 
 ### Acknowledgements

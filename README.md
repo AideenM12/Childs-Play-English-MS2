@@ -129,7 +129,7 @@ This project was deployed from the [Github Respository](https://github.com/Aidee
 
 * Littleboy and littlegirl images were found [Freepik]('https://www.freepik.com/vectors/girl')Frame vector created by brgfx
 * Astronaut image were found [Freepik]('https://www.freepik.com/vectors/heart')Heart vector created by catalyststuff 
-
+* 404astro image [Freepik](<a href='https://www.freepik.com/vectors/logo')Logo vector created by catalyststuff 
 ### Code
 
 ### Acknowledgements

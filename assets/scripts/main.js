@@ -20,6 +20,8 @@ let solutions = document.getElementsByClassName("solutions");
 
 const nxtBtn = document.getElementById("nxtBtn");
 const prevBtn = document.getElementById("prevBtn");
+let currentQuestionIndex;
+
 
 function chooseFoodQuiz(){
     $(foodQuiz).click()
@@ -492,17 +494,20 @@ let objectQuestions =[
 ];
 
 function randomQ(){
+    
     let randomNum = Math.floor(Math.random()*questions.length);
     console.log()
-    randomQuestion = questions[randomNum][currentQuestion];
+    currentQuestionIndex = randomNum;
+    randomQuestion = questions[randomNum];
+   
     return randomQuestion;
 }
 
 let finalQuestion = questions.length - 1;
 
-let currentQuestion = 0;
+//let currentQuestion= 0;
 
-let randomQuestion;
+let randomQuestion =0;
 
 function askQuestion(){
    
@@ -518,14 +523,14 @@ function askQuestion(){
 }
  
 function prevQuestion(){
-    if(currentQuestion <= 0) currentQuestion = questions.length;
-        currentQuestion--; 
+    if(currentQuestionIndex <= 0) randomQuestion = questions.length;
+        randomQuestion--; 
         return askQuestion();       
     }  
 
 function nextQuestion(){
-    if( currentQuestion < finalQuestion ){
-        currentQuestion++  
+    if( currentQuestionIndex < finalQuestion ){
+        randomQuestion++  
         return askQuestion();
                    
     }
@@ -553,7 +558,7 @@ function nextQuestion(){
 
 
 function checkSelection(solutions) {
-    if (solutions == questions[currentQuestion].correct && currentQuestion < finalQuestion) {
+    if (solutions == questions[currentQuestionIndex].correct && currentQuestionIndex < finalQuestion) {
         swal.fire({
              showClass: {
                 popup: 'animate__animated animate__backInDown'
@@ -576,7 +581,7 @@ function checkSelection(solutions) {
             imageAlt: 'Custom image',
             background: '#71f909',
         });
-        currentQuestion++
+        randomQuestion++
         askQuestion();
     }
     else if (solutions != questions[currentQuestion].correct) {
@@ -632,13 +637,17 @@ beginQuiz.addEventListener("click", startQuiz);
 
 foodQuiz.addEventListener("click", chooseFoodQuiz);
 
-objectQuiz.addEventListener("click", chooseObjectQuiz);
+objectQuiz.addEventListener("click", chooseObjectQuiz)
+
+//solution.addEventListener("click", checkSelection);
 
 function startQuiz(){
     beginQuiz.style.display = "none";
     welcomeQuiz.style.display ="none";
     titleHeader.style.display ="none";
     askQuestion();
+    
+
     quiz.style.display = "block";
     question.style.display= "inline";
     qImages.style.display="block";

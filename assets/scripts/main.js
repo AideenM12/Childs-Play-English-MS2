@@ -564,7 +564,7 @@ function nextQuestion(){
 
 
 function checkSelection(solutions) {
-    if (solutions == questions[currentQuestionIndex].correct && currentQuestionIndex < finalQuestion) {
+    if (solutions == questions[currentQuestionIndex].correct && questionCount < 12) {
         swal.fire({
              showClass: {
                 popup: 'animate__animated animate__backInDown'

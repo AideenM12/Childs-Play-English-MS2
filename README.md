@@ -98,6 +98,7 @@ The footer code was used twice to alter the display on different screen sizes.
 - [SweetAlert2](https://sweetalert2.github.io/)
 -[EmailJS](https://www.emailjs.com/)
 -[CSS-Tricks](https://css-tricks.com/)
+-[Favicon.io](https://favicon.io/) 
 
 
 ## Testing

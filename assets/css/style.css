@@ -17,11 +17,11 @@ h1, .navbar-brand, footer{
 .nav-color{
     background-color: #009bf5;
 }
-.jb-bg{
+/*.jb-bg{
     background-color: #d81159;
     margin-bottom: 0;
     
-}
+}*/
 .btn{
     background-color: #fffffc;
     border: 2px solid #001011;
@@ -36,12 +36,19 @@ footer{
     overflow: hidden;
     padding-bottom: 2vh;
     padding-top: 1vh;
-    font-size: 20px;
+    font-size: 25px;
 }
 .icons{
     float: right;
     font-size: 30px;
+}
+.icons > a{
     color: #001011;
+     -webkit-text-stroke: 0.5px  #fffffc;
+}
+.icons > a:hover{
+    color: #fffffc;
+     -webkit-text-stroke: 0.5px  #001011;
 }
 #astro{
     border-radius: 5%;
@@ -103,7 +110,8 @@ footer{
    display: block; 
   margin-left: auto;
   margin-right: auto;
-  
+  border-radius: 5%;
+  border: 10px solid #fffffc;
   width: 500px;
   max-height: 400px;
   
@@ -136,7 +144,7 @@ footer{
         flex: 100%;
         line-height: 30px;
         word-spacing: 60px;
-        color: #001011;
+        
     }
     .solutions{
        height: 40px;

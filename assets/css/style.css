@@ -52,6 +52,9 @@ footer{
     animation: slideInRight; /* referring directly to the animation's @keyframe declaration */
   animation-duration: 2s;
 }
+.btn-404{
+    color: #001011;
+}
 .solutions{
     
     width: 150px;

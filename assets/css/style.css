@@ -8,8 +8,9 @@ body{
 .navbar{
     z-index: 300;
 }
-h1, .navbar-brand{
+h1, .navbar-brand, footer{
     font-family: 'Chewy', sans-serif;
+     -webkit-text-stroke: 0.5px  #fffffc;
     
 }
 
@@ -35,14 +36,16 @@ footer{
     overflow: hidden;
     padding-bottom: 2vh;
     padding-top: 1vh;
- 
+    font-size: 20px;
 }
 .icons{
     float: right;
-    font-size: 20px;
+    font-size: 30px;
     color: #001011;
 }
 #astro{
+    border-radius: 5%;
+    border: 10px solid #fffffc;
     margin-bottom: 10px;
     animation: slideInRight; /* referring directly to the animation's @keyframe declaration */
   animation-duration: 2s;

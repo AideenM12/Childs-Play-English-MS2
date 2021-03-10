@@ -496,20 +496,23 @@ let objectQuestions =[
 function randomQ(){
     
     let randomNum = Math.floor(Math.random()*questions.length);
-    console.log()
+    console.log(randomNum)
     currentQuestionIndex = randomNum;
     randomQuestion = questions[randomNum];
-    randomQuestion.length = questions.length;
+   // randomQuestion.length = questions.length;
    // finalQuestion = randomNum.length;
     return randomQuestion;
 }
 
+let questionCount = 0;
+
+//let randomNum;
 //let finalQuestion = questions.length -1;
 
 //let currentQuestion= 0;
 
 let randomQuestion = 0;
-let finalQuestion = questions.length -1;
+let finalQuestion = questions.length ;
 
 function askQuestion(){
    
@@ -522,6 +525,7 @@ function askQuestion(){
     opt3.innerHTML = q.opt3;
     opt4.innerHTML = q.opt4;
     changeBackground();
+    
 }
  
 function prevQuestion(){
@@ -585,6 +589,7 @@ function checkSelection(solutions) {
         });
         randomQuestion++
         askQuestion();
+        questionCount++
     }
     else if (solutions != questions[currentQuestionIndex].correct) {
             swal.fire({
@@ -604,7 +609,7 @@ function checkSelection(solutions) {
             background: '#d00000',
             })
     }
-    else if(currentQuestionIndex == finalQuestion){
+    else if(questionCount == 12){
         swal.fire({
             showClass: {
                 popup: 'animate__animated animate__swing'

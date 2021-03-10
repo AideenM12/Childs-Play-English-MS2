@@ -94,9 +94,10 @@ The footer code was used twice to alter the display on different screen sizes.
     - Some images were resized using Adobe Photoshop.
 - [Google DevTools](https://developers.google.com/web/tools/chrome-devtools) 
     - Google Dev Tools was extensively used throughout the project for various styling and testing purposes. Its lighthouse feature was used as one of the main testing tools for this project.
-- [Animate.css]('https://animate.style/')
-- [SweetAlert2]('https://sweetalert2.github.io/')
--[EmailJS]('https://www.emailjs.com/')
+- [Animate.css](https://animate.style/)
+- [SweetAlert2](https://sweetalert2.github.io/)
+-[EmailJS](https://www.emailjs.com/)
+-[CSS-Tricks](https://css-tricks.com/)
 
 
 ## Testing

@@ -499,25 +499,17 @@ function randomQ(){
     console.log(randomNum)
     currentQuestionIndex = randomNum;
     randomQuestion = questions[randomNum];
-   // randomQuestion.length = questions.length;
-   // finalQuestion = randomNum.length;
     return randomQuestion;
 }
 
 let questionCount = 0;
 
-//let randomNum;
-//let finalQuestion = questions.length -1;
-
-//let currentQuestion= 0;
-
 let randomQuestion = 0;
+
 let finalQuestion = questions.length ;
 
 function askQuestion(){
-   
     let q = randomQ();
-    //let q = questions[currentQuestion];
     qImages.innerHTML = "<img src="+ q.imgSrc +">";
     question.innerHTML = "<p>"+ q.question +"</p>";
     opt1.innerHTML = q.opt1;
@@ -646,7 +638,7 @@ foodQuiz.addEventListener("click", chooseFoodQuiz);
 
 objectQuiz.addEventListener("click", chooseObjectQuiz)
 
-//solution.addEventListener("click", checkSelection);
+
 
 function startQuiz(){
     beginQuiz.style.display = "none";

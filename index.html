@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
       integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous" />
-      <!--<link rel="stylesheet" href="sweetalert2.min.css">-->
+     <link rel="stylesheet" href="  https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.0/css/hover-min.css" /> 
     <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
     <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicons/apple-touch-icon.png">
     <link rel="shortcut icon" type="image/png" sizes="16x16" href="assets/images/favicons/favicon-16x16.png">
@@ -33,7 +33,7 @@
             <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
                     <a class="nav-item nav-link active" href="index.html">Home <span class="sr-only">(current)</span></a>
-                    <a class="nav-item nav-link" href="contact.html">Contact</a>
+                    <a class="nav-item nav-link active" href="contact.html">Contact/About</a>
 
                 </div>
             </div>
@@ -42,7 +42,7 @@
         </header>
         <div class="container-fluid ">
             <div class="row justify-content-center">
-                <h1 id="title-h1"  class=" mt-4 pt-5">Child's Play English!</h1>
+                <h1 id="title-h1"  class=" mt-4 pt-5"><a href="index.html">Child's Play English!</a></h1>
                 
             </div>
         </div>
@@ -54,9 +54,9 @@
         <img src="assets/images/misc/astronaut.jpg"  height="400" width="500" class=" " id="astro"/>
         
         <div class="row mx-auto">   
-        <button id="begin-quiz" class="btn  mx-auto p-2">Animals Quiz!</button>
-        <button id="food-quiz" class="btn  mx-auto p-2 ">Food Quiz!</button>
-         <button id="object-quiz" class="btn  mx-auto p-2">Objects Quiz!</button>
+        <button id="begin-quiz" class="btn hvr-sweep-to-right  mx-auto p-2">Animals Quiz!</button>
+        <button id="food-quiz" class="btn hvr-sweep-to-right mx-auto p-2 ">Food Quiz!</button>
+         <button id="object-quiz" class="btn hvr-sweep-to-right mx-auto p-2">Objects Quiz!</button>
          
     </div>
     </div>
@@ -65,10 +65,10 @@
    <div style="display: none"  id="qImages"><img src="#"/></div>
     <div id="solution" style="display: none" class=" mx-auto m-2 p-2">
         <ul class="list-inline row mx-auto">
-        <button class="solutions mx-auto btn options list-inline-item" id="opt1" onclick="checkSelection('opt1')"></button>
-        <button class=" solutions mx-auto btn options list-inline-item" id="opt2" onclick="checkSelection('opt2')"></button>
-        <button class=" solutions mx-auto btn options list-inline-item" id="opt3" onclick="checkSelection('opt3')"></button>
-        <button class=" solutions mx-auto btn options list-inline-item" id="opt4" onclick="checkSelection('opt4')"></button>
+        <button class="solutions mx-auto btn hvr-sweep-to-right list-inline-item" id="opt1" onclick="checkSelection('opt1')"></button>
+        <button class=" solutions mx-auto btn hvr-sweep-to-right list-inline-item" id="opt2" onclick="checkSelection('opt2')"></button>
+        <button class=" solutions mx-auto btn hvr-sweep-to-right list-inline-item" id="opt3" onclick="checkSelection('opt3')"></button>
+        <button class=" solutions mx-auto btn hvr-sweep-to-right list-inline-item" id="opt4" onclick="checkSelection('opt4')"></button>
         </ul>
     </div>
     <div class="selectors row m-2"> <button type="button" style="display: none" class="btn btn-primary btn-lg mt-2 list-inline-item mx-auto p-2" id="prevBtn" onclick="prevQuestion()">Previous</button>

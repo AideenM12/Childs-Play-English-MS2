@@ -8,20 +8,19 @@ body{
 .navbar{
     z-index: 300;
 }
-h1, .navbar-brand, footer{
+h1, h3, .navbar-brand, .nav-item, footer{
     font-family: 'Chewy', sans-serif;
      -webkit-text-stroke: 0.5px  #fffffc;
     
 }
-
+/*.nav-item{
+    font-weight: 600;
+    color: #001011;
+}*/
 .nav-color{
     background-color: #009bf5;
 }
-/*.jb-bg{
-    background-color: #d81159;
-    margin-bottom: 0;
-    
-}*/
+
 .btn{
     background-color: #fffffc;
     border: 2px solid #001011;
@@ -42,14 +41,17 @@ footer{
     float: right;
     font-size: 30px;
 }
-.icons > a{
+ a{
     color: #001011;
      -webkit-text-stroke: 0.5px  #fffffc;
 }
-.icons > a:hover{
+ a:hover{
     color: #fffffc;
      -webkit-text-stroke: 0.5px  #001011;
+     text-decoration: none;
 }
+
+
 #astro{
     border-radius: 5%;
     border: 10px solid #fffffc;
@@ -58,12 +60,15 @@ footer{
   animation-duration: 2s;
 }
 #astro404{
+    border-radius: 5%;
+    border: 10px solid #fffffc;
     margin-bottom: 10px;
-    animation: slideInRight; /* referring directly to the animation's @keyframe declaration */
+    animation: slideInRight; 
   animation-duration: 2s;
 }
 .btn-404{
     color: #001011;
+    display: block;
 }
 .solutions{
     
@@ -122,9 +127,29 @@ footer{
 #solution{
     margin: 30px;
 }
+.hvr-sweep-to-right:before {
+    background: rgba(0, 155, 245, 0.8);
+    
+}
+
 .btn{
     animation: slideInRight; /* referring directly to the animation's @keyframe declaration */
   animation-duration: 2s;
+}
+.contact-form{
+    width: 75%;
+    background-color: #d81159;
+    clear: both;
+    float: none;
+    border-radius: 5%;
+     border: 10px solid #fffffc;
+}
+.contact-btn{
+    display: block;
+    float: none;
+	clear: both;
+	margin-left: auto;
+	margin-right: auto;
 }
 @media only screen and (min-width: 577px) and (max-width:992px) {
      footer{
@@ -157,7 +182,7 @@ footer{
     display: inline;
     margin: 10px;
     font-weight: 700;
-    font-size: 20px;
+    
     }
     #qImages > img{
         width: 300px;
@@ -173,9 +198,4 @@ footer{
     font-size: 30px;
     margin-bottom: 0;
 }
-/*.options{
-    width:30px;
-    height: 30px;
-    font-size: 18px;
-}*/
 }

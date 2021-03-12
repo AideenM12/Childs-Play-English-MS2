@@ -72,13 +72,15 @@ a:hover {
 	animation-duration: 2s;
 }
 
-.btn-404 {
+#contact-btn,.btn-404 {
 	color: #001011;
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
-	margin-bottom: 20px;
+    margin-bottom: 20px;
+    -webkit-text-stroke: #001011;
 }
+
 
 .solutions {
 	width: 150px;
@@ -120,7 +122,8 @@ a:hover {
 	font-weight: 400;
 	margin-top: 100px;
 	font-family: 'Chewy', sans-serif;
-	font-size: 30px;
+    font-size: 30px;
+    -webkit-text-stroke: 0.5px #fffffc;
 }
 
 #qImages {

@@ -490,14 +490,25 @@ let objectQuestions = [{
 
 ];
 
+/*var chooseName = function () {
+    var unique = true;
+    num = Math.floor(Math.random() * a.length - 5);
+    name = a.splice(num,1);
+    a.push(name);
+}*/
+
 function randomQ() {
 
 	let randomNum = Math.floor(Math.random() * questions.length);
 	console.log(randomNum)
 	currentQuestionIndex = randomNum;
-	randomQuestion = questions[randomNum];
-	return randomQuestion;
+    randomQuestion = questions[randomNum];
+    //let index = randomQuestion.indexOf();
+   // let removed = questions.splice(randomNum, 1);
+    return randomQuestion;
 }
+
+
 
 let questionCount = 0;
 
@@ -506,16 +517,31 @@ let randomQuestion = 0;
 let finalQuestion = questions.length;
 
 function askQuestion() {
-	let q = randomQ();
+    let q = randomQ();
+    
 	qImages.innerHTML = "<img src=" + q.imgSrc + ">";
 	question.innerHTML = "<p>" + q.question + "</p>";
 	opt1.innerHTML = q.opt1;
 	opt2.innerHTML = q.opt2;
 	opt3.innerHTML = q.opt3;
 	opt4.innerHTML = q.opt4;
-	changeBackground();
-
+    changeBackground();
+   
+   // noRepeat(questions)
+    
 }
+
+/*function noRepeat(questions){
+    let duplicate = questions.slice(0);
+    return fuction(){
+        if(duplicate.length < 1){
+            duplicate = questions.slice(0)}
+            var index = Math.floor(Math.random() * duplicate.length);
+    var item = duplicate[index];
+    duplicate.splice(index, 1);
+    return item;
+    }
+}*/
 
 function prevQuestion() {
 	if (currentQuestionIndex <= 0) randomQuestion = questions.length;
@@ -577,7 +603,8 @@ function checkSelection(solutions) {
 		});
 		randomQuestion++
 		askQuestion();
-		questionCount++
+        questionCount++
+         
 	} else if (solutions != questions[currentQuestionIndex].correct) {
 		swal.fire({
 			showClass: {

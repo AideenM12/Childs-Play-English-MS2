@@ -45,7 +45,7 @@ function changeBackground() {
 	$('body').css("background-color", colorArray[randColor]);
 }
 
-let questions = [{
+const questions = [{
 		question: "What animal is this?",
 		imgSrc: "assets/images/animals/unicorn.jpg",
 		opt1: "A Unicorn",
@@ -490,12 +490,6 @@ let objectQuestions = [{
 
 ];
 
-/*var chooseName = function () {
-    var unique = true;
-    num = Math.floor(Math.random() * a.length - 5);
-    name = a.splice(num,1);
-    a.push(name);
-}*/
 
 function randomQ() {
 
@@ -655,6 +649,9 @@ beginQuiz.addEventListener("click", startQuiz);
 foodQuiz.addEventListener("click", chooseFoodQuiz);
 
 objectQuiz.addEventListener("click", chooseObjectQuiz)
+
+
+
 
 
 function startQuiz() {

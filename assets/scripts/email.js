@@ -6,18 +6,49 @@ function sendMail(contactForm){
     })
     .then(
         function response(){
+        Swal.fire({
+  title: 'Custom animation with Animate.css',
+  showClass: {
+    popup: 'animate__animated animate__fadeInDown'
+  },
+  hideClass: {
+    popup: 'animate__animated animate__fadeOutUp'
+  }
+})
+     
+        
+    }.then(function(){
+      location.replace("index.html")}),
+    
+
+    
+    
+    function error(){
+        console.log("FAILED", error)
+    });
+    return false;
+}
+
+      
+
+
+
+
+
+  /*.then(
+        function response(){
             console.log("SUCCESS", response)
         },
         function error(){
             console.log("FAILED", error)
         });
 
-        return false;
-        
+        return false;       
 
 
-}
-document.getElementById('contact-btn').onclick = function(){
+}*/
+
+/*document.getElementById('contact-btn').onclick = function(){
     Swal.fire({
   title: 'Custom animation with Animate.css',
   showClass: {
@@ -34,7 +65,7 @@ document.getElementById('contact-btn').onclick = function(){
  
             
 
-     /* let contactBtn = document.getElementById("contact-btn");
+      let contactBtn = document.getElementById("contact-btn");
       
       contactBtn.addEventListener("click",resetForm);
 
@@ -45,4 +76,5 @@ document.getElementById('contact-btn').onclick = function(){
            $(document).on('click', "#contact-btn", function() {
 		// Reset the form
 		document.getElementById('contactUs').reset();
-	})*/
+    })
+    */

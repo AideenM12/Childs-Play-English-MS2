@@ -499,7 +499,9 @@ function randomQ() {
     randomQuestion = questions[randomNum];
     //let index = randomQuestion.indexOf();
    // let removed = questions.splice(randomNum, 1);
+
     return randomQuestion;
+    randomQuestion.splice();
 }
 
 

@@ -45,7 +45,7 @@ function changeBackground() {
 	$('body').css("background-color", colorArray[randColor]);
 }
 
-const questions = [{
+let questions = [{
 		question: "What animal is this?",
 		imgSrc: "assets/images/animals/unicorn.jpg",
 		opt1: "A Unicorn",
@@ -490,6 +490,7 @@ let objectQuestions = [{
 
 ];
 
+let usedQuestions = [];
 
 function randomQ() {
 
@@ -499,9 +500,15 @@ function randomQ() {
     randomQuestion = questions[randomNum];
     //let index = randomQuestion.indexOf();
    // let removed = questions.splice(randomNum, 1);
-
+    if (!usedQuestions.includes(randomQuestion)) { // If randomQuestion is not in usedQuestions, it shows
+        console.log(randomQuestion);
+        usedQuestions.push(randomQuestion); // Then, the question is put in the array
+    } else {
+        randomQ();
+   // return randomQuestion;
+   // randomQuestion.splice();
+    }
     return randomQuestion;
-    randomQuestion.splice();
 }
 
 

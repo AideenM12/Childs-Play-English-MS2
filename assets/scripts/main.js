@@ -11,6 +11,8 @@ const question = document.getElementById("question");
 
 const qImages = document.getElementById("qImages");
 
+let counter = document.getElementById("counter");
+
 const opt1 = document.getElementById("opt1");
 const opt2 = document.getElementById("opt2");
 const opt3 = document.getElementById("opt3");
@@ -59,38 +61,7 @@ function askQuestion() {
 
 
 
-/*function prevQuestion() {
-	if (currentQuestionIndex <= 0) randomQuestion = questions.length;
-	randomQuestion--;
-	return askQuestion();
-}
 
-function nextQuestion() {
-	if (currentQuestionIndex < finalQuestion) {
-		randomQuestion++
-		return askQuestion();
-
-	} else {
-		swal.fire({
-			showClass: {
-				popup: 'animate__animated animate__swing'
-			},
-			hideClass: {
-				popup: 'animate__animated animate__backOutRight'
-			},
-			text: 'Game Over! Great Work!',
-			confirmButtonText: 'Okay',
-			confirmButtonColor: '#fffffc',
-			imageUrl: 'assets/images/misc/astronaut.jpg',
-			imageWidth: 200,
-			imageHeight: 300,
-			imageAlt: 'Custom image',
-			background: '#009bf5',
-		}).then(function () {
-			location.reload(); //Reload function found on stack overflow
-		});
-	}
-}*/
 
 
 function chooseFoodQuiz() {
@@ -196,9 +167,20 @@ function checkSelection(solutions) {
 		});
 
 	} else {
-		nextQuestion();
+		location.reload();
 	}
 
+}
+
+
+function progressCounter(){
+    let progressCount = "1";
+    if(progressCount <= questionCount){
+        progressCount++;
+        counter.innerHTML =
+        "<div class='mx-auto' id='counter'>" + progessCount + "</div>";
+        
+    }
 }
 
 
@@ -219,5 +201,6 @@ function startQuiz() {
 	qImages.style.display = "block";
 	solution.style.display = "inline";
 	nxtBtn.style.display = "inline";
-	prevBtn.style.display = "inline";
+    prevBtn.style.display = "inline";
+    progressCounter();
 }

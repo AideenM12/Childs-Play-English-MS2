@@ -21,22 +21,10 @@ const nxtBtn = document.getElementById("nxtBtn");
 const prevBtn = document.getElementById("prevBtn");
 let currentQuestionIndex;
 
+let usedQuestions = [];
 
-function chooseFoodQuiz() {
-	$(foodQuiz).click()
-	questions = foodQuestions;
-	finalQuestion = foodQuestions.length - 1;
-	startQuiz();
-	askQuestion();
-}
 
-function chooseObjectQuiz() {
-	$(objectQuiz).click()
-	questions = objectQuestions;
-	finalQuestion = objectQuestions.length - 1;
-	startQuiz();
-	askQuestion();
-}
+
 //Found on codepen
 function changeBackground() {
 	let colorArray = ["#ffadad", "#ffd6a5", "#fdffb6", "#caffbf", "#9bf6ff", "#a0c4ff", "#bdb2ff", "#ffc6ff", "#fffffc"]
@@ -45,21 +33,9 @@ function changeBackground() {
 }
 
 
-let usedQuestions = [];
 
-function randomQuiz() {
-    let randomNum = Math.floor(Math.random() * questions.length);
-	console.log(randomNum)
-	currentQuestionIndex = randomNum;
-    randomQuestion = questions[randomNum];
-    if (!usedQuestions.includes(randomQuestion)) { // If randomQuestion is not in usedQuestions, it shows
-        console.log(randomQuestion);
-        usedQuestions.push(randomQuestion); // Then, the question is put in the array
-    } else {
-        randomQuiz();
-    }
-    return randomQuestion;
-}
+
+
 
 
 let questionCount = 0;
@@ -115,6 +91,41 @@ function nextQuestion() {
 }*/
 
 
+function chooseFoodQuiz() {
+    $(foodQuiz).click();
+    
+    questions = foodQuestions;
+    
+	finalQuestion = foodQuestions.length - 1;
+    startQuiz();
+   
+    askQuestion();
+      
+}
+
+function chooseObjectQuiz() {
+	$(objectQuiz).click();
+	questions = objectQuestions;
+	finalQuestion = objectQuestions.length - 1;
+	startQuiz();
+	askQuestion();
+}
+
+function randomQuiz() {
+    let randomNum = Math.floor(Math.random() * questions.length);
+	console.log(randomNum);
+	currentQuestionIndex = randomNum;
+    randomQuestion = questions[randomNum];
+    if (!usedQuestions.includes(randomQuestion)) { // If randomQuestion is not in usedQuestions, it shows
+        console.log(randomQuestion);
+        usedQuestions.push(randomQuestion); // Then, the question is put in the array
+    } else {
+        randomQuiz();
+    }
+    return randomQuestion;
+}
+
+
 function checkSelection(solutions) {
 	if (solutions == questions[currentQuestionIndex].correct && questionCount < 12) {
 		swal.fire({
@@ -160,7 +171,7 @@ function checkSelection(solutions) {
 			imageAlt: 'Custom image',
 			background: '#d00000',
 		})
-	} else if (questionCount == 12) {
+	} else if(questionCount == 12) {
 		swal.fire({
 			showClass: {
 				popup: 'animate__animated animate__swing'

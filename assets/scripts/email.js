@@ -3,8 +3,27 @@ function sendMail(contactForm){
         "from_name": contactForm.name.value,
         "from_email": contactForm.emailaddress.value,
         "message": contactForm.textarea.value
-    })
-    .then(
+    }).then(
+        function response(){
+            console.log("SUCCESS", response)
+            document.getElementById("contactUs").reset();
+        },
+        function error(){
+            console.log("FAILED", error)
+        });
+
+        return false;       
+
+
+}
+
+
+
+
+
+
+
+   /* .then(
         function response(){
         Swal.fire({
   title: 'Custom animation with Animate.css',
@@ -27,7 +46,7 @@ function sendMail(contactForm){
         console.log("FAILED", error)
     });
     return false;
-}
+}*/
 
       
 

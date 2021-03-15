@@ -45,6 +45,7 @@ let randomQuestion = 0;
 let finalQuestion = questions.length;
 
 function askQuestion() {
+
     let q = randomQuiz();
     qImages.innerHTML = "<img src=" + q.imgSrc + ">";
 	question.innerHTML = "<p>" + q.question + "</p>";
@@ -54,6 +55,7 @@ function askQuestion() {
 	opt4.innerHTML = q.opt4;
     changeBackground();     
 }
+
 
 
 
@@ -99,7 +101,7 @@ function chooseFoodQuiz() {
 	finalQuestion = foodQuestions.length - 1;
     startQuiz();
    
-    askQuestion();
+    
       
 }
 
@@ -108,7 +110,7 @@ function chooseObjectQuiz() {
 	questions = objectQuestions;
 	finalQuestion = objectQuestions.length - 1;
 	startQuiz();
-	askQuestion();
+	
 }
 
 function randomQuiz() {
@@ -148,7 +150,8 @@ function checkSelection(solutions) {
 			imageWidth: 200,
 			imageHeight: 300,
 			imageAlt: 'Custom image',
-			background: '#71f909',
+            background: '#71f909',
+            heightAuto: false,
 		});
 		randomQuestion++
 		askQuestion();

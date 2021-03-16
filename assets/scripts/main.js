@@ -11,7 +11,8 @@ const question = document.getElementById("question");
 
 const qImages = document.getElementById("qImages");
 
-let counter = document.getElementById("counter");
+//let counter = document.getElementById("counter");
+
 
 const opt1 = document.getElementById("opt1");
 const opt2 = document.getElementById("opt2");
@@ -24,7 +25,6 @@ const prevBtn = document.getElementById("prevBtn");
 let currentQuestionIndex;
 
 let usedQuestions = [];
-
 
 
 //Found on codepen
@@ -55,7 +55,10 @@ function askQuestion() {
 	opt2.innerHTML = q.opt2;
 	opt3.innerHTML = q.opt3;
 	opt4.innerHTML = q.opt4;
-    changeBackground();     
+    changeBackground();    
+   
+   //document.getElementById("counter").innerHTML= `${questionCount}/12`;
+  
 }
 
 
@@ -127,6 +130,9 @@ function checkSelection(solutions) {
 		randomQuestion++
 		askQuestion();
         questionCount++
+        progressCounter();
+        
+        
          
 	} else if (solutions != questions[currentQuestionIndex].correct) {
 		swal.fire({
@@ -172,16 +178,13 @@ function checkSelection(solutions) {
 
 }
 
+let numbersArray = [1, 2, 3, 4,] ;
 
 function progressCounter(){
-    let progressCount = "1";
-    if(progressCount <= questionCount){
-        progressCount++;
-        counter.innerHTML =
-        "<div class='mx-auto' id='counter'>" + progessCount + "</div>";
-        
+
+     return document.getElementById("counter").innerHTML= `${questionCount}/12`;
     }
-}
+
 
 
 beginQuiz.addEventListener("click", startQuiz);
@@ -195,12 +198,13 @@ function startQuiz() {
 	beginQuiz.style.display = "none";
 	welcomeQuiz.style.display = "none";
 	titleHeader.style.display = "none";
-	askQuestion();
+    askQuestion();
+    progressCounter();
     quiz.style.display = "block";
 	question.style.display = "inline";
 	qImages.style.display = "block";
 	solution.style.display = "inline";
-	nxtBtn.style.display = "inline";
-    prevBtn.style.display = "inline";
-    progressCounter();
+    counter.style.display = "inline";
+    
+    
 }

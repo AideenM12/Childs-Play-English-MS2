@@ -36,10 +36,10 @@ The footer code was used twice to alter the display on different screen sizes.
 ### Design
 **Colours**
 
-<img src="documentation/ms2pastels.png" width="450" height="250" alt="milestone palette one">
+<img src="documentation/doc-images/ms2pastels.png" width="450" height="250" alt="milestone palette one">
 
 
-<img src="documentation/ms2bold.png" width="450" height="250" alt="milestone palette two">
+<img src="documentation/doc-images/ms2bold.png" width="450" height="250" alt="milestone palette two">
 
 
 

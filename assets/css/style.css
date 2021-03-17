@@ -5,12 +5,15 @@ body {
 	font-family: 'Chilanka', sans-serif;
 }
 
+
+/*-------------------------------------Headings/Navigation---------------*/
+
 .navbar {
 	z-index: 300;
 }
 
 h1,
-h3,
+h2,
 .navbar-brand,
 .nav-item,
 footer {
@@ -22,24 +25,19 @@ footer {
 	background-color: #009bf5;
 }
 
-.btn {
-	background-color: #fffffc;
-	border: 2px solid #001011;
-	font-weight: 600;
-	color: #001011;
-}
+
+/*---------------------------------Footer and Social Media Icons-----*/
 
 footer {
 	width: 100%;
 	height: auto;
-    position: relative;
-    bottom: 0;
+	position: relative;
+	bottom: 0;
 	background-color: #d81159;
 	overflow: hidden;
-	
 	padding: 0;
-    font-size: 25px;
-    margin-top: 15px;
+	font-size: 25px;
+	margin-top: 15px;
 }
 
 .icons {
@@ -58,6 +56,10 @@ a:hover {
 	text-decoration: none;
 }
 
+
+/*-----------------------------Images-----------*/
+
+#astro404,
 #astro {
 	border-radius: 5%;
 	border: 10px solid #fffffc;
@@ -66,23 +68,41 @@ a:hover {
 	animation-duration: 2s;
 }
 
-#astro404 {
+#qImages {
+	width: 100%;
+}
+
+#qImages>img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
 	border-radius: 5%;
 	border: 10px solid #fffffc;
-	margin-bottom: 10px;
-	animation: slideInRight;
+	width: 500px;
+	max-height: 400px;
+	animation: slideInLeft;
 	animation-duration: 2s;
 }
 
-#contact-btn,.btn-404 {
+
+/*---------------------Buttons, Questions and Counter -------*/
+
+#contact-btn,
+.btn-404 {
 	color: #001011;
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
-    margin-bottom: 20px;
-    -webkit-text-stroke: #001011;
+	margin-bottom: 20px;
+	-webkit-text-stroke: #001011;
 }
 
+.btn {
+	background-color: #fffffc;
+	border: 2px solid #001011;
+	font-weight: 600;
+	color: #001011;
+}
 
 .solutions {
 	width: 150px;
@@ -95,30 +115,25 @@ a:hover {
 	border-radius: 10%;
 	clear: both;
 	animation: slideInRight;
-	/* referring directly to the animation's @keyframe declaration */
-    animation-duration: 2s;
-    margin-top: 20px;
-    margin-bottom: 20px;
+	animation-duration: 2s;
+	margin-top: 20px;
+	margin-bottom: 20px;
 }
 
 #opt1 {
-    background-color: #ffd6a5;
-    
+	background-color: #ffd6a5;
 }
 
 #opt2 {
-    background-color: #ffadad;
-    
+	background-color: #ffadad;
 }
 
 #opt3 {
-    background-color: #caffbf;
-    
+	background-color: #caffbf;
 }
 
 #opt4 {
-    background-color: #9bf6ff;
-    
+	background-color: #9bf6ff;
 }
 
 #question {
@@ -130,34 +145,16 @@ a:hover {
 	font-weight: 400;
 	margin-top: 100px;
 	font-family: 'Chewy', sans-serif;
-    font-size: 30px;
-    -webkit-text-stroke: 0.5px #fffffc;
+	font-size: 30px;
+	-webkit-text-stroke: 0.5px #fffffc;
 }
 
-#qImages {
-	width: 100%;
-	/*margin-top: 5%;*/
-}
-
-#qImages>img {
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
+#counter {
+	font-size: 30px;
+	font-weight: 600;
 	border-radius: 5%;
-	border: 10px solid #fffffc;
-	width: 500px;
-	max-height: 400px;
-	animation: slideInLeft;
-	/* referring directly to the animation's @keyframe declaration */
-	animation-duration: 2s;
-}
-
-#counter{
-    font-size: 30px;
-    font-weight: 600;
-    border-radius: 5%;
-    border: 2px solid #001011 ;
-    padding: 5px;
+	border: 2px solid #001011;
+	padding: 5px;
 }
 
 .hvr-sweep-to-right:before {
@@ -166,9 +163,11 @@ a:hover {
 
 .btn {
 	animation: slideInRight;
-	/* referring directly to the animation's @keyframe declaration */
 	animation-duration: 2s;
 }
+
+
+/*------------------------------Contact Page------------*/
 
 .contact-form {
 	width: 75%;
@@ -177,6 +176,7 @@ a:hover {
 	float: none;
 	border-radius: 5%;
 	border: 10px solid #fffffc;
+	color: #fffffc;
 }
 
 .contact-btn {
@@ -187,66 +187,91 @@ a:hover {
 	margin-right: auto;
 }
 
-#thanks{
-     font-size: 15px;
-    font-weight: 600;
-    
-    border: 2px solid #001011 ;
-    padding: 5px;
+#thanks {
+	font-size: 15px;
+	font-weight: 600;
+	border: 2px solid #001011;
+	padding: 5px;
 }
 
 @media only screen and (min-width: 577px) and (max-width:992px) {
-	footer {
+   #welcome-quiz,
+   #start-btns{
+       padding: 50px;
+   }
+
+  	footer {
 		font-family: 'Chewy', san-serif;
-        font-size: 30px;
-       position: relative;
-       margin-top: 15px;
-       padding: 0;
-        
+		font-size: 30px;
+		position: absolute;
+		margin-top: 15px;
+		padding: 0;
 	}
 }
 
 @media only screen and (max-width: 576px) {
+    /*---------------------------Footer and Icons--------*/
+    
 	footer {
 		font-family: 'Chewy', san-serif;
 		font-size: 30px;
-        position: relative;
-	}
+		position: relative;
+    }
+    
 	.icons {
 		display: inline-flex;
 		flex: 100%;
 		line-height: 30px;
 		word-spacing: 60px;
-	}
+    }
+    
+    /*------------------------Buttons and Quiz Content------------*/
+
+   #welcome-quiz,
+   #start-btns{
+       padding: 20px;
+   }
+   
 	.solutions {
 		height: 40px;
 		width: 80px;
 		font-size: 2.5vw;
 		padding: 0
     }
-    #counter, #thanks{
-        font-size: 3vw;
+    
+	#counter,
+	#thanks {
+		font-size: 3vw;
     }
+    
 	.btn {
 		display: inline;
 		margin: 10px;
 		font-weight: 700;
-	}
-	#qImages>img {
-		width: 300px;
-		margin-top: 20px;
-	}
-	#astro {
-		width: 300px;
-		position: relative;
-	}
+    }
+    
 	#question>p {
 		font-weight: 600;
 		margin-top: 80px;
 		font-size: 30px;
 		margin-bottom: 0;
     }
-    .contact-form{
-        width: 100%;
+    
+    /*-----------------Images------------*/
+    
+	#qImages>img {
+		width: 300px;
+		margin-top: 20px;
     }
+    
+	#astro {
+		width: 300px;
+		position: relative;
+    }
+    
+    /*--------------------Contact Page---------*/
+    
+	.contact-form {
+		width: 100%;
+	}
 }

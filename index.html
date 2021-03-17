@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Children's esl resources">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
       integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous" />
@@ -18,7 +19,7 @@
   </head>
   <body >
     <header>
-      <!--------------Navbar taken from Bootstrap Documentation------------>
+      <!--------------------------------------Navigation------------------------------------------------->
       <nav class="navbar navbar-expand-lg navbar-light nav-color position-fixed w-100 ">
         <a class="navbar-brand" href="index.html">Child's Play English!</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
@@ -33,6 +34,8 @@
         </div>
       </nav>
     </header>
+    <!------------------------------------------------Quiz Main Body------------------------------------------------> 
+    <!------------------------------Landing Page Content----------------------------------->
     <div class="container-fluid ">
       <div class="row justify-content-center">
         <h1 id="title-h1"  class=" mt-4 pt-5"><a href="index.html">Child's Play English!</a></h1>
@@ -40,16 +43,17 @@
     </div>
     <div class="container-fluid ">
       <div id="welcome-quiz" class=" text-center">
-        <img src="assets/images/misc/astronaut.jpg"  height="400" width="500" class=" " id="astro"/>
-        <div class="row mx-auto">   
+        <img src="assets/images/misc/astronaut.jpg"  height="400" width="500" class=" " id="astro" alt="astronaut"/>
+        <div class="row mx-auto" id="start-btns">   
           <button id="begin-quiz" class="btn hvr-sweep-to-right  mx-auto p-2">Animals Quiz!</button>
           <button id="food-quiz" class="btn hvr-sweep-to-right mx-auto p-2 ">Food Quiz!</button>
           <button id="object-quiz" class="btn hvr-sweep-to-right mx-auto p-2">Objects Quiz!</button>
         </div>
       </div>
+      <!----------------------------------------------Quiz Content------------------------------------------->
       <div id="quiz" style="display: none"></div>
       <div id="question" style="display: none" class="text-center"></div>
-      <div style="display: none"  id="qImages"><img src="#"/></div>
+      <div style="display: none"  id="qImages"><img src="#" alt="quiz-image"/></div>
       <div id="solution" style="display: none" class=" mx-auto m-2 p-2">
         <ul class="list-inline row mx-auto">
           <button class="solutions mx-auto btn list-inline-item" id="opt1" onclick="checkSelection('opt1')"></button>
@@ -59,19 +63,26 @@
         </ul>
       </div>
       <div class="row">
-          <div class="card text-center mx-auto">
-      <div class="" id="counter" style="display: none">1/12</div>
-      </div>
+        <div class="card text-center mx-auto">
+          <div id="counter" style="display: none">1/12</div>
+        </div>
       </div>
     </div>
-    <footer class="no-gutters">
+    <!----------------------------------------------------------Footer------------------------------------------------->
+    <footer>
       <div class="container-fluid justify-content-between d-none d-sm-none d-md-none d-lg-block">
         <div class="row">
           <p class="col-8 mt-2">Childs Play English &copy</p>
           <ul class="list-inline col-4 mt-2 ">
-            <li class="list-inline-item icons"><a href="https://www.facebook.com/"><i class="fab fa-facebook mr-3"></i></a></li>
-            <li class="list-inline-item icons"><a href="https://www.instagram.com/"><i class="fab fa-instagram mr-3"></i></a></li>
-            <li class="list-inline-item icons"><a href="https://www.twitter.com/"><i class="fab fa-twitter mr-3"></i></a></li>
+            <li class="list-inline-item icons"><a href="https://www.facebook.com/"><i class="fab fa-facebook mr-3">
+              <span class="sr-only">Facebook</span></i></a>
+            </li>
+            <li class="list-inline-item icons"><a href="https://www.instagram.com/"><i class="fab fa-instagram mr-3">
+              <span class="sr-only">Instagram</span></i></a>
+            </li>
+            <li class="list-inline-item icons"><a href="https://www.twitter.com/"><i class="fab fa-twitter mr-3">
+              <span class="sr-only">Twitter</span></i></a>
+            </li>
           </ul>
         </div>
       </div>
@@ -79,19 +90,22 @@
         <div class="row justify-content-center align-self-center p-2">  Childs Play English &copy</div>
         <div class="row justify-content-center align-self-center p-2">
           <ul class="list-inline">
-            <li class="list-inline-item icons "><a href="https://www.facebook.com/" rel="noopener" target="_blank"><i class="fab fa-facebook mr-3"></i></a></li>
-            <li class="list-inline-item icons "> <a href="https://www.instagram.com/" rel="noopener" target="_blank"><i class="fab fa-instagram mr-3"></i></a></li>
-            <li class="list-inline-item icons "> <a href="https://www.twitter.com/" rel="noopener" target="_blank"><i class="fab fa-twitter mr-3"></i></a></li>
+            <li class="list-inline-item icons "><a href="https://www.facebook.com/" rel="noopener" target="_blank">
+              <i class="fab fa-facebook mr-3"><span class="sr-only">Facebook</span></i></a>
+            </li>
+            <li class="list-inline-item icons "> <a href="https://www.instagram.com/" rel="noopener" target="_blank">
+              <i class="fab fa-instagram mr-3"><span class="sr-only">Instagram</span></i></a>
+            </li>
+            <li class="list-inline-item icons "> <a href="https://www.twitter.com/" rel="noopener" target="_blank">
+              <i class="fab fa-twitter mr-3"><span class="sr-only">Twitter</span></i></a>
+            </li>
           </ul>
         </div>
       </div>
     </footer>
-    
-     <script src="assets/scripts/quiz.js"></script>
+    <script src="assets/scripts/quiz.js"></script>
     <script src="assets/scripts/main.js"></script>
-   
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
-   <!-- <script src="https://kit.fontawesome.com/38072707df.js" crossorigin="anonymous"></script> -->
   </body>
 </html>

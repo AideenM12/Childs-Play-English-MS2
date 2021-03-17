@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Children's esl resources">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
       integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous" />
@@ -23,7 +24,7 @@
   </head>
   <body>
     <header>
-      <!--------------Navbar taken from Bootstrap Documentation------------>
+      <!--------------------------------------Navigation------------------------------------------------->
       <nav class="navbar navbar-expand-lg navbar-light nav-color ">
         <a class="navbar-brand" href="index.html">Child's Play English!</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
@@ -32,7 +33,7 @@
         </button>
         <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
           <div class="navbar-nav">
-            <a class="nav-item nav-link active" href="index.html">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-item nav-link active" href="index.html">Home <span class="sr-only"></span></a>
             <a class="nav-item nav-link active" href="contact.html">Contact/About</a>
           </div>
         </div>
@@ -43,9 +44,10 @@
         </div>
       </div>
     </header>
+    <!---------------------------------------About section and Contact form--------------------------------------->
     <div class="text-center">
-      <img src="assets/images/misc/404astro.jpg" class="img-fluid" height="200" width="300" id="astro404" alt="astro404"/>
-      <h3>About</h3>
+      <img src="assets/images/misc/404astro.jpg" class="img-fluid" height="200" width="300" id="astro404" alt="astronaut"/>
+      <h2>About</h2>
       <p>Child's play English is a simple website designed to help younger learners learn basic English vocabulary in a fun stress free way.</p>
       <p>If you have any suggestions for the site contact us below!</p>
     </div>
@@ -71,20 +73,29 @@
       </div>
     </div>
     <div class="container">
-    <div class="row">
+      <div class="row">
         <div class="card text-center mx-auto">
-    <div id="thanks"  style="display: none"><p id="thank-you-msg"></p></div>
+          <div id="thanks"  style="display: none">
+            <p id="thank-you-msg"></p>
+          </div>
+        </div>
+      </div>
     </div>
-    </div>
-    </div>
+    <!----------------------------------------------------------Footer------------------------------------------------->
     <footer>
       <div class="container-fluid justify-content-between d-none d-sm-none d-md-none d-lg-block">
         <div class="row">
           <p class="col-8 mt-2">Childs Play English &copy</p>
           <ul class="list-inline col-4 mt-2">
-            <li class="list-inline-item icons"><a href="https://www.facebook.com/"><i class="fab fa-facebook mr-3"></i></a></li>
-            <li class="list-inline-item icons"><a href="https://www.instagram.com/"><i class="fab fa-instagram mr-3"></i></a></li>
-            <li class="list-inline-item icons"><a href="https://www.twitter.com/"><i class="fab fa-twitter mr-3"></i></a></li>
+            <li class="list-inline-item icons"><a href="https://www.facebook.com/"><i class="fab fa-facebook mr-3"><span class="sr-only">Facebook</span></i>
+              </a>
+            </li>
+            <li class="list-inline-item icons"><a href="https://www.instagram.com/"><i class="fab fa-instagram mr-3"><span class="sr-only">Instagram</span></i>
+              </a>
+            </li>
+            <li class="list-inline-item icons"><a href="https://www.twitter.com/"><i class="fab fa-twitter mr-3"><span class="sr-only">Twitter</span></i>
+              </a>
+            </li>
           </ul>
         </div>
       </div>
@@ -92,16 +103,21 @@
         <div class="row justify-content-center align-self-center p-2">  Childs Play English &copy</div>
         <div class="row justify-content-center align-self-center p-2">
           <ul class="list-inline">
-            <li class="list-inline-item icons "><a href="https://www.facebook.com/" rel="noopener" target="_blank"><i class="fab fa-facebook mr-3"></i></a></li>
-            <li class="list-inline-item icons "> <a href="https://www.instagram.com/" rel="noopener" target="_blank"><i class="fab fa-instagram mr-3"></i></a></li>
-            <li class="list-inline-item icons "> <a href="https://www.twitter.com/" rel="noopener" target="_blank"><i class="fab fa-twitter mr-3"></i></a></li>
+            <li class="list-inline-item icons "><a href="https://www.facebook.com/" rel="noopener" target="_blank">
+              <i class="fab fa-facebook mr-3"><span class="sr-only">Facebook</span></i></a>
+            </li>
+            <li class="list-inline-item icons "> <a href="https://www.instagram.com/" rel="noopener" target="_blank">
+              <i class="fab fa-instagram mr-3"><span class="sr-only">Instagram</span></i></a>
+            </li>
+            <li class="list-inline-item icons "> <a href="https://www.twitter.com/" rel="noopener" target="_blank">
+              <i class="fab fa-twitter mr-3"><span class="sr-only">Twitter</span></i></a>
+            </li>
           </ul>
         </div>
       </div>
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="assets/scripts/email.js"></script>
-    <!--<script src="assets/scripts/main.js"></script>-->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>

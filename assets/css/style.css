@@ -32,12 +32,14 @@ footer {
 footer {
 	width: 100%;
 	height: auto;
-	position: relative;
+    position: relative;
+    bottom: 0;
 	background-color: #d81159;
 	overflow: hidden;
-	padding-bottom: 2vh;
-	padding-top: 1vh;
-	font-size: 25px;
+	
+	padding: 0;
+    font-size: 25px;
+    margin-top: 15px;
 }
 
 .icons {
@@ -94,7 +96,9 @@ a:hover {
 	clear: both;
 	animation: slideInRight;
 	/* referring directly to the animation's @keyframe declaration */
-	animation-duration: 2s;
+    animation-duration: 2s;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 #opt1 {
@@ -148,8 +152,12 @@ a:hover {
 	animation-duration: 2s;
 }
 
-#solution {
-	margin: 30px;
+#counter{
+    font-size: 30px;
+    font-weight: 600;
+    border-radius: 5%;
+    border: 2px solid #001011 ;
+    padding: 5px;
 }
 
 .hvr-sweep-to-right:before {
@@ -179,10 +187,22 @@ a:hover {
 	margin-right: auto;
 }
 
+#thanks{
+     font-size: 15px;
+    font-weight: 600;
+    
+    border: 2px solid #001011 ;
+    padding: 5px;
+}
+
 @media only screen and (min-width: 577px) and (max-width:992px) {
 	footer {
 		font-family: 'Chewy', san-serif;
-		font-size: 30px;
+        font-size: 30px;
+       position: relative;
+       margin-top: 15px;
+       padding: 0;
+        
 	}
 }
 
@@ -190,7 +210,7 @@ a:hover {
 	footer {
 		font-family: 'Chewy', san-serif;
 		font-size: 30px;
-		margin-top: 10px;
+        position: relative;
 	}
 	.icons {
 		display: inline-flex;
@@ -203,7 +223,10 @@ a:hover {
 		width: 80px;
 		font-size: 2.5vw;
 		padding: 0
-	}
+    }
+    #counter, #thanks{
+        font-size: 3vw;
+    }
 	.btn {
 		display: inline;
 		margin: 10px;
@@ -222,5 +245,8 @@ a:hover {
 		margin-top: 80px;
 		font-size: 30px;
 		margin-bottom: 0;
-	}
+    }
+    .contact-form{
+        width: 100%;
+    }
 }

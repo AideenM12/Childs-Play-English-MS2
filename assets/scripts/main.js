@@ -11,7 +11,7 @@ const question = document.getElementById("question");
 
 const qImages = document.getElementById("qImages");
 
-//let counter = document.getElementById("counter");
+
 
 
 const opt1 = document.getElementById("opt1");
@@ -57,7 +57,7 @@ function askQuestion() {
 	opt4.innerHTML = q.opt4;
     changeBackground();    
    
-   //document.getElementById("counter").innerHTML= `${questionCount}/12`;
+  
   
 }
 
@@ -113,11 +113,11 @@ function checkSelection(solutions) {
 			},
 			customClass: {
 				background: '#71f909',
-				textColor: '#000',
+				textColor: '#fffffc',
 			},
 			width: 500,
 			height: 600,
-			text: 'Well Done',
+			text: 'Well Done!',
 			confirmButtonText: 'Cool!',
 			confirmButtonColor: '#009bf5',
 			imageUrl: 'assets/images/misc/littlegirl.jpg',
@@ -125,7 +125,8 @@ function checkSelection(solutions) {
 			imageHeight: 300,
 			imageAlt: 'Custom image',
             background: '#71f909',
-            heightAuto: false,
+          
+            textColor: '#fffffc'
 		});
 		randomQuestion++
 		askQuestion();
@@ -141,7 +142,8 @@ function checkSelection(solutions) {
 			},
 			hideClass: {
 				popup: 'animate__animated animate__backOutRight'
-			},
+            },
+            textColor: '#fffffc',
 			text: 'Uh Oh Try Again!',
 			confirmButtonText: 'Okay',
 			confirmButtonColor: '#009bf5',
@@ -158,7 +160,8 @@ function checkSelection(solutions) {
 			},
 			hideClass: {
 				popup: 'animate__animated animate__backOutRight'
-			},
+            },
+            textColor: '#fffffc',
 			text: 'Game Over! Great Work!',
 			confirmButtonText: 'Okay',
 			confirmButtonColor: '#d81159',
@@ -178,11 +181,11 @@ function checkSelection(solutions) {
 
 }
 
-let numbersArray = [1, 2, 3, 4,] ;
+
 
 function progressCounter(){
 
-     return document.getElementById("counter").innerHTML= `${questionCount}/12`;
+     return document.getElementById("counter").innerHTML= `Score: ${questionCount}/12`;
     }
 
 

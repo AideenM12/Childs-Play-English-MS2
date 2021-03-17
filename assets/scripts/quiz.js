@@ -1,3 +1,5 @@
+//All quiz question arrays are located in this file and are its sole contents
+
 let questions = [{
 		question: "What animal is this?",
 		imgSrc: "assets/images/animals/unicorn.jpg",

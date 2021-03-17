@@ -27,18 +27,12 @@ footer {
 
 
 /*---------------------------------Footer and Social Media Icons-----*/
-
-footer {
-	width: 100%;
-	height: auto;
-	position: relative;
-	bottom: 0;
-	background-color: #d81159;
-	overflow: hidden;
-	padding: 0;
-	font-size: 25px;
-	margin-top: 15px;
+footer{
+    background-color: #d81159;
+    font-size: 25px;
+    bottom: 0;
 }
+
 
 .icons {
 	float: right;
@@ -203,7 +197,6 @@ a:hover {
   	footer {
 		font-family: 'Chewy', san-serif;
 		font-size: 30px;
-		position: absolute;
 		margin-top: 15px;
 		padding: 0;
 	}

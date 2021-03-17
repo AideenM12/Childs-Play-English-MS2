@@ -191,7 +191,7 @@ beginQuiz.addEventListener("click", startQuiz);
 
 foodQuiz.addEventListener("click", chooseFoodQuiz);
 
-objectQuiz.addEventListener("click", chooseObjectQuiz)
+objectQuiz.addEventListener("click", chooseObjectQuiz);
 
 
 function startQuiz() {

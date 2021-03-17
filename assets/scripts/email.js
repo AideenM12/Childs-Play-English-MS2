@@ -17,7 +17,16 @@ function sendMail(contactForm){
 
 }
 
+let contactUs = document.getElementById("contactUs")
 
+contactUs.addEventListener('submit', thankYou);
+
+let thankYouMsg = document.getElementById("thanks");
+
+function thankYou(){
+thankYouMsg.style.display ="inline";
+    document.getElementById("thank-you-msg").innerHTML = "Thank you for contacting us, we will be in touch shortly.";
+}
 
 
 

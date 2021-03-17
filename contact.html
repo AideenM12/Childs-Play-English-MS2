@@ -65,11 +65,12 @@
             <textarea class="form-control" id="textarea" rows="5" required></textarea>
           </div>
           <div class="mx-auto">
-            <button class="btn hvr-sweep-to-right" id="contact-btn" type="submit">Submit</button>
+            <button class="btn hvr-sweep-to-right" id="contact-btn" type="submit" onsubmit="thankYou()">Submit</button>
           </div>
         </form>
       </div>
     </div>
+    <div id="thanks"  style="display: none"><p id="thank-you-msg"></p></div>
     <footer>
       <div class="container-fluid justify-content-between d-none d-sm-none d-md-none d-lg-block">
         <div class="row">

@@ -232,6 +232,7 @@ a:hover {
    #welcome-quiz,
    #start-btns{
        padding: 20px;
+       height: 100vh;
    }
    
 	.solutions {

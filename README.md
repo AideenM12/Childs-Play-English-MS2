@@ -1,4 +1,4 @@
-![Website MockUp](documentation/doc-images/MS2mockup.png)
+![Website MockUp](documentation/doc-images/MS2Mockuppage.png)
 
 The live website can be viewed [here](https://aideenm12.github.io/Childs-Play-English-MS2/)
 
@@ -123,7 +123,7 @@ This project was developed using [Gitpod IDE](https://gitpod.io) and pushed to G
 This project was deployed from the [Github Respository](https://github.com/AideenM12/Galway-Tours-MS1) to GitHub Pages using the following steps:
 
 1. Log into Github.
-2. Select the [AideenM12/Galway-Tours-MS1](https://github.com/AideenM12/Galway-Tours-MS1) respository.
+2. Select the [AideenM12/Galway-Tours-MS1](https://github.com/AideenM12/Childs-Play-English-MS2) respository.
 3. Click the settings tab.
 4. Scroll to the GitHub Pages section of the page.
 5. Under the source heading select the *master* branch option.
@@ -133,12 +133,18 @@ This project was deployed from the [Github Respository](https://github.com/Aidee
 ### Making a clone to run locally
 
 1. Log into GitHub.
-2. Select the [respository](https://github.com/AideenM12/Galway-Tours-MS1).
+2. Select the [respository](https://github.com/AideenM12/Childs-Play-English-MS2).
 3. Click the Code dropdown button next to the green Gitpod button.
 4. Download ZIP file and unpackage locally and open with IDE. Alternatively copy the URL in the HTTPS box.
 5. Open the alternative editor and terminal window.
 6. Type 'git clone' and paste the copied URL.
 7. Press Enter. A local clone will be created.
+
+### How to Fork the respository.
+
+1. Log into GitHub.
+2. In Github go to (https://github.com/AideenM12/Childs-Play-English-MS2).
+3. In the top right hand corner click "Fork".
 
 ## Credits
 

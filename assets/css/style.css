@@ -63,7 +63,8 @@ a:hover {
 }
 
 #qImages {
-	width: 100%;
+    width: 100%;
+    min-height: 25rem;
 }
 
 #qImages>img {
@@ -91,10 +92,13 @@ a:hover {
 	-webkit-text-stroke: #001011;
 }
 
+#welcome-quiz{
+    height: 100vh;
+}
 
-   #start-btns{
-       padding: 50px;
- }
+/*#start-btns{
+    padding: 50px;
+ }*/
 
 .btn {
 	background-color: #fffffc;
@@ -135,14 +139,14 @@ a:hover {
 	background-color: #9bf6ff;
 }
 
-#question {
+/*#question {
 	margin-top: 250px;
 	margin-bottom: 0;
-}
+}*/
 
 #question>p {
 	font-weight: 400;
-	margin-top: 100px;
+	margin-top: 70px;
 	font-family: 'Chewy', sans-serif;
 	font-size: 30px;
 	-webkit-text-stroke: 0.5px #fffffc;
@@ -196,11 +200,15 @@ a:hover {
 @media only screen and (min-width: 577px) and (max-width:992px) {
    #welcome-quiz,
    #start-btns{
-       padding: 80px;
+       padding: 60px;
+   }
+
+   #welcome-quiz{
+       height: auto;
    }
 
    .card{
-    margin-bottom: 80px;
+         margin-bottom: 15vh;
     }
 
   	footer {
@@ -231,10 +239,13 @@ a:hover {
 
    #welcome-quiz,
    #start-btns{
-       padding: 20px;
-       height: 100vh;
+      padding: 0;   
    }
    
+   #welcome-quiz{
+       height: auto;
+   }
+
 	.solutions {
 		height: 40px;
 		width: 80px;
@@ -267,6 +278,10 @@ a:hover {
 	#qImages>img {
 		width: 300px;
 		margin-top: 20px;
+    }
+
+    #qImages{
+        min-height: 20rem;
     }
     
 	#astro {

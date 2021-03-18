@@ -83,7 +83,7 @@
     No issues were detected in any of these browsers at the time of submission.
 
 
-    The below image is an example result of lighthouse testing performed on the index page for mobile with every other test achieving similar results. The lighthouse tool found in Google Dev Tools was used repeatedly throughout the building of the project and was essential in discovering and resolving the issues described below. A lighthouse test was performed on both mobile and desktop for each individual page on the site with links to the full reports of each of these tests found below. The lighthouse tool tested each of the following criteria: performance, accessibility, best practices and SEO of each individual page in both mobile and desktop. Each test resulted in a score of 70 or above for each of the aforementioned criteria.
+    The below image is an example result of lighthouse testing performed on the index page for desktop with every other test achieving similar results. The lighthouse tool found in Google Dev Tools was used repeatedly throughout the building of the project and was essential in discovering and resolving the issues described below. A lighthouse test was performed on both mobile and desktop for each individual page on the site with links to the full reports of each of these tests found below. The lighthouse tool tested each of the following criteria: performance, accessibility, best practices and SEO of each individual page in both mobile and desktop. Each test resulted in a score of 90 or above for desktop criteria and 70 or above for mobile criteria.
 
     <img src="documentation/doc-images/lighthouseMS2.jpg" width="600" height="250">
 
@@ -95,25 +95,53 @@
 
 ## Testing Features
 
-    ### Navigation 
-    * On the home page click the "Child's Play English" header on the top left corner to navigate to the home page.
-    * On the contact page click the "Child's Play English" header on the top left corner to navigate to the home page.
-    * On the 404 page click the "Child's Play English" header on the top left corner to navigate to the home page.
-    * Alternatively click "Home" on the top right corner to navigate to the home page on the home page, contact page and      404 page.
-    * On the home page, contact page and 404 page click "Contact/About" to navigate to the contact page. On mobile this can   be selected from the dropdown menu.
+ ### Navigation 
+   * On the home page click the "Child's Play English" header on the top left corner to navigate to the home page.
+   * On the contact page click the "Child's Play English" header on the top left corner to navigate to the home page.
+   * On the 404 page click the "Child's Play English" header on the top left corner to navigate to the home page.
+   * Alternatively click "Home" on the top right corner to navigate to the home page on the home page, contact page and      404 page.
+   * On the home page, contact page and 404 page click "Contact/About" to navigate to the contact page. On mobile this can   be selected from the dropdown menu.
 
-    ### Quiz functions
-    * When the Animals Quiz button is selected ensure that users are brought to the quiz that selects questions from the questions array.
-    * When the Food Quiz button is selected ensure that users are brought to the quiz that selects questions from the foodQuestions array.
-    * When the Objects Quiz button is selected ensure that users are brought to the quiz that selects questions from the objectQuestions array.
+ ### Quiz functions
+   * When the Animals Quiz button is selected ensure that users are brought to the quiz that selects questions from the questions array.
+   * When the Food Quiz button is selected ensure that users are brought to the quiz that selects questions from the foodQuestions array.
+   * When the Objects Quiz button is selected ensure that users are brought to the quiz that selects questions from the objectQuestions array.
 
-    ### Social Media links
-    * When the facebook icon is clicked ensure that the user is brought to the facebook homepage in a new tab.
-    * When the instagram icon is clicked ensure that the user is brought to the instagram homepage in a new tab.
-    * When the twitter icon is clicked ensure that the user is brought to the twitter homepage in a new tab.
+ ### Social Media links
+   * When the facebook icon is clicked ensure that the user is brought to the facebook homepage in a new tab.
+   * When the instagram icon is clicked ensure that the user is brought to the instagram homepage in a new tab.
+   * When the twitter icon is clicked ensure that the user is brought to the twitter homepage in a new tab.
 
-    ### Buttons
+ ### Buttons and solutions functions
+  * When any of the landing page buttons are clicked ensure that the user is brought to the appropriate quiz.
+  
+  * When a quiz solution button is clicked ensure that an alert has been triggered.
 
+  * When the home button on the 404 page has been selected ensure that the user is immediately brought back to the home page.
+
+ ### Alerts
+ * When a quiz solution button is clicked ensure that the correct alert has been triggered to give the user appropriate feedback.
+ * When the quiz has finished ensure that the game over alert is triggered and the user is immediately brought back to the home page.
+
+ ### Score Counter
+ * When a correct answer has been clicked ensure that the numbers on the score counter move accordingly.
+
+ ### Contact Form
+ * When the submit button of the contact form is clicked ensure the relevant fields of the form have been filled out correctly.
+  * When the submit button of the contact form is clicked and the relevant fields of the form have been filled out correctly ensure that the submit event listener triggers the thank you response to display so that the user knows the form has been submitted.
+  * When the submit button of the contact form is clicked and the relevant fields of the form have been filled out correctly ensure that the form resets as expected.
+
+ ### 404 Page
+ * Ensure that there is a functioning 404 page that allows users to navigate back to the home page.
+
+
+## Site Responsiveness
+
+
+## User Testing
+ * The site was tested by my six year old Niece, Shae, due to the fact she is a member of the target age group. She was able to inituitively navigate the site with no assistance and responded positively to the colors and imagery. She is also bilingual which was useful in testing the target language and primary function of the site. No issues were noticed during this user testing and user experience appeared to be overwhelmingly positive. 
+
+* The site was also tested by members of the Slack community in the peer-code-review channel who pointed out that the desktop version had an unnecessary scroll feature to find the question buttons and also that the footer links did not open in a new tab. These issues have since been resolved. 
 
 
 

@@ -30,8 +30,8 @@ let currentQuestionIndex;
 let usedQuestions = [];
 
 
-/* This function changes the background colour each time a new question is asked*/
-/*This code was found on codepen and modified for the needs of the project*/
+/* This function changes the background colour each time a new question is asked
+ This code was found on codepen and modified for the needs of the project*/
 function changeBackground() {
 	let colorArray = ["#ffadad", "#ffd6a5", "#fdffb6", "#caffbf", "#9bf6ff", "#a0c4ff", "#bdb2ff", "#ffc6ff", "#fffffc"]
 	let randColor = Math.floor(Math.random() * colorArray.length);
@@ -81,19 +81,24 @@ function chooseObjectQuiz() {
 being repeated */
 function randomQuiz() {
 	let randomNum = Math.floor(Math.random() * questions.length);
-	console.log(randomNum);
+	//console.log(randomNum);
 	currentQuestionIndex = randomNum;
-	randomQuestion = questions[randomNum];
-	if (!usedQuestions.includes(randomQuestion)) { // If randomQuestion is not in usedQuestions, it shows
-		console.log(randomQuestion);
-		usedQuestions.push(randomQuestion); // Then, the question is put in the array
+    randomQuestion = questions[randomNum];
+    // If randomQuestion is not in usedQuestions, it shows
+    // Then, the question is put in the array
+
+	if (!usedQuestions.includes(randomQuestion)) { 
+		//console.log(randomQuestion);
+		usedQuestions.push(randomQuestion); 
 	} else {
 		randomQuiz();
 	}
 	return randomQuestion;
 }
 
-/* This function checks the answer of the user and responds appropriately based on the conditions of whether the answer is correct, incorrect or whether the quiz has finished*/
+/* This function checks the answer of the user and responds
+ appropriately based on the conditions of whether the answer 
+ is correct, incorrect or whether the quiz has finished*/
 
 function checkSelection(solutions) {
 	if (solutions == questions[currentQuestionIndex].correct && questionCount < 12) {

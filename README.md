@@ -60,6 +60,8 @@ The 'Chewy' and 'Chilanka' fonts were found on [Google Fonts](https://fonts.goog
 
 The imagery was found on the FreePik Website(https://www.freepik.com/). It was chosen based on its suitablity for the target audience and also for its use of color which is similar to the color palettes selected for the site. 
 
+## Features left to implement
+
 ## Skeleton
 
 ### Wireframes
@@ -193,13 +195,18 @@ This project was deployed from the [Github Respository](https://github.com/Aidee
 * 404astro image [Freepik](https://www.freepik.com/vectors/logo)Logo vector created by catalyststuff 
 
 ### Code
-* The Javascript aspects of this site were inspired by a tutorial found on [codeexplained.org](https://www.codeexplained.org/2018/10/create-multiple-choice-quiz-using-javascript.html)
+* The Javascript aspects of this site were inspired by a tutorial found on [codeexplained.org](https://www.codeexplained.org/2018/10/create-multiple-choice-quiz-using-javascript.html). The basic code template was taken and repurposed with the appropriate code necessary to build this site.
 
 Other important resources for basic tutorials and troubleshooting resources include:
 * [Stack Overflow](https://stackoverflow.com/)
+    - Stack overflow was used as a general resource for learning and troubleshooting.
 * [W3Schools](https://www.w3schools.com/)
+   - W3Schools was used as a general resource for learning and troubleshooting.
 * [Youtube](https://www.youtube.com/)
+   - Youtube was used as a general resource for learning and troubleshooting.
 * [Codepen.io](https://codepen.io/)
+    -The function to change and randomise the background colour during the quiz was found on this site.
 * [CodeInstitute](https://codeinstitute.net/) 
+    -In particular the email.js code was sourced from Matt Rudge's code institute tutorial.
 
 ### Acknowledgements

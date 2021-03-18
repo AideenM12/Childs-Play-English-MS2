@@ -199,6 +199,10 @@ a:hover {
        padding: 80px;
    }
 
+   .card{
+    margin-bottom: 80px;
+    }
+
   	footer {
 		font-family: 'Chewy', san-serif;
 		font-size: 30px;
@@ -254,7 +258,9 @@ a:hover {
 		font-size: 30px;
 		margin-bottom: 0;
     }
-    
+    .card{
+        margin-bottom: 20px;
+    }
     /*-----------------Images------------*/
     
 	#qImages>img {

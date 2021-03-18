@@ -9,11 +9,11 @@ function sendMail(contactForm) {
 		"message": contactForm.textarea.value
 	}).then(
 		function response() {
-			console.log("SUCCESS", response)
+			console.log("SUCCESS", response);
 			document.getElementById("contactUs").reset();
 		},
 		function error() {
-			console.log("FAILED", error)
+			console.log("FAILED", error);
 		});
 
 	return false;
@@ -21,7 +21,7 @@ function sendMail(contactForm) {
 
 /* The contactUs variable is used to create to the submit event listener to trigger the thankYou function*/
 
-let contactUs = document.getElementById("contactUs")
+let contactUs = document.getElementById("contactUs");
 
 contactUs.addEventListener('submit', thankYou);
 

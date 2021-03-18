@@ -1,3 +1,8 @@
+![Website MockUp](documentation/doc-images/MS2mockup.png)
+
+The live website can be viewed [here](https://aideenm12.github.io/Childs-Play-English-MS2/)
+
+
 # UX
 
 ## Strategy
@@ -26,6 +31,7 @@ The primary goal of the project is to create a site for younger, non-english spe
 * As a returning user I want to be able to repeat the proscribed learning material in order to boost familiarity with the new vocabulary and aid the learning process.
 
 * As a returning user I want to boost the learning process by encountering the same visual graphics in order to assist in the memorisation of the vocabulary.
+
 # Structure
 
 ## Features
@@ -36,16 +42,23 @@ The footer code was used twice to alter the display on different screen sizes.
 ### Design
 **Colours**
 
+Two color palettes were chosen for this project. The pastel palette was chosen to tone down the colorful nature of the site to prevent it from appearing too garish whilst also being vibrant enough to appeal to the target audience. 
+
 <img src="documentation/doc-images/ms2pastels.png" width="450" height="250" alt="milestone palette one">
 
+The second palette was chosen for the more interactive parts of the site to highlight the navigation bar and footer whilst also employing simple shades of black and white for various sections of text. The green and red colors were chosen for their vibrancy but more importantly because green can indicate to a non English speaking audience that they have selected a correct answer whilst red is a universal indicator of error. 
 
 <img src="documentation/doc-images/ms2bold.png" width="450" height="250" alt="milestone palette two">
 
 
 
 **Typography**
-'Chewy'
-'Chilanka'
+
+The 'Chewy' and 'Chilanka' fonts were found on [Google Fonts](https://fonts.google.com/) were chosen because of their child-like and cartoonish qualities to appeal to a junior audience.  
+
+**Imagery**
+
+The imagery was found on the FreePik Website(https://www.freepik.com/). It was chosen based on its suitablity for the target audience and also for its use of color which is similar to the color palettes selected for the site. 
 
 ## Skeleton
 
@@ -96,10 +109,10 @@ The footer code was used twice to alter the display on different screen sizes.
     - Google Dev Tools was extensively used throughout the project for various styling and testing purposes. Its lighthouse feature was used as one of the main testing tools for this project.
 - [Animate.css](https://animate.style/)
 - [SweetAlert2](https://sweetalert2.github.io/)
--[EmailJS](https://www.emailjs.com/)
--[CSS-Tricks](https://css-tricks.com/)
--[Favicon.io](https://favicon.io/) 
-
+- [EmailJS](https://www.emailjs.com/)
+- [CSS-Tricks](https://css-tricks.com/)
+- [Favicon.io](https://favicon.io/) 
+- [Am I Responsive](http://ami.responsivedesign.is/)
 
 ## Testing
 Testing information can be found here in the separate [TESTING.md file](TESTING.md)

@@ -121,9 +121,9 @@ function checkSelection(solutions) {
 
 			textColor: '#fffffc'
 		});
-		randomQuestion++
+		randomQuestion++;
 		askQuestion();
-		questionCount++
+		questionCount++;
 		progressCounter();
 
 	} else if (solutions != questions[currentQuestionIndex].correct) {
@@ -143,7 +143,7 @@ function checkSelection(solutions) {
 			imageHeight: 300,
 			imageAlt: 'Custom image',
 			background: '#d00000',
-		})
+		});
 	} else if (questionCount == 12) {
 		swal.fire({
 			showClass: {

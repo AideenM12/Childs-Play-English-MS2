@@ -122,10 +122,10 @@ Testing information can be found here in the separate [TESTING.md file](TESTING.
 ## Deployment
 This project was developed using [Gitpod IDE](https://gitpod.io) and pushed to Github using the in-built terminal.
 
-This project was deployed from the [Github Respository](https://github.com/AideenM12/Galway-Tours-MS1) to GitHub Pages using the following steps:
+This project was deployed from the [Github Respository](https://github.com/AideenM12/Childs-Play-English-MS2) to GitHub Pages using the following steps:
 
 1. Log into Github.
-2. Select the [AideenM12/Galway-Tours-MS1](https://github.com/AideenM12/Childs-Play-English-MS2) respository.
+2. Select the [AideenM12/Childs-Play-English-MS2](https://github.com/AideenM12/Childs-Play-English-MS2) respository.
 3. Click the settings tab.
 4. Scroll to the GitHub Pages section of the page.
 5. Under the source heading select the *master* branch option.

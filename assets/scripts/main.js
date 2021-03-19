@@ -35,7 +35,7 @@ let usedQuestions = [];
 function changeBackground() {
     let colorArray = ["#ffadad", "#ffd6a5", "#fdffb6", "#caffbf", "#9bf6ff",
         "#a0c4ff", "#bdb2ff", "#ffc6ff", "#fffffc"
-    ]
+    ];
     let randColor = Math.floor(Math.random() * colorArray.length);
     $('body').css("background-color", colorArray[randColor]);
 }
@@ -86,14 +86,12 @@ function chooseObjectQuiz() {
  prevents the questions from being repeated */
 function randomQuiz() {
     let randomNum = Math.floor(Math.random() * questions.length);
-
     currentQuestionIndex = randomNum;
     randomQuestion = questions[randomNum];
+
     // If randomQuestion is not in usedQuestions, it shows
     // Then, the question is put in the array
-
     if (!usedQuestions.includes(randomQuestion)) {
-
         usedQuestions.push(randomQuestion);
     } else {
         randomQuiz();

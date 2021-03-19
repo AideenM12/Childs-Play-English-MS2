@@ -96,6 +96,11 @@
 ## Testing Features
 
  ### Navigation 
+ 
+ <img src="documentation/doc-images/CPEatag.png" height="100" width="200">
+
+  <img src="documentation/doc-images/CPEhome.png" height="70" width="150">
+
    * On the home page click the "Child's Play English" header on the top left corner to navigate to the home page.
    * On the contact page click the "Child's Play English" header on the top left corner to navigate to the home page.
    * On the 404 page click the "Child's Play English" header on the top left corner to navigate to the home page.
@@ -103,16 +108,24 @@
    * On the home page, contact page and 404 page click "Contact/About" to navigate to the contact page. On mobile this can   be selected from the dropdown menu.
 
  ### Quiz functions
+
+ <img src="documentation/doc-images/quiz-buttons.png" height="100" width="400">
+
    * When the Animals Quiz button is selected ensure that users are brought to the quiz that selects questions from the questions array.
    * When the Food Quiz button is selected ensure that users are brought to the quiz that selects questions from the foodQuestions array.
    * When the Objects Quiz button is selected ensure that users are brought to the quiz that selects questions from the objectQuestions array.
 
  ### Social Media links
+
+  <img src="documentation/doc-images/footericons.png" height="100" width="300">
+
    * When the facebook icon is clicked ensure that the user is brought to the facebook homepage in a new tab.
    * When the instagram icon is clicked ensure that the user is brought to the instagram homepage in a new tab.
    * When the twitter icon is clicked ensure that the user is brought to the twitter homepage in a new tab.
 
  ### Buttons and solutions functions
+
+ <img src="documentation/doc-images/user1.jpg" width="150" height="350"> <img src="documentation/doc-images/animals-btn.png" width="150" height="80">
   * When any of the landing page buttons are clicked ensure that the user is brought to the appropriate quiz.
   
   * When a quiz solution button is clicked ensure that an alert has been triggered.
@@ -124,19 +137,37 @@
  * When the quiz has finished ensure that the game over alert is triggered and the user is immediately brought back to the home page.
 
  ### Score Counter
+
+ <img src="documentation/doc-images/score0.png" height="60" width="150"><img src="documentation/doc-images/score7.png" height="60" width="150"><img src="documentation/doc-images/score12.png" height="60" width="150">
+
  * When a correct answer has been clicked ensure that the numbers on the score counter move accordingly.
 
  ### Contact Form
+ 
+   <img src="documentation/doc-images/required-form.jpg" height="250" width="250">
+
+
  * When the submit button of the contact form is clicked ensure the relevant fields of the form have been filled out correctly.
+
+   <img src="documentation/doc-images/thank-you-msg.png" height="80" width="250">
+
   * When the submit button of the contact form is clicked and the relevant fields of the form have been filled out correctly ensure that the submit event listener triggers the thank you response to display so that the user knows the form has been submitted.
+
+    <img src="documentation/doc-images/reset-form.png" height="400" width="350">
+
+
   * When the submit button of the contact form is clicked and the relevant fields of the form have been filled out correctly ensure that the form resets as expected.
 
  ### 404 Page
+ 
+ <img src="documentation/doc-images/404screenshot.jpg" height="350" width="200">
+
  * Ensure that there is a functioning 404 page that allows users to navigate back to the home page.
 
 
 ## Site Responsiveness
 
+<img src="documentation/doc-images/responsive-MS2.png" height="600" width="800">
 
 ## User Testing
  * The site was tested by my six year old Niece, Shae, due to the fact she is a member of the target age group. She was able to inituitively navigate the site with no assistance and responded positively to the colors and imagery. She is also bilingual which was useful in testing the target language and primary function of the site. No issues were noticed during this user testing and user experience appeared to be overwhelmingly positive. 

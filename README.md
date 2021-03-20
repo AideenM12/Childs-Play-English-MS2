@@ -1,27 +1,43 @@
-![Website MockUp](documentation/doc-images/MS2Mockuppage.png)
-
-The live website can be viewed [here](https://aideenm12.github.io/Childs-Play-English-MS2/)
-
 # Contents
 * [UX](#UX)
     * [Strategy](#Strategy)
        * [Project Goals](#Project-Goals)
        * [User Stories](#User-Stories) 
     * [Structure](#Structure)
-       * [Features](#Features) 
+       * [Existing Features](#Existing-Features) 
+            * [Navigation](#Navigation)
+            * [Footer](#Footer)
+            * [Images](#Images)
+            * [Buttons](#Buttons)
+            * [Alerts](#Alerts)
+            * [Score Counter](#Score-Counter)
+            * [Contact/About Page](#Contact/About-Page)
+            * [404 Page](#404-Page)
        * [Features Left To Implement](Feature-Left-To-Implement)  
-        * [Existing Features](#Existing-Features)
-        * [Design](#Design)
+       * [Design](#Design)
+            * [Colors](#Colors)
+            * [Typography](#Imagery)
+            * [Imagery](#Imagery)    
     * [Skeleton](#Skeleton)
       * [Wireframes](#Wireframes)
-      * [Technolgies Used](#Technologies-Used)
+    * [Technolgies Used](#Technologies-Used)
     * [Testing](#Testing)
     * [Deployment](#Deployment)
+      * [Deployment Steps](#Deployment-Steps) 
       * [Making a clone to run locally](#Making-a-clone-to-run-locally)
+      * [How to Fork the respository](#How-to-Fork-the-Respository)
     * [Credits](#Credits)
       * [Media](#Media)
       * [Code](#Code)
       * [Acknowledgements](#Acknowledgements)
+
+# Childs Play English
+
+![Website MockUp](documentation/doc-images/MS2Mockuppage.png)
+
+The live website can be viewed [here](https://aideenm12.github.io/Childs-Play-English-MS2/)
+
+
 
 
 # UX
@@ -55,13 +71,69 @@ The primary goal of the project is to create a site for younger, non-english spe
 
 # Structure
 
-## Features
+## Existing Features
+
+### Navigation 
+* The website title in the navigation bar is wrapped in an anchor tag to allow the user to easily navigate back to the home page from any other page on the site. It is also placed strategically to promote brand awareness. Each feature of the navigation bar highlights in bold when the user hovers over it in order to highlight it's interactivity.
+
+* The menu aspect of the navigation bar is located on the right on all devices. It is designed to allow the user to navigate back to the home page if desired or to the conact/about page from anywhere on the site. It's location was chosen based on the principles of good UX design ie. it can be found where the user expects it to be. It compresses into a hamburger style on smaller screens which also follows the principles of good UX design by making good use of space and behaving in a manner that the user has come to expect from mobile websites.
+
+* Finally the 'Childs Play English' title h1 tag also has an anchor tag which when clicked will relocate the user back to the home page. It's interactive nature is made visible by the hover attribute which changes the text from black to white, signifying to the user that the text has an interactive function.
 
 ### Footer
-The footer code was used twice to alter the display on different screen sizes.
+* The footer code was used twice to alter the display on different screen sizes. On desktop the footer appears as a slim line at the bottom of the page with the website title appearing in the left corner of the page and the footer social media icons appearing on the right corner of the screen. On smaller screens the footer transforms into a block layout with the website title appearing above the footer icons and with all of these features centered inside the footer.
 
-### Design
-**Colours**
+* The footer icons link to three social media sites, Facebook, Instagram and Twitter. Link the title h1, the footer icons interactive nature is made visible by the hover attribute which changes the text from black to white, signifying to the user that the icons have an interactive function. Each of these icons opens in a new tab following the principles of good UX by keeping the user on the business page for longer.
+
+### Images
+
+* All images are presented in the center of the screen on all screen sizes. The images are not stretched on pixelated. Each new image slides on to the page from the left using animate.css animations and are the focal point of the page because they are a visual representation of the target language.
+
+### Buttons
+* The quiz buttons are presented on the landing page in an inline style directly beneath the image. They have been style using [hover.css](https://ianlunn.github.io/Hover) to create better UX and clearly indicate to the user what quiz they are choosing to select. Once a button has been clicked the quiz is initiated.
+
+* The solutions buttons present the target language along with three other possible answers to choose from. Once clicked these buttons trigger an alert to indicate to the user if they have in fact selected the word which matches the above image presented. 
+
+### Alerts
+* [SweetAlert2](https://sweetalert2.github.io/) was used to create the alerts used in the quiz. If the user selects the correct corresponding solution to the image presented a green alert pop up is triggered to give feedback to the user that they have chosen the correct solution and the next question is presented when the user clicks the alert popup button. If the user's choice is incorrect then a similar red alert pop up is displayed to indicate that the solution is incorrect and the user must choose again. At the end of the quiz a blue alert pop-up is triggered and once its' button has been clicked the user is redirected to the home page. Each of these alerts has been animated using [animate.css](https://animate.style/).
+
+### Score Counter
+* A score counter was created to indicate the user's progress and inform the user of the length of the quiz. This was designed to promote a sense of achievement and a more positive learning experience for the user.
+
+### Contact/About Page
+* The information about the site is presented on a separate page to the home page because the site has been designed to minimise the language presented to the user outside of the target language. This page has been designed with parents of the target audience in mind but again, the language is minimal based on the assumption that English may not be the first language of the parent's of site users. The about section gives a brief overview of the site's primary function based on these assumptions.
+
+* The contact form has been created using [Bootstrap](https://getbootstrap.com/) and [EmailJS](https://www.emailjs.com/) to allow users to contact the site creator with any questions or suggestions that they may have.
+
+* Each field of the contact form has been marked as required to avoid the possibility of an error when trying to contact the owners of the site. 
+
+* When the form has been correctly filled out and submitted and thank you message will be displayed above the form to allow the user to know that they have submitted the form correctly and the form then resets.
+
+### 404 Page.
+
+* A 404 Page has been created in order to deal with user errors in navigation or invalid search data in order to assist the user in returning to the home page. All navigation features are present on the 404 page as well as a button labelled home in order to easily redirect the user back to the relevant page.
+
+
+## Features left to implement
+
+During the creation of this site its potentially sprawling scope became evident. Features such as the score counter and the thank you message for the contact form were last minute additions in order to improve UX but other features could be implemented at a later date. Potential future features include but are not limited to :
+
+* A study page where the user can see the images and vocabulary presented together in order to study the target language before taking the quiz.
+
+* Other quiz topics for a slightly older target audience.
+
+* Sections which focus specifically on grammar basics rather than vocabulary.
+
+* Audio features so that the user can learn how the words are pronounced by a native speaker.
+
+* A picture flip game where the user has to match a word to an image. 
+
+* A hangman game which allows users to practice spelling the target language (Spelling is often reported as one of the most difficult aspects of learning English).
+
+
+## Design
+
+### Colors
 
 Two color palettes were chosen for this project. The pastel palette was chosen to tone down the colorful nature of the site to prevent it from appearing too garish whilst also being vibrant enough to appeal to the target audience. 
 
@@ -71,17 +143,19 @@ The second palette was chosen for the more interactive parts of the site to high
 
 <img src="documentation/doc-images/ms2bold.png" width="450" height="250" alt="milestone palette two">
 
+Both palettes were created on the [Coolors Website](https://coolors.co).
 
 
-**Typography**
 
-The 'Chewy' and 'Chilanka' fonts were found on [Google Fonts](https://fonts.google.com/) were chosen because of their child-like and cartoonish qualities to appeal to a junior audience.  
+### Typography
 
-**Imagery**
+The 'Chewy' and 'Chilanka' fonts were found on [Google Fonts](https://fonts.google.com/) were chosen because of their child-like and cartoonish qualities to appeal to a junior audience.  The 'Chewy' font was chosen for its bold clear nature in order to present the site brand, questions and headers clearly. The 'Chilanka' font was chosen as a softer contrast for smaller text and also for it's similarity to the Disney font which I felt would appeal to the target audience.
 
-The imagery was found on the [FreePik Website](https://www.freepik.com/). It was chosen based on its suitablity for the target audience and also for its use of color which is similar to the color palettes selected for the site. 
+### Imagery
 
-## Features left to implement
+The imagery was found on the [FreePik Website](https://www.freepik.com/). It was chosen based on its suitablity for the target audience and also for its use of color which is similar to the color palettes selected for the site. Changes to the quiz topics were made based on imagery. Objects replaces clothes as a quiz topic in order to maintain similar imagery throughout the site.
+
+
 
 ## Skeleton
 
@@ -98,6 +172,8 @@ The imagery was found on the [FreePik Website](https://www.freepik.com/). It was
 * [Clothes Page Wireframes](documentation/wireframes/clothes-page-frames.pdf)
 
 * [Event Wireframes](documentation/wireframes/event-frames.pdf)
+
+
 
 
 ## Technologies Used
@@ -149,6 +225,8 @@ Testing information can be found here in the separate [TESTING.md file](TESTING.
 This project was developed using [Gitpod IDE](https://gitpod.io) and pushed to Github using the in-built terminal.
 
 This project was deployed from the [Github Respository](https://github.com/AideenM12/Childs-Play-English-MS2) to GitHub Pages using the following steps:
+
+### Deployment Steps
 
 1. Log into Github.
 2. Select the [AideenM12/Childs-Play-English-MS2](https://github.com/AideenM12/Childs-Play-English-MS2) respository.
@@ -241,3 +319,11 @@ Other important resources for basic tutorials and troubleshooting resources incl
   - In particular the email.js code was sourced from Matt Rudge's code institute tutorial.
 
 ### Acknowledgements
+
+* First and foremost I would like to thank my mentor, Aaron Sinnott, for his constant guidance, encouraging feedback and knowledgable advice without which this project could not have been created.
+
+* I would like to thank my Niece Shae for being an obliging and enthuasiatic tester of this site during its final stages.
+
+* I would like to thank the following members of the Slack community for their useful feedback in the peer code review channel: Helen, StuartCox and Harry for pointing out that the footer icons didn't open in a new tab and that the desktop version didn't display the quiz buttons directly beneath the hero image, Clint for providing me with the min height tip on the qImages div to prevent the site from  jumping each time a new image loaded. I'd like to thank Kotaro Tanaka for kindly providing me with a solution to prevent questions repeating in the randomQuiz function. I'd like to thank Abi Harrison for her thoughtful guidance during the project's inception. And finally I'd like to thank my Springboard classmates for constantly offering help and support throughout the project and also pushing me to improve by maintaining a high standard in their own work.
+
+* Finally I would like to thank my boyfriend Shane for constantly helping to test the project throughout its development, providing insightful suggestions as to how to improve user experience such as the Score Counter feature, the Contact form reset feature and the thank you message for the contact form. And also for helping to proof read this document and ensure it meets the correct standards of grammar, spelling and readability. 

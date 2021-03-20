@@ -23,7 +23,7 @@
 <img src="documentation/doc-images/user1.jpg" width="150" height="350">  <img src="documentation/doc-images/cookie-test.png" width="400" height="300">  <img src="documentation/doc-images/object-test.png" width="400" height="300">
 
 
-   - All graphics were chosen specfically to appeal to the target audience and scaled to fit all potential devices. Each image depicts the target language in a clear and non-confusing way. The images are colorful and fun in order to promote a positive emotional response from the user. 
+   - All graphics were chosen specfically to appeal to the target audience and scaled to fit all potential devices. Each image depicts the target language in a clear and non-confusing way. The images are colorful and fun in order to promote a positive emotional response from the user. Testing was done to ensure the site images and vocabulary were understandable and applicable to the target audience.
         
 
 
@@ -31,7 +31,7 @@
 
 <img src="documentation/doc-images/user2.jpg" width="150" height="350">
 
-   - The SweetAlert pop ups are designed to ensure that even users with a virtually non-existant level of English can be sure that they have selected the correct answer. The green color and the affirmative 'Yes' presented in the image provide two indications and green is often used as an affirmative color globally.
+   - The SweetAlert pop ups are designed to ensure that even users with a virtually non-existant level of English can be sure that they have selected the correct answer. The green color and the affirmative 'Yes' presented in the image provide two indications and green is often used as an affirmative color globally. Testing was done to ensure that the pop-ups appear as expected when the user interacts with the solutions buttons.
 
     
 
@@ -39,7 +39,7 @@
 
 <img src="documentation/doc-images/user4.jpg" width="150" height="350">
 
-    - The quiz topics are presented directly below the hero image and visible on all screen sizes so that the user can navigate based on their own curiousity and the nav-heading and h1 tag are both interactively linked to the home-page so that users can find themselves back at the home-page easily to explore the other quizzes.
+- The quiz topics are presented directly below the hero image and visible on all screen sizes so that the user can navigate based on their own curiousity and the nav-heading and h1 tag are both interactively linked to the home-page so that users can find themselves back at the home-page easily to explore the other quizzes. Testing was done to ensure each button functions as expected and brings users to the chosen quiz topic.
 
    
 
@@ -49,7 +49,7 @@
 
 <img src="documentation/doc-images/user6.jpg" width="150" height="350">
 
-   - All vocabulary has been selected based on the vocabulary covered in children's beginner English exams and is often the same vocabulary they encounter in the school enviroment both in their native language and in English. 
+   - All vocabulary has been selected based on the vocabulary covered in children's beginner English exams and is often the same vocabulary they encounter in a school enviroment both in their native language and in English. Testing was done to ensure the site vocabulary aligned with the vocabulary suitable for beginner English younger learners.
 
     
 
@@ -58,14 +58,14 @@
 
  <img src="documentation/doc-images/user3.jpg" width="150" height="350">
 
-   - The red SweetAlert pop is designed to ensure that users are aware that they have made an error. The animate.css animation chosen for this pop up was also chosen to indicate error in that it is not a sleek movement but rather a stiff and jarring movement designed to halt the user. 
+   - The red SweetAlert popup is designed to ensure that users are aware that they have made an error. The animate.css animation chosen for this pop up was also chosen to indicate error in that it is not a sleek movement, but rather a stiff and jarring motion designed to halt the user. Testing was done to ensure this popup appears when required after the specified user action. 
 
 
 
   
-6. As a returning user I want to be able to repeat the proscribed learning material in order to boost familiarity with the new vocabulary and aid the learning process.
+6. As a returning user I want to be able to repeat the prescribed learning material in order to boost familiarity with the new vocabulary and aid the learning process.
 
-    - Twelve questions are selected from a slightly larger bank in order to give the user a slightly newer experience upon their first returning visit but the material remains mostly the same in order to boost familiarity and confidence with the target language. 
+    - Twelve questions are selected from a slightly larger bank in order to give the user a slightly newer experience upon their first returning visit but the material remains mostly the same in order to boost familiarity and confidence with the target language. Testing was done to ensure that all the material appears over the course of multiple visits to the site but also that no question repeats in a single quiz session.
 
 
 
@@ -110,28 +110,31 @@
    * On the 404 page click the "Child's Play English" header on the top left corner to navigate to the home page.
    * Alternatively click "Home" on the top right corner to navigate to the home page on the home page, contact page and      404 page.
    * On the home page, contact page and 404 page click "Contact/About" to navigate to the contact page. On mobile this can   be selected from the dropdown menu.
+   * Testing was done to ensure all Navigation features functioned as expected at the time of submission.
 
  ### Quiz functions
 
  <img src="documentation/doc-images/quiz-buttons.png" height="100" width="400">
 
-   * When the Animals Quiz button is selected ensure that users are brought to the quiz that selects questions from the questions array.
-   * When the Food Quiz button is selected ensure that users are brought to the quiz that selects questions from the foodQuestions array.
-   * When the Objects Quiz button is selected ensure that users are brought to the quiz that selects questions from the objectQuestions array.
+   * When the Animals Quiz button is selected, ensure that users are brought to the quiz that selects questions from the questions array.
+   * When the Food Quiz button is selected, ensure that users are brought to the quiz that selects questions from the foodQuestions array.
+   * When the Objects Quiz button is selected, ensure that users are brought to the quiz that selects questions from the objectQuestions array.
+   * Testing was done to ensure all landing page quiz buttons functioned as expected at the time of submission.
 
  ### Social Media links
 
   <img src="documentation/doc-images/footericons.png" height="100" width="300">
 
-   * When the facebook icon is clicked ensure that the user is brought to the facebook homepage in a new tab.
-   * When the instagram icon is clicked ensure that the user is brought to the instagram homepage in a new tab.
-   * When the twitter icon is clicked ensure that the user is brought to the twitter homepage in a new tab.
+   * When the facebook icon is clicked, ensure that the user is brought to the facebook homepage in a new tab.
+   * When the instagram icon is clicked, ensure that the user is brought to the instagram homepage in a new tab.
+   * When the twitter icon is clicked, ensure that the user is brought to the twitter homepage in a new tab.
+   * Testing was done to ensure all Social media links functioned as expected and opened in new at the time of submission.
 
  ### Buttons and Solutions Functions
 
    <img src="documentation/doc-images/user1.jpg" width="150" height="350"> <img src="documentation/doc-images/animals-btn.png" width="150" height="80">
 
-  * When any of the landing page buttons are clicked ensure that the user is brought to the appropriate quiz.
+  * When any of the landing page buttons are clicked, ensure that the user is brought to the appropriate quiz.
 
 
     <img src="documentation/doc-images/user2.jpg" width="150" height="350"> <img src="documentation/doc-images/user3.jpg" width="150" height="350">
@@ -139,39 +142,46 @@
 
      <img src="documentation/doc-images/404-home-btn.png" height="150" width="250">
 
-  * When the home button on the 404 page has been selected ensure that the user is immediately brought back to the home page.
+  * When the home button on the 404 page has been selected, ensure that the user is immediately brought back to the home page.
+  * Testing was done to ensure all solution buttons functioned as expected and triggered the correct functions at the time of submission.  
+  *  Testing was done to ensure the home button on the 404 page functioned as expected at the time of submission.
 
  ### Alerts
- * When a quiz solution button is clicked ensure that the correct alert has been triggered to give the user appropriate feedback.
- * When the quiz has finished ensure that the game over alert is triggered and the user is immediately brought back to the home page.
+ * When a quiz solution button is clicked, ensure that the correct alert has been triggered to give the user appropriate feedback.
+ * When the quiz has finished, ensure that the game over alert is triggered and the user is immediately brought back to the home page.
+ * Testing was done to ensure the correct alert appeared after a user clicked a solutions and that all alerts functioned as expected at the time of submission.
 
  ### Score Counter
 
    <img src="documentation/doc-images/score0.png" height="60" width="150"><img src="documentation/doc-images/score7.png" height="60" width="150"><img src="documentation/doc-images/score12.png" height="60" width="150">
 
- * When a correct answer has been clicked ensure that the numbers on the score counter move accordingly.
+ * When a correct answer has been clicked, ensure that the numbers on the score counter move accordingly.
+ * Testing was done to ensure the score counter moved accordingly during the quiz and fucntioned as expected at the time of submission.
 
  ### Contact Form
  
    <img src="documentation/doc-images/required-form.jpg" height="250" width="250">
 
 
- * When the submit button of the contact form is clicked ensure the relevant fields of the form have been filled out correctly.
+ * When the submit button of the contact form is clicked, ensure the relevant fields of the form have been filled out correctly.
 
   <img src="documentation/doc-images/thank-you-msg.png" height="80" width="250">
 
-  * When the submit button of the contact form is clicked and the relevant fields of the form have been filled out correctly ensure that the submit event listener triggers the thank you response to display so that the user knows the form has been submitted.
+  * When the submit button of the contact form is clicked and the relevant fields of the form have been filled out correctly, ensure that the submit event listener triggers the thank you response to display so that the user knows the form has been submitted.
 
     <img src="documentation/doc-images/reset-form.png" height="400" width="350">
 
 
-  * When the submit button of the contact form is clicked and the relevant fields of the form have been filled out correctly ensure that the form resets as expected.
+  * When the submit button of the contact form is clicked and the relevant fields of the form have been filled out correctly, ensure that the form resets as expected.
+  * Testing was done to ensure all fields were marked as required at the time of submission.
+  * Testing was done to ensure that the contact form resets and the 'thank you' message displays after the submit button has been clicked as expected at the time of submission.
 
  ### 404 Page
  
  <img src="documentation/doc-images/404screenshot.jpg" height="350" width="200">
 
  * Ensure that there is a functioning 404 page that allows users to navigate back to the home page.
+ * Testing was done to ensure that there was a functioning 404 page that allowed the user to easily navigate back to the home oage at the time of submission.
 
 
 ## Site Responsiveness
@@ -194,7 +204,7 @@
 
 
 ## User Testing
- * The site was tested by my six year old Niece, Shae, due to the fact she is a member of the target age group. She was able to inituitively navigate the site with no assistance and responded positively to the colors and imagery. She is also bilingual which was useful in testing the target language and primary function of the site. No issues were noticed during this user testing and user experience appeared to be overwhelmingly positive. 
+ * The site was tested by my six year old niece, Shae, due to the fact she is a member of the target age group. She was able to inituitively navigate the site with no assistance and responded positively to the colors and imagery. She is also bilingual which was useful in testing the target language and primary function of the site. No issues were noticed during this user testing and user experience appeared to be overwhelmingly positive. 
 
 * The site was also tested by members of the Slack community in the peer-code-review channel who pointed out that the desktop version had an unnecessary scroll feature to find the question buttons and also that the footer links did not open in a new tab. These issues have since been resolved. 
 
@@ -211,7 +221,7 @@
 		randomQuiz();
 	    }
 
-This code was inserted into the randomQuiz function and, along with the usedQuestions array, effectively prevented questions repetition. However when this code was implemented it created a new issue. The food question array stopped calling the else if (questionCount == 12) statement of the checkSolutions function and displayed the questionCount numbers in the console on an infinite loop and stopped handling user interactions effectively. After using the debugger tool in google dev tools with the help of student support it was discovered that the askQuestion function that was being called inside the chooseObjectQuiz and chooseFoodQuiz functions was causing extra questions to be called and discarded before a question is displayed in the DOM. This caused the foodQuestions bank to be less than the required 12 questions needed to call the else if (questionCount == 12) statement of the checkSolutions function. The askQuestion function was removed from these two functions and the problem was rectified. 
+This code was inserted into the randomQuiz function and, along with the usedQuestions array, effectively prevented questions repetition. However when this code was implemented it created a new issue. The food question array stopped calling the else if (questionCount == 12) statement of the checkSolutions function and displayed the questionCount numbers in the console on an infinite loop and stopped handling user interactions effectively. After using the debugger tool in google dev tools with the help of tutor support it was discovered that the askQuestion function that was being called inside the chooseObjectQuiz and chooseFoodQuiz functions and this was causing extra questions to be called and discarded before a question was displayed in the DOM. This caused the foodQuestions bank to be less than the required 12 questions needed to call the else if (questionCount == 12) statement of the checkSolutions function. The askQuestion function was removed from these two functions and the problem was resolved. 
 
 ## Further Testing
 

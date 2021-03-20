@@ -46,7 +46,7 @@ The live website can be viewed [here](https://aideenm12.github.io/Childs-Play-En
 
 ### Project Goals
 
-The primary goal of the project is to create a site for younger, non-english speaking, learners to learn some basic English vocabulary in a stress-free playful environment. Younger learners enjoy repetitive material and respond better to praise than to new challenges so the site will be designed with this in mind. The material will be easy in order to encourage learners and the graphics used will be consistent with what is attractive to the target audience. The vocabulary chosen is food, animals and clothing because often learners in non English speaking countries are presented with certified English speaking exams that often involve being able to identify this vocabulary when presented with images so the site can function as an effective study aid in order to make the process of learning and studying much less daunting and hopefully much more enjoyable. Given the fact that the site is designed with English language learners in mind the amount of text outside of the target language will be minimal in order to not overwhelm, confuse or distract the user. The lack of text outside the target language will also promote a positive emotional response because of the site's ease of use and the relaxed presentation of the target language.
+The primary goal of the project is to create a site for younger, Non-English speaking learners to learn some basic English vocabulary in a stress-free, playful environment. Younger learners enjoy repetitive material and respond better to praise than to new challenges so the site will be designed with this in mind. The material will be easy in order to encourage learners, and the graphics used will be consistent with what is attractive to the target audience. The vocabulary chosen is 'food', 'animals' and 'clothing' because often learners in Non-English speaking countries are presented with certified English speaking exams that often involve being able to identify this vocabulary when presented with images so the site can function as an effective study aid in order to make the process of learning and studying much less daunting and hopefully much more enjoyable. Given the fact that the site is designed with English language learners in mind the amount of text outside of the target language will be minimal in order not to overwhelm, confuse or distract the user. The lack of text outside the target language will also promote a positive emotional response because of the site's ease of use and the relaxed presentation of the target language.
 
 **The Ideal User of this site is:**
 * Aged 5+ or a younger child with excellent reading skills.
@@ -65,7 +65,7 @@ The primary goal of the project is to create a site for younger, non-english spe
 
 * As a first time user I want to be able to be intuitvely aware of when I have made an error in order to aid my learning.
 
-* As a returning user I want to be able to repeat the proscribed learning material in order to boost familiarity with the new vocabulary and aid the learning process.
+* As a returning user I want to be able to repeat the prescribed learning material in order to boost familiarity with the new vocabulary and aid the learning process.
 
 * As a returning user I want to boost the learning process by encountering the same visual graphics in order to assist in the memorisation of the vocabulary.
 
@@ -76,9 +76,9 @@ The primary goal of the project is to create a site for younger, non-english spe
 ### Navigation 
 * The website title in the navigation bar is wrapped in an anchor tag to allow the user to easily navigate back to the home page from any other page on the site. It is also placed strategically to promote brand awareness. Each feature of the navigation bar highlights in bold when the user hovers over it in order to highlight it's interactivity.
 
-* The menu aspect of the navigation bar is located on the right on all devices. It is designed to allow the user to navigate back to the home page if desired or to the conact/about page from anywhere on the site. It's location was chosen based on the principles of good UX design ie. it can be found where the user expects it to be. It compresses into a hamburger style on smaller screens which also follows the principles of good UX design by making good use of space and behaving in a manner that the user has come to expect from mobile websites.
+* The menu aspect of the navigation bar is located on the right on all devices. It is designed to allow the user to navigate back to the home page if desired or to the Contact/About page from anywhere on the site. Its location was chosen based on the principles of good UX design, i.e. it can be found where the user expects it to be. It compresses into a hamburger style on smaller screens which also follows the principles of good UX design by making good use of space and behaving in a manner that the user has come to expect from mobile websites.
 
-* Finally the 'Childs Play English' title h1 tag also has an anchor tag which when clicked will relocate the user back to the home page. It's interactive nature is made visible by the hover attribute which changes the text from black to white, signifying to the user that the text has an interactive function.
+* Finally the 'Childs Play English' title h1 tag also has an anchor tag which when clicked will relocate the user back to the home page. Its interactive nature is made visible by the hover attribute which changes the text from black to white, signifying to the user that the text has an interactive function.
 
 ### Footer
 * The footer code was used twice to alter the display on different screen sizes. On desktop the footer appears as a slim line at the bottom of the page with the website title appearing in the left corner of the page and the footer social media icons appearing on the right corner of the screen. On smaller screens the footer transforms into a block layout with the website title appearing above the footer icons and with all of these features centered inside the footer.
@@ -87,36 +87,36 @@ The primary goal of the project is to create a site for younger, non-english spe
 
 ### Images
 
-* All images are presented in the center of the screen on all screen sizes. The images are not stretched on pixelated. Each new image slides on to the page from the left using animate.css animations and are the focal point of the page because they are a visual representation of the target language.
+* All images are presented in the center of the screen on all screen sizes. The images are not stretched or pixelated. Each new image slides on to the page from the left using animate.css animations and is the focal point of the page because they are a visual representation of the target language.
 
 ### Buttons
-* The quiz buttons are presented on the landing page in an inline style directly beneath the image. They have been style using [hover.css](https://ianlunn.github.io/Hover) to create better UX and clearly indicate to the user what quiz they are choosing to select. Once a button has been clicked the quiz is initiated.
+* The quiz buttons are presented on the landing page in an inline style directly beneath the image. They have been styled using [hover.css](https://ianlunn.github.io/Hover) to create better UX and clearly indicate to the user what quiz they are choosing to select. Once a button has been clicked the quiz is initiated.
 
 * The solutions buttons present the target language along with three other possible answers to choose from. Once clicked these buttons trigger an alert to indicate to the user if they have in fact selected the word which matches the above image presented. 
 
 ### Alerts
-* [SweetAlert2](https://sweetalert2.github.io/) was used to create the alerts used in the quiz. If the user selects the correct corresponding solution to the image presented a green alert pop up is triggered to give feedback to the user that they have chosen the correct solution and the next question is presented when the user clicks the alert popup button. If the user's choice is incorrect then a similar red alert pop up is displayed to indicate that the solution is incorrect and the user must choose again. At the end of the quiz a blue alert pop-up is triggered and once its' button has been clicked the user is redirected to the home page. Each of these alerts has been animated using [animate.css](https://animate.style/).
+* [SweetAlert2](https://sweetalert2.github.io/) was used to create the alerts used in the quiz. If the user selects the correct corresponding solution to the image presented, a green alert pop up is triggered to give feedback to the user that they have chosen the correct solution and the next question is presented when the user clicks the alert popup button. If the user's choice is incorrect, then a similar red alert pop up is displayed to indicate that the solution is incorrect and the user must choose again. At the end of the quiz a blue alert pop-up is triggered and once its button has been clicked the user is redirected to the home page. Each of these alerts has been animated using [animate.css](https://animate.style/).
 
 ### Score Counter
 * A score counter was created to indicate the user's progress and inform the user of the length of the quiz. This was designed to promote a sense of achievement and a more positive learning experience for the user.
 
 ### Contact/About Page
-* The information about the site is presented on a separate page to the home page because the site has been designed to minimise the language presented to the user outside of the target language. This page has been designed with parents of the target audience in mind but again, the language is minimal based on the assumption that English may not be the first language of the parent's of site users. The about section gives a brief overview of the site's primary function based on these assumptions.
+* The information about the site is presented on a separate page to the home page because the site has been designed to minimise the language presented to the user outside of the target language. This page has been designed with parents of the target audience in mind but again, the language is minimal based on the assumption that English may not be the first language of the parents of the site user. The About section gives a brief overview of the site's primary function based on these assumptions.
 
 * The contact form has been created using [Bootstrap](https://getbootstrap.com/) and [EmailJS](https://www.emailjs.com/) to allow users to contact the site creator with any questions or suggestions that they may have.
 
 * Each field of the contact form has been marked as required to avoid the possibility of an error when trying to contact the owners of the site. 
 
-* When the form has been correctly filled out and submitted and thank you message will be displayed above the form to allow the user to know that they have submitted the form correctly and the form then resets.
+* When the form has been correctly filled out and submitted and 'thank you' message will be displayed above the form to allow the user to know that they have submitted the form correctly and the form then resets.
 
 ### 404 Page.
 
-* A 404 Page has been created in order to deal with user errors in navigation or invalid search data in order to assist the user in returning to the home page. All navigation features are present on the 404 page as well as a button labelled home in order to easily redirect the user back to the relevant page.
+* A 404 Page has been created in order to deal with user errors in navigation or invalid search data in order to assist the user in returning to the home page. All navigation features are present on the 404 page as well as a button labelled 'home' in order to easily redirect the user back to the relevant page.
 
 
 ## Features left to implement
 
-During the creation of this site its potentially sprawling scope became evident. Features such as the score counter and the thank you message for the contact form were last minute additions in order to improve UX but other features could be implemented at a later date. Potential future features include but are not limited to :
+During the creation of this site, its potentially sprawling scope became evident. Features such as the score counter and the 'thank you' message for the contact form were last minute additions in order to improve UX but other features could be implemented at a later date. Potential future features include, but are not limited to :
 
 * A study page where the user can see the images and vocabulary presented together in order to study the target language before taking the quiz.
 
@@ -139,7 +139,7 @@ Two color palettes were chosen for this project. The pastel palette was chosen t
 
 <img src="documentation/doc-images/ms2pastels.png" width="450" height="250" alt="milestone palette one">
 
-The second palette was chosen for the more interactive parts of the site to highlight the navigation bar and footer whilst also employing simple shades of black and white for various sections of text. The green and red colors were chosen for their vibrancy but more importantly because green can indicate to a non English speaking audience that they have selected a correct answer whilst red is a universal indicator of error. 
+The second palette was chosen for the more interactive parts of the site to highlight the navigation bar and footer, whilst also employing simple shades of black and white for various sections of text. The green and red colors were chosen for their vibrancy but more importantly because green can indicate to a non English speaking audience that they have selected a correct answer whilst red is a universal indicator of error. 
 
 <img src="documentation/doc-images/ms2bold.png" width="450" height="250" alt="milestone palette two">
 
@@ -149,7 +149,7 @@ Both palettes were created on the [Coolors Website](https://coolors.co).
 
 ### Typography
 
-The 'Chewy' and 'Chilanka' fonts were found on [Google Fonts](https://fonts.google.com/) were chosen because of their child-like and cartoonish qualities to appeal to a junior audience.  The 'Chewy' font was chosen for its bold clear nature in order to present the site brand, questions and headers clearly. The 'Chilanka' font was chosen as a softer contrast for smaller text and also for it's similarity to the Disney font which I felt would appeal to the target audience.
+The 'Chewy' and 'Chilanka' fonts were found and chosen on [Google Fonts](https://fonts.google.com/) because of their child-like and cartoonish qualities to appeal to a junior audience.  The 'Chewy' font was chosen for its bold, clear nature in order to present the site brand, questions and headers clearly. The 'Chilanka' font was chosen as a softer contrast for smaller text and also for its similarity to the Disney font which I felt would appeal to the target audience.
 
 ### Imagery
 
@@ -216,7 +216,7 @@ The imagery was found on the [FreePik Website](https://www.freepik.com/). It was
 - [Am I Responsive](http://ami.responsivedesign.is/)
     - This was used to test the responsiveness of the site and also to create the mock-up image presented at the start of this document.
 - [Beautifier.io](https://beautifier.io/)
-    -Beautifier.io was used to format all javascript files in this project.
+    - Beautifier.io was used to format all javascript files in this project.
 
 ## Testing
 Testing information can be found here in the separate [TESTING.md file](TESTING.md)
@@ -322,8 +322,8 @@ Other important resources for basic tutorials and troubleshooting resources incl
 
 * First and foremost I would like to thank my mentor, Aaron Sinnott, for his constant guidance, encouraging feedback and knowledgable advice without which this project could not have been created.
 
-* I would like to thank my Niece Shae for being an obliging and enthuasiatic tester of this site during its final stages.
+* I would like to thank my niece Shae for being an obliging and enthuasiatic tester of this site during its final stages.
 
 * I would like to thank the following members of the Slack community for their useful feedback in the peer code review channel: Helen, StuartCox and Harry for pointing out that the footer icons didn't open in a new tab and that the desktop version didn't display the quiz buttons directly beneath the hero image, Clint for providing me with the min height tip on the qImages div to prevent the site from  jumping each time a new image loaded. I'd like to thank Kotaro Tanaka for kindly providing me with a solution to prevent questions repeating in the randomQuiz function. I'd like to thank Abi Harrison for her thoughtful guidance during the project's inception. And finally I'd like to thank my Springboard classmates for constantly offering help and support throughout the project and also pushing me to improve by maintaining a high standard in their own work.
 
-* Finally I would like to thank my boyfriend Shane for constantly helping to test the project throughout its development, providing insightful suggestions as to how to improve user experience such as the Score Counter feature, the Contact form reset feature and the thank you message for the contact form. And also for helping to proof read this document and ensure it meets the correct standards of grammar, spelling and readability. 
+* Finally I would like to thank my boyfriend Shane for constantly helping to test the project throughout its development, providing insightful suggestions as to how to improve user experience such as the Score Counter feature, the Contact form reset feature and the 'thank you' message for the contact form. And also for helping to proof read this document and ensure it meets the correct standards of grammar, spelling and readability. 

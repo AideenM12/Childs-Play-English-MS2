@@ -5,7 +5,6 @@ body {
 	font-family: 'Chilanka', sans-serif;
 }
 
-
 /*-------------------------------------Headings/Navigation---------------*/
 
 .navbar {
@@ -25,14 +24,13 @@ footer {
 	background-color: #009bf5;
 }
 
-
 /*---------------------------------Footer and Social Media Icons-----*/
+
 footer{
     background-color: #d81159;
     font-size: 25px;
     bottom: 0;
 }
-
 
 .icons {
 	float: right;
@@ -49,7 +47,6 @@ a:hover {
 	-webkit-text-stroke: 0.5px #001011;
 	text-decoration: none;
 }
-
 
 /*-----------------------------Images-----------*/
 
@@ -79,7 +76,6 @@ a:hover {
 	animation-duration: 2s;
 }
 
-
 /*---------------------Buttons, Questions and Counter -------*/
 
 #contact-btn,
@@ -95,10 +91,6 @@ a:hover {
 #welcome-quiz{
     height: 100vh;
 }
-
-/*#start-btns{
-    padding: 50px;
- }*/
 
 .btn {
 	background-color: #fffffc;
@@ -139,11 +131,6 @@ a:hover {
 	background-color: #9bf6ff;
 }
 
-/*#question {
-	margin-top: 250px;
-	margin-bottom: 0;
-}*/
-
 #question>p {
 	font-weight: 400;
 	margin-top: 70px;
@@ -168,7 +155,6 @@ a:hover {
 	animation: slideInRight;
 	animation-duration: 2s;
 }
-
 
 /*------------------------------Contact Page------------*/
 
@@ -198,6 +184,7 @@ a:hover {
 }
 
 @media only screen and (min-width: 577px) and (max-width:992px) {
+
    #welcome-quiz,
    #start-btns{
        padding: 60px;
@@ -220,6 +207,7 @@ a:hover {
 }
 
 @media only screen and (max-width: 576px) {
+
     /*---------------------------Footer and Icons--------*/
     
 	footer {
@@ -270,9 +258,11 @@ a:hover {
 		font-size: 30px;
 		margin-bottom: 0;
     }
+
     .card{
         margin-bottom: 20px;
     }
+    
     /*-----------------Images------------*/
     
 	#qImages>img {

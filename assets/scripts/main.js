@@ -1,5 +1,8 @@
 // Main Javascript Document
 
+/* This document was partially created using a tutorial
+ on codeexplained.org, a link can be found in the README.md*/
+
 // Start and Choose Quiz variables
 const beginQuiz = document.getElementById("begin-quiz");
 const foodQuiz = document.getElementById("food-quiz");
@@ -9,14 +12,10 @@ const welcomeQuiz = document.getElementById("welcome-quiz");
 // Interative H1 variable
 const titleHeader = document.getElementById("title-h1");
 
-
 // Question and Image variables
 const quiz = document.getElementById("quiz");
-
 const question = document.getElementById("question");
-
 const qImages = document.getElementById("qImages");
-
 
 // Answer button variables
 const opt1 = document.getElementById("opt1");
@@ -40,16 +39,13 @@ function changeBackground() {
     $('body').css("background-color", colorArray[randColor]);
 }
 
-
 //Question variables
-
 let questionCount = 0;
 let randomQuestion = 0;
 let finalQuestion = questions.length;
 
 /* This function generates a question from the questions
  array and also calls the change background function*/
-
 function askQuestion() {
     let q = randomQuiz();
     qImages.innerHTML = "<img src=" + q.imgSrc + ">";
@@ -64,7 +60,6 @@ function askQuestion() {
 
 /*This function allows the user to select the questions
  from the foodQuestions Array*/
-
 function chooseFoodQuiz() {
     $(foodQuiz).click();
     questions = foodQuestions;
@@ -74,7 +69,6 @@ function chooseFoodQuiz() {
 
 /*This function allows the user to select the questions
  from the objectQuestions Array*/
-
 function chooseObjectQuiz() {
     $(objectQuiz).click();
     questions = objectQuestions;
@@ -89,13 +83,16 @@ function randomQuiz() {
     currentQuestionIndex = randomNum;
     randomQuestion = questions[randomNum];
 
-    // If randomQuestion is not in usedQuestions, it shows
-    // Then, the question is put in the array
+    /* If randomQuestion is not in usedQuestions, it shows
+     Then, the question is put in the array*/
+
     if (!usedQuestions.includes(randomQuestion)) {
         usedQuestions.push(randomQuestion);
     } else {
         randomQuiz();
     }
+    /*Returns a random, non-repeating question
+     from the chosen array*/
     return randomQuestion;
 }
 
@@ -103,8 +100,10 @@ function randomQuiz() {
  appropriately based on the conditions of whether the answer 
  is correct, incorrect or whether the quiz has finished*/
 
-//Reload function found on stack overflow
+ /*Solutions parameter passes the innerHTML of the buttons
+ through the checkSolution function*/
 
+//Reload function found on stack overflow
 function checkSelection(solutions) {
     if (solutions == questions[currentQuestionIndex].correct && questionCount <
         12) {
@@ -183,27 +182,22 @@ function checkSelection(solutions) {
 
 }
 
-
 /*This function documents the users progress in the quiz*/
-
+/*It returns the value of questionCount in the "counter" div*/
 function progressCounter() {
-
     return document.getElementById("counter").innerHTML =
         `Score: ${questionCount}/12`;
 }
 
 /* These event listeners are used to determine the appropriate
  function based on the users action */
-
 beginQuiz.addEventListener("click", startQuiz);
-
 foodQuiz.addEventListener("click", chooseFoodQuiz);
-
 objectQuiz.addEventListener("click", chooseObjectQuiz);
+
 
 /* This function initiates the quiz based on which
  event listener has been triggered*/
-
 function startQuiz() {
     beginQuiz.style.display = "none";
     welcomeQuiz.style.display = "none";

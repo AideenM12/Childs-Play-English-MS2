@@ -2,6 +2,27 @@
 
 The live website can be viewed [here](https://aideenm12.github.io/Childs-Play-English-MS2/)
 
+# Contents
+* [UX](#UX)
+    * [Strategy](#Strategy)
+       * [Project Goals](#Project-Goals)
+       * [User Stories](#User-Stories) 
+    * [Structure](#Structure)
+       * [Features](#Features) 
+       * [Features Left To Implement](Feature-Left-To-Implement)  
+        * [Existing Features](#Existing-Features)
+        * [Design](#Design)
+    * [Skeleton](#Skeleton)
+      * [Wireframes](#Wireframes)
+      * [Technolgies Used](#Technologies-Used)
+    * [Testing](#Testing)
+    * [Deployment](#Deployment)
+      * [Making a clone to run locally](#Making-a-clone-to-run-locally)
+    * [Credits](#Credits)
+      * [Media](#Media)
+      * [Code](#Code)
+      * [Acknowledgements](#Acknowledgements)
+
 
 # UX
 
@@ -9,13 +30,13 @@ The live website can be viewed [here](https://aideenm12.github.io/Childs-Play-En
 
 ### Project Goals
 
-The primary goal of the project is to create a site for younger, non-english speaking, learners to learn some basic English vocabulary in a stress-free playful environment. Younger learners enjoy repetitive material and respond better to praise than to new challenges so the site will be designed with this in mind. The material will be easy in order to encourage learners and the graphics used will be consistent with what is attractive to the target audience. The vocabulary chosen is food, animals and clothing because often learners in non English speaking countries are presented with certified English speaking exams that often involve being able to identify this vocabulary when presented with images so the site can function as an effective study aid in order to make the process of learning and studying much less daunting and hopefully much more enjoyable.
+The primary goal of the project is to create a site for younger, non-english speaking, learners to learn some basic English vocabulary in a stress-free playful environment. Younger learners enjoy repetitive material and respond better to praise than to new challenges so the site will be designed with this in mind. The material will be easy in order to encourage learners and the graphics used will be consistent with what is attractive to the target audience. The vocabulary chosen is food, animals and clothing because often learners in non English speaking countries are presented with certified English speaking exams that often involve being able to identify this vocabulary when presented with images so the site can function as an effective study aid in order to make the process of learning and studying much less daunting and hopefully much more enjoyable. Given the fact that the site is designed with English language learners in mind the amount of text outside of the target language will be minimal in order to not overwhelm, confuse or distract the user. The lack of text outside the target language will also promote a positive emotional response because of the site's ease of use and the relaxed presentation of the target language.
 
 **The Ideal User of this site is:**
 * Aged 5+ or a younger child with excellent reading skills.
 * Someone who enjoys languages and learning new things.
 * Someone who has regular access to a phone or computer with internet connection.
-* Someome who has been in enrolled in a ESL oral exam such as Trinity's GESE 1 exam.  
+* Someome who has been in enrolled in an English as a Foreign Language oral exam such as Trinity's GESE 1 exam.  
 
 ### User Stories
 * As a first time user I want to learn basic English vocabulary with the aid of intuitive visual images/graphics.
@@ -58,7 +79,7 @@ The 'Chewy' and 'Chilanka' fonts were found on [Google Fonts](https://fonts.goog
 
 **Imagery**
 
-The imagery was found on the FreePik Website(https://www.freepik.com/). It was chosen based on its suitablity for the target audience and also for its use of color which is similar to the color palettes selected for the site. 
+The imagery was found on the [FreePik Website](https://www.freepik.com/). It was chosen based on its suitablity for the target audience and also for its use of color which is similar to the color palettes selected for the site. 
 
 ## Features left to implement
 
@@ -81,7 +102,8 @@ The imagery was found on the FreePik Website(https://www.freepik.com/). It was c
 
 ## Technologies Used
 - This project is primarily built using HTML5 semantic markup, CSS stylesheets and Javascript.
--[jQuery](https://jquery.com/)
+- [jQuery](https://jquery.com/)
+    - This framework was used to create some of the site's interactive functions.
 - [Gitpod](https://gitpod.io)
     - This project was built using Gitpod as the IDE.
 - [Google fonts](https://fonts.google.com/) 
@@ -89,12 +111,10 @@ The imagery was found on the FreePik Website(https://www.freepik.com/). It was c
 - [Bootstrap 4.5](https://getbootstrap.com/)
    - Various aspects of this website were structured using Bootstrap.
    - Bootstrap was used to make this website responsive
-- [TinyJPG](https://tinyjpg.com/)
-   - The images represented were compressed using TinyJPG in order to improve the performance of the project. 
 - [Fontawesome](https://fontawesome.com/)
     - The icons used on this page were found in Fontawesome.
 - [Hover.css](https://ianlunn.github.io/Hover/) 
-    - The hover feature of the navigation links below the hero image were implemented using Hover.css. 
+    - The hover feature of the buttons of the site were implemented using Hover.css. 
 - [Popper.js](https://popper.js.org/)
     - Certain bootstrap responsive elements require Popper.js in order to function correctly.
 - [Balsamiq](https://balsamiq.com/)
@@ -105,16 +125,22 @@ The imagery was found on the FreePik Website(https://www.freepik.com/). It was c
     - This was used to format the CSS stylesheet.
 - [Freeformatter- HTML formatter](https://www.freeformatter.com/html-formatter.html)
     - This was used to format each HTML page
-- [Adobe Photoshop](https://photoshop.adobe.com/) 
-    - Some images were resized using Adobe Photoshop.
 - [Google DevTools](https://developers.google.com/web/tools/chrome-devtools) 
     - Google Dev Tools was extensively used throughout the project for various styling and testing purposes. Its lighthouse feature was used as one of the main testing tools for this project.
 - [Animate.css](https://animate.style/)
+    - Buttons, images and popups were animated using Animate.css.
 - [SweetAlert2](https://sweetalert2.github.io/)
+    - All pop-ups were created using SweetAlert2.
 - [EmailJS](https://www.emailjs.com/)
+    - The contact-form was created using EmailJS following a code institute tutorial.
 - [CSS-Tricks](https://css-tricks.com/)
+    - This was used as a general reference resource.
 - [Favicon.io](https://favicon.io/) 
+    - This was used to create the site's favicon.
 - [Am I Responsive](http://ami.responsivedesign.is/)
+    - This was used to test the responsiveness of the site and also to create the mock-up image presented at the start of this document.
+- [Beautifier.io](https://beautifier.io/)
+    -Beautifier.io was used to format all javascript files in this project.
 
 ## Testing
 Testing information can be found here in the separate [TESTING.md file](TESTING.md)
@@ -151,62 +177,67 @@ This project was deployed from the [Github Respository](https://github.com/Aidee
 ## Credits
 
 ### Media
-* Dog image was found [Freepik](https://www.freepik.com/vectors/dog)Dog vector created by catalyststuff .
-* Cat image was found [Freepik](https://www.freepik.com/vectors/cartoon)Cartoon vector created by catalyststuff 
-* Lion image was found [Freepik](https://www.freepik.com/vectors/logo)Cartoon vector created by catalyststuff
-* Penguin image was found [Freepik](https://www.freepik.com/vectors/winter)Cartoon vector created by catalyststuff
-* Elephant image was found [Freepik](https://www.freepik.com/vectors/baby)Cartoon vector created by catalyststuff
-* Panda Bear image was found [Freepik](https://www.freepik.com/vectors/baby)Cartoon vector created by catalyststuff
-* Pig image was found [Freepik](https://www.freepik.com/vectors/food)Food vector created by catalyststuff
-* Cow image was found [Freepik](https://www.freepik.com/vectors/music)Music vector created by catalyststuff 
-* Mouse image was found [Freepik](https://www.freepik.com/vectors/food)Food vector created by catalyststuff 
-* Rabbit image was found [Freepik](https://www.freepik.com/vectors/design)Design vector created by catalyststuff 
-* Horse image was found [Freepik](https://www.freepik.com/vectors/nature) Nature vector created by catalyststuff 
-* Parrot image was found [Freepik](https://www.freepik.com/vectors/cartoon) Cartoon vector created by catalyststuff 
-* Turtle image was found [Freepik](https://www.freepik.com/vectors/cartoon)Cartoon vector created by catalyststuff 
-* Duck image was found[Freepik](https://www.freepik.com/vectors/baby)Baby vector created by catalyststuff 
-* Shark image was found [Freepik](https://www.freepik.com/vectors/water)Water vector created by catalyststuff 
-* Owl image was found [Freepik](https://www.freepik.com/vectors/food) Food vector created by catalyststuff 
-* Unicorn image was found [Freepik](https://www.freepik.com/vectors/nature)Nature vector created by catalyststuff
+* The dog image was originally obtained from [catalyststuff on Freepik.com](https://www.freepik.com/vectors/dog)
+* The cat image was originally obtained from [catalyststuff on Freepik.com](https://www.freepik.com/vectors/cartoon)
+* The lion image was originally obtained from [catalyststuff on Freepik.com](https://www.freepik.com/vectors/logo) 
+* The penguin image was originally obtained from [catalyststuff on Freepik.com](https://www.freepik.com/vectors/winter) 
+* The elephant image was originally obtained from [catalyststuff on Freepik.com](https://www.freepik.com/vectors/baby) 
+* The panda bear image was originally obtained from [catalyststuff on Freepik.com](https://www.freepik.com/vectors/baby) 
+* The pig image was originally obtained from [catalyststuff on Freepik.com](https://www.freepik.com/vectors/food) 
+* The cow image was originally obtained from [catalyststuff on Freepik.com](https://www.freepik.com/vectors/music)  
+* The mouse image was originally obtained from [catalyststuff on Freepik.com](https://www.freepik.com/vectors/food) 
+* The rabbit image was originally obtained from [catalyststuff on Freepik.com](https://www.freepik.com/vectors/design) 
+* The horse image was originally obtained from [catalyststuff on Freepik.com](https://www.freepik.com/vectors/nature)  
+* The parrot image was originally obtained from [catalyststuff on Freepik.com](https://www.freepik.com/vectors/cartoon) 
+* The turtle image was originally obtained from [catalyststuff on Freepik.com](https://www.freepik.com/vectors/cartoon) 
+* The duck image was originally obtained from [catalyststuff on Freepik.com](https://www.freepik.com/vectors/baby) 
+* The shark image was originally obtained from [catalyststuff on Freepik.com](https://www.freepik.com/vectors/water) 
+* The owl image was originally obtained from [catalyststuff on Freepik.com](https://www.freepik.com/vectors/food)  
+* The unicorn image was originally obtained from [catalyststuff on Freepik.com](https://www.freepik.com/vectors/nature)
 
-* Strawberry image was found [Freepik](https://www.freepik.com/vectors/food)food vector created by gstudioimagen
-* Pizza image [FreePik](https://www.freepik.com/vectors/food)Food vector created by catalyststuff
-* Burger image [FreePik](https://www.freepik.com/vectors/food)Food vector created by catalyststuff 
-* Coffee image [FreePik](https://www.freepik.com/vectors/food)Food vector created by catalyststuff  
-* Icecream image [FreePik](https://www.freepik.com/vectors/food)Food vector created by catalyststuff 
-* Cookies image [FreePik](https://www.freepik.com/vectors/food)Food vector created by catalyststuff 
-* Chocolate image [FreePik](https://www.freepik.com/vectors/food)Food vector created by catalyststuff 
-* Cheese image [FreePik](https://www.freepik.com/vectors/food)Food vector created by catalyststuff 
-* Meat image [FreePik](https://www.freepik.com/vectors/food)Food vector created by catalyststuff 
-* Salad image [FreePik](https://www.freepik.com/vectors/food)Food vector created by catalyststuff 
-* Fruit image [FreePik](https://www.freepik.com/vectors/food)Food vector created by catalyststuff 
-* Candy image [FreePik](https://www.freepik.com/vectors/food)Food vector created by catalyststuff 
-* Bread image [FreePik](https://www.freepik.com/vectors/food)Food vector created by catalyststuff
-* Chicken image [FreePik](https://www.freepik.com/vectors/food)Food vector created by catalyststuff
-* Fish image [FreePik](https://www.freepik.com/vectors/food)Food vector created by catalyststuff
+* The strawberry image was originally obtained from [gstudioimagen on Freepik.com](https://www.freepik.com/vectors/food)
+* The pizza image was originally obtained from [catalyststuff on Freepik.com](https://www.freepik.com/vectors/food) 
+* The burger image was originally obtained from [catalyststuff on Freepik.com](https://www.freepik.com/vectors/food) 
+* The coffee image was originally obtained from [catalyststuff on Freepik.com](https://www.freepik.com/vectors/food)  
+* The icecream image was originally obtained from [catalyststuff on Freepik.com](https://www.freepik.com/vectors/food) 
+* The cookies image was originally obtained from [catalyststuff on Freepik.com](https://www.freepik.com/vectors/food)  
+* The chocolate image was originally obtained from [catalyststuff on Freepik.com](https://www.freepik.com/vectors/food) 
+* The cheese image was originally obtained from [catalyststuff on Freepik.com](https://www.freepik.com/vectors/food)  
+* The meat image was originally obtained from [catalyststuff on Freepik.com](https://www.freepik.com/vectors/food)  
+* The salad image was originally obtained from [catalyststuff on Freepik.com](https://www.freepik.com/vectors/food) 
+* The fruit image was originally obtained from [catalyststuff on Freepik.com](https://www.freepik.com/vectors/food) 
+* The candy image was originally obtained from [catalyststuff on Freepik.com](https://www.freepik.com/vectors/food) 
+* The bread image was originally obtained from [catalyststuff on Freepik.com](https://www.freepik.com/vectors/food)
+* The chicken image was originally obtained from [catalyststuff on Freepik.com](https://www.freepik.com/vectors/food)
+* The fish image was originally obtained from [catalyststuff on Freepik.com](https://www.freepik.com/vectors/food) 
 
-* Clock image [Freepik](https://www.freepik.com/vectors/hand)Hand vector created by catalyststuff 
-* Crayons image [Freepik](https://www.freepik.com/vectors/box)Box vector created by catalyststuff 
-* Book image [Freepik](https://www.freepik.com/vectors/book)Book vector created by catalyststuff 
-* Phone image [Freepik](https://www.freepik.com/vectors/heart)Heart vector created by catalyststuff
+* The clock image was originally obtained from [catalyststuff on Freepik.com](https://www.freepik.com/vectors/hand) 
+* The crayons image was originally obtained from [catalyststuff on Freepik.com](https://www.freepik.com/vectors/box) 
+* The book image was originally obtained from [catalyststuff on Freepik.com](https://www.freepik.com/vectors/book)  
+* The phone image was originally obtained from [catalyststuff on Freepik.com](https://www.freepik.com/vectors/heart) 
 
-* Littleboy and littlegirl images were found [Freepik](https://www.freepik.com/vectors/girl)Frame vector created by brgfx
-* Astronaut image were found [Freepik](https://www.freepik.com/vectors/heart)Heart vector created by catalyststuff 
-* 404astro image [Freepik](https://www.freepik.com/vectors/logo)Logo vector created by catalyststuff 
+* The littleboy and littlegirl images were originally obtained from [brgfx on Freepik.com](https://www.freepik.com/vectors/girl)
+* The astronaut image was originally obtained from [catalyststuff on Freepik.com](https://www.freepik.com/vectors/heart) 
+* The 404astro image was originally obtained from [catalyststuff on Freepik.com](https://www.freepik.com/vectors/logo)  
 
 ### Code
 * The Javascript aspects of this site were inspired by a tutorial found on [codeexplained.org](https://www.codeexplained.org/2018/10/create-multiple-choice-quiz-using-javascript.html). The basic code template was taken and repurposed with the appropriate code necessary to build this site.
 
 Other important resources for basic tutorials and troubleshooting resources include:
+
 * [Stack Overflow](https://stackoverflow.com/)
     - Stack overflow was used as a general resource for learning and troubleshooting.
+
 * [W3Schools](https://www.w3schools.com/)
    - W3Schools was used as a general resource for learning and troubleshooting.
+
 * [Youtube](https://www.youtube.com/)
    - Youtube was used as a general resource for learning and troubleshooting.
+
 * [Codepen.io](https://codepen.io/)
-    -The function to change and randomise the background colour during the quiz was found on this site.
+  - The function to change and randomise the background colour during the quiz was found on this site.
+
 * [CodeInstitute](https://codeinstitute.net/) 
-    -In particular the email.js code was sourced from Matt Rudge's code institute tutorial.
+  - In particular the email.js code was sourced from Matt Rudge's code institute tutorial.
 
 ### Acknowledgements
